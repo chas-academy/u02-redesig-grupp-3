@@ -1,1 +1,172 @@
 /*# sourceMappingURL=kontakt.css.map */
+ *{
+    margin: 0px;
+    padding: 0px;
+    
+  } 
+  body {
+    display: flex;
+    flex-direction: column;
+   font-family: Arial, sans-serif;
+   width: 100%;
+    height: 100%;
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+
+}
+body::before {
+    content: "";
+    background-image: url('stockholmcity.jpg');
+    opacity: 60%; /* Set your desired opacity */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place it behind other elements */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FEF7EC; /* Set your desired background color */
+
+}
+
+/* Style the logo */
+.logo img {
+  max-width: 60px; /* Adjust the maximum width for your logo */
+  height: 60px; /* Adjust the height for your logo */
+}
+
+/* Style the navigation links (text) */
+.nav-links {
+  display: flex;
+}
+.navlist {
+
+    margin-right: 20px;
+}
+
+.nav-links a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 20px;
+
+}
+
+/* hover effect for the links in nav */
+.nav-links a:hover {
+  color: #470B00; 
+}
+
+
+.ContactAll {
+    display: flex;
+    margin-top: 60px;
+
+}
+
+
+.contactinfo {
+    flex: 1;
+    background-color: #FEF7EC;
+    padding-top: 60px;
+    padding-left: 30px;
+    margin-right: 30px;
+    margin-left: 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add a shadow */
+
+}
+.kontaktoss{
+    margin-top: 30px;
+    color: #470B00;
+}
+.infoalltext {
+  margin-top: 70px;
+  color: #470B00;
+}
+.facebookinstagram {
+    background-color: #FEF7EC;
+    padding: 10px;
+    text-align: left;
+    margin-top: 40px;
+
+
+}
+
+/* label {
+    font-weight: bold;
+} */
+.contactform {
+    flex: 1;
+    background: linear-gradient(#FEF7EC, #FEF7EC) 0 60px/100% 900px no-repeat,
+                linear-gradient(#470B00, #470B00) 0 0px/100% 60px no-repeat;
+    padding: 70px;
+    margin-right: 70px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add a shadow */
+
+
+}
+.allcontactfom {
+    margin-top: 40px;
+    
+}
+.bold-word {
+    font-weight: bold;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+.sicka {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-left: 150px; */
+}
+.sicka input[type="submit"] {
+    width: 170px; /* Adjust the width to your preference */
+    height: 30px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+}
+.footer{
+    background-color:black ;
+    margin-top: 40px;
+    /* height: 200px;
+    width: 100%; */
+}
+.footericons {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin-top: 150px;
+}
+
+.footericons div {
+    margin: 0 10px; /
+    border-radius:50%;
+
+}
+.scroll-to-top {  /* scroll-to-top button */
+  position: fixed;
+  display: flex;
+  bottom: 50px;
+  right: 20px;
+  z-index: 99;
+  opacity: 80%;
+  background-color: #000000;
+  border-radius: 50%;
+}
