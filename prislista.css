@@ -58,7 +58,51 @@ table {
 <link href="https://fonts.googleapis.com/css2?family=Nobile:ital,wght@1,400;1,500;1,700&family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">*/
 /*Fonts*/
 /*Colors*/
+/*Dot colors*/
 /*Members background color*/
 body {
-  background-color: #C60000;
+  background-color: #FEF7EC;
+}
+
+.wrapper {
+  width: 390px;
+}
+
+.hero {
+  background-image: url(./Prislistaimg/hero_img.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 252px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: "Nobile", sans-serif;
+  color: #FFF4DF;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+}
+
+.header-text {
+  font-family: "Poppins", sans-serif;
+  color: #FFF4DF;
+  font-size: 14px;
+  text-align: center;
+}
+
+.prislistor {
+  display: flex;
+  justify-content: center;
+  width: 390px;
+}
+
+table {
+  width: 150px;
+  display: inline;
+  justify-content: center;
+  flex-direction: column;
 }/*# sourceMappingURL=prislista.css.map */
