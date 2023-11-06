@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"version":3,"sources":["primary.scss"],"names":[],"mappings":"AAAA;;;uMAAA;AAMA,QAAA;AAQA,SAAA;AAQA,2BAAA","file":"primary.css"}
+=======
+{"version":3,"sources":["primary.scss"],"names":[],"mappings":"AAAA;;;uMAAA;AAMA,QAAA;AAQA,SAAA;AAUA,2BAAA","file":"primary.css"}
+>>>>>>> c99f7058d03c51cc4bf44fdac61c5485bfedb0a6
