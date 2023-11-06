@@ -1,0 +1,7 @@
+
+// Mixin
+@mixin devices ($breakpoint) {
+    @media screen and (min-width: $breakpoint) {
+        @content;
+    }
+}
