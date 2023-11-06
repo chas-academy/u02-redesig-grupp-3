@@ -80,9 +80,8 @@ p {
 
 
 #news-section {
-    border: solid 2px;
     height: auto;
-    width: 90vw;
+    width: 100%;
     margin-top: 20px;
     background-color: $cardBackgroundColor;
 }
@@ -91,34 +90,34 @@ p {
 .news-header-info {
     display: flex;
     flex-direction: row;
-    margin: 1rem;
-    margin-bottom: 2rem;
+    /* margin: 1rem; */
+    /* margin-bottom: 2rem; */
     align-items: center;
     justify-content: space-between;
-
+    padding: 1rem;
     .dot-veg {
         font-family: 'Material Symbols Outlined';
-        color: yellowgreen;
+        color: $vegDot;
         font-size: smaller;
     }
     .dot-meat {
         font-family: 'Material Symbols Outlined';
-        color: red;
+        color: $meatDot;
         font-size: smaller;
     }
     .dot-pork {
         font-family: 'Material Symbols Outlined';
-        color: yellow;
+        color: $pigDot;
         font-size: smaller;
     }
     .dot-chicken {
         font-family: 'Material Symbols Outlined';
-        color: red;
+        color: $chickenDot;
         font-size: smaller;
     }
     .dot-fish {
         font-family: 'Material Symbols Outlined';
-        color: blue;
+        color: $fishDot;
         font-size: smaller;
     }
     .dot-text {
@@ -130,6 +129,7 @@ p {
 #card-JK {
     border:solid 1px;
     width: 80vw;
+
 }
 
 
@@ -195,7 +195,11 @@ background-color: $cardColor;
     flex-direction: row;
 }
 
-
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /*.news-img-one {
     height: 100%;
     width: 100%;
