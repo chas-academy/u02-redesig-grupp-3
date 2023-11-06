@@ -1,11 +1,14 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="nyheter.css" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="nyheter.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nobile:ital,wght@1,400;1,500;1,700&family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0">
     <title>Document</title>
 </head>
 
@@ -17,36 +20,31 @@
         <section id="hero-section">
             <div class="hero-content">
                 <div class="hero-img-container">
-                    <div class="hero-img">
-                        <!--Här kommer hero bilden ligga, i css-->
-                        <img src="nyheter-img/hero-img-nyheter.png" alt="nyheter_hero" />
-                        <!-- Ändra så bilden ligger i css igen-->
                         <div class="hero-text-container">
                             <div class="hero-text-header">
                                 <h2>Nytt hos våra medlemmar</h2>
                             </div>
                             <div class="hero-text">
-                                <p>
+                                <p class="hero-text-color">
                                     Kolla vad våra medlemmar erbjuder inom catering i november
                                 </p>
+                                <button class="hero-button" type="button">
+                                    Gå till erbjudande
+                                </button>
                             </div>
                         </div>
-
-                        <button class="hero-button" type="button">
-                            Gå till erbjudande
-                        </button>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="news-section">
-            <div class="news-header-info">
-                <p>-Veg</p>
-                <p>-Kött</p>
-                <p>Gris</p>
-                <p>Kyckling</p>
-                <p>Fisk/Skaldjur</p>
+            <div class="news-header-info"> <!--svg-->
+                <div class="dot-veg">circle</div><p class="dot-text">-Veg</p>
+                <div class="dot-meat">circle</div><p class="dot-text">-Kött</p>
+                <div class="dot-pork">circle</div><p class="dot-text">-Gris</p>
+                <div class="dot-chicken">circle</div><p class="dot-text">-Kyckling</p>
+                <div class="dot-fish">circle</div><p class="dot-text">-Fisk/Skaldjur</p>
             </div>
             <!--info om kyckling, nöt osv-->
 
@@ -57,7 +55,7 @@
                     <div class="profile-img-container">
                         <!--innehåller boxen för img-->
                         <div class="profile-img">
-                            <img src="nyheter-img/Joes_louisiana_kitchen.png" alt="card-JK-img" />
+                            <img src="nyheter-img/Joes_louisiana_kitchen.png" alt="card-JK-img" >
                         </div>
                         <!--bild här-->
                     </div>
@@ -74,24 +72,24 @@
                 <div class="offer-container">
                     <div class="offer-content-text">
                         <p>Låt ditt nästa event glittra med smaker från Louisiana!</p>
-                        <br />
+                        <br >
                         <p>
                             Dyk ned i en autentisk Cajun-upplevelse från Joe's Kitchen. Vår
                             catering buffé öppnar dörren till en värld av rika och exotiska
                             smaker – från krispig hel friterad kalkon till kryddiga cajun
                             kräftor.
                         </p>
-                        <br />
+                        <br >
                         <p>
                             Överlåt besväret med matlagningen till oss och fokusera på att
                             njuta av ditt event.
                         </p>
-                        <br />
+                        <br >
                         <p>
                             <span class="offer-color-red">
                                 Erbjudandet gäller fr o m 10/11 - 2023</span>
                         </p>
-                        <br />
+                        <br >
                         <p>
                             Endast <span class="offer-color-red"> 389 kr </span> per person
                             för en oförglömlig Cajun-fest!
@@ -101,27 +99,25 @@
                 </div>
                 <div class="news-img-container">
                     <div class="news-img-one"></div>
-                    <img src="nyheter-img/cajun_special_1.png" alt="cajun_special_1" />
+                    <img src="nyheter-img/cajun_special_1.png" alt="cajun_special_1" >
                     <div class="news-img-two"></div>
-                    <img src="nyheter-img/cajun_special_2.png" alt="cajun_special_2" />
+                    <img src="nyheter-img/cajun_special_2.png" alt="cajun_special_2" >
                     <div class="news-img-three"></div>
-                    <img src="nyheter-img/cajun_special_3.png" alt="cajun_special_3" />
+                    <img src="nyheter-img/cajun_special_3.png" alt="cajun_special_3" >
                     <div class="news-img-four"></div>
-                    <img src="nyheter-img/cajun_special_4.png" alt="cajun_special_4" />
+                    <img src="nyheter-img/cajun_special_4.png" alt="cajun_special_4" >
                 </div>
-                <!--Här kommer fyra-5 bilder ligga-->
             </div>
-            <!--information om Cesans-->
+
+            <!--
+
             <div id="card-Cesans">
                 <div class="profile-container">
-                    <!--innehåller profil/text-->
                     <div class="profile-img-container">
-                        <!--innehåller boxen för img-->
                         <div class="profile-img">
                             <img src="nyheter-img/cesan_13.png" alt="card-Cesans-img" />
                         </div>
 
-                        <!--bild här-->
                     </div>
                     <div class="profile-text-container">
                         <div class="profile-text-content">
@@ -176,20 +172,15 @@
                         <img src="nyheter-img/cesan_special_5.png" alt="cesan_special_5" />
                     </div>
                 </div>
-                <!--Här kommer fyra-5 bilder ligga-->
             </div>
 
-            <!--information om Chapo-->
 
             <div id="card-Chapo">
                 <div class="profile-container">
-                    <!--innehåller profil/text-->
                     <div class="profile-img-container">
-                        <!--innehåller boxen för img-->
                         <div class="profile-img">
                             <img src="nyheter-img/Chapoh_profile.png" alt="card-Chapo-img" />
                         </div>
-                        <!--bild här-->
                     </div>
                     <div class="profile-text-container">
                         <div class="profile-text-content">
@@ -236,20 +227,15 @@
                         <img src="nyheter-img/chapo_special_4.png" alt="chapo_special_4" />
                     </div>
                 </div>
-                <!--Här kommer fyra-5 bilder ligga-->
             </div>
 
-            <!--information om Charrata-->
 
             <div id="card-Charrata">
                 <div class="profile-container">
-                    <!--innehåller profil/text-->
                     <div class="profile-img-container">
-                        <!--innehåller boxen för img-->
                         <div class="profile-img">
                             <img src="nyheter-img/charrata.png" alt="card-Charrata-img" />
                         </div>
-                        <!--bild här-->
                     </div>
                     <div class="profile-text-container">
                         <div class="profile-text-content">
@@ -301,20 +287,15 @@
                         <img src="nyheter-img/charrata_special_5.png" alt="charrata_special_5" />
                     </div>
                 </div>
-                <!--Här kommer fyra-5 bilder ligga-->
             </div>
 
-            <!--information om Votcan-->
 
             <div id="card-Votcan">
                 <div class="profile-container">
-                    <!--innehåller profil/text-->
                     <div class="profile-img-container">
-                        <!--innehåller boxen för img-->
                         <div class="profile-img">
                             <img src="nyheter-img/votcan.png" alt="card-Votcan-img" />
                         </div>
-                        <!--bild här-->
                     </div>
                     <div class="profile-text-container">
                         <div class="profile-text-content">
@@ -360,19 +341,14 @@
                         <img src="nyheter-img/votcan_special_5.png" alt="votcan_special_5" />
                     </div>
                 </div>
-                <!--Här kommer fyra-5 bilder ligga-->
             </div>
-            <!--information om MeanB-->
 
             <div id="card-MeanB">
                 <div class="profile-container">
-                    <!--innehåller profil/text-->
                     <div class="profile-img-container">
-                        <!--innehåller boxen för img-->
                         <div class="profile-img">
                             <img src="nyheter-img/mean_burgers_profile.png" alt="card-MeanB-img" />
                         </div>
-                        <!--bild här-->
                     </div>
                     <div class="profile-text-container">
                         <div class="profile-text-content">
@@ -416,14 +392,12 @@
                         <img src="nyheter-img/mean_burgers_special_4.png" alt="mean_burgers_special_4" />
                     </div>
                 </div>
-                <!--Här kommer fyra-5 bilder ligga-->
-            </div>
+            </div> 
+            -->
+
         </section>
     </main>
     <footer><!--footer här--></footer>
 </body>
 
 </html>
-=======
-
->>>>>>> c99f7058d03c51cc4bf44fdac61c5485bfedb0a6

@@ -1,1 +1,261 @@
-/*# sourceMappingURL=nyheter.css.map */
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Header and secondary font copy paste i HTML:
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nobile:ital,wght@1,400;1,500;1,700&family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">*/
+/*Fonts*/
+/*Colors*/
+/*Members background color*/
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/*tillfälligt tills nav*/
+header {
+  width: auto;
+  height: 50px;
+}
+
+body {
+  background-color: #FEF7EC;
+}
+
+.hero-content {
+  width: 100%;
+  height: 10rem;
+}
+.hero-content .hero-img-container {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  background-size: cover;
+  background-image: url(nyheter-img/hero-shadow-img.png);
+}
+.hero-content .hero-text-container {
+  display: flex;
+  flex-direction: row;
+  color: #FFF4DF;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.hero-content .hero-text-header {
+  display: flex;
+}
+.hero-content .hero-text {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hero-content .hero-text .hero-text-color {
+  color: #FFF4DF;
+}
+.hero-content .hero-button {
+  background-color: #F9E7A4;
+  color: #470B00;
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  font-family: "Nobile", sans-serif;
+  font-size: xx-large;
+  padding: 1rem;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  color: #470B00;
+}
+
+#news-section {
+  border: solid 2px;
+  height: auto;
+  width: 90vw;
+  margin-top: 20px;
+  background-color: #16262B;
+}
+
+.news-header-info {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  margin-bottom: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.news-header-info .dot-veg {
+  font-family: "Material Symbols Outlined";
+  color: yellowgreen;
+  font-size: smaller;
+}
+.news-header-info .dot-meat {
+  font-family: "Material Symbols Outlined";
+  color: red;
+  font-size: smaller;
+}
+.news-header-info .dot-pork {
+  font-family: "Material Symbols Outlined";
+  color: yellow;
+  font-size: smaller;
+}
+.news-header-info .dot-chicken {
+  font-family: "Material Symbols Outlined";
+  color: red;
+  font-size: smaller;
+}
+.news-header-info .dot-fish {
+  font-family: "Material Symbols Outlined";
+  color: blue;
+  font-size: smaller;
+}
+.news-header-info .dot-text {
+  font-size: 8px;
+  color: #FFF4DF;
+}
+
+#card-JK {
+  border: solid 1px;
+  width: 80vw;
+}
+
+.profile-container {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-img-container {
+  width: 100%;
+  padding: 10px;
+  background-color: #2D5653; /*måste ändra så att den ligge specifikt för detta card sen*/
+}
+
+.profile-img {
+  height: 100%;
+  border: solid 1px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  width: 83px;
+}
+
+.profile-text-container {
+  width: 100%;
+  background-color: #FEF7EC; /*måste ändra så att den ligge specifikt för detta card sen*/
+}
+
+.profile-text-content {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.offer-container {
+  width: 100%;
+  height: auto;
+  border: solid 1px;
+  background-color: #FEF7EC;
+}
+
+.offer-color-red {
+  color: #C60000;
+}
+
+.card-button {
+  display: flex;
+  background-color: #F9E7A4;
+}
+
+/*space mellan bilderna så bakgrunden syns*/
+.news-img-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+/*.news-img-one {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-image: url(https://cdn.discordapp.com/attachments/1166343969932857446/1168951572756185128/cajun_special_4.png?ex=6553a1fd&is=65412cfd&hm=c245bc3f79bc715c5f42e21a301f1833701cf173c8860c98ba3c9ff286cf0910&);
+}
+
+
+.news-img-two {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-image: url(https://cdn.discordapp.com/attachments/1166343969932857446/1168951571833421895/cajun_special_2.png?ex=6553a1fc&is=65412cfc&hm=6ad7a41c290f5130be74297ba94e5b35c9c5eb2d6e0f91575ff9ce4b7327efee&);
+}
+.news-img-three {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-image: url(https://cdn.discordapp.com/attachments/1166343969932857446/1168951572282232882/cajun_special_3.png?ex=6553a1fc&is=65412cfc&hm=61b33812e873009461681e59287d18521e2ea4839ca88eccb8e7cbeacd5cc671&);
+}
+.news-img-four {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-image: url(https://cdn.discordapp.com/attachments/1166343969932857446/1168951571212681288/cajun_special_1.png?ex=6553a1fc&is=65412cfc&hm=5b4ef74a6a9ab238940433b77f2210d2d604eece60995de84bc076f4aaed7cf4&);
+}
+*//*# sourceMappingURL=nyheter.css.map */
