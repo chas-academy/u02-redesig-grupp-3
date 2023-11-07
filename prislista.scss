@@ -1,0 +1,51 @@
+@import "reset";
+@import "primary";
+
+
+body {
+    background-color: $mainBackgroundColor;
+}
+
+.wrapper {
+    width: 390px;
+}
+
+.hero {
+    background-image: url(./Prislistaimg/hero_img.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 252px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+h1 {
+    font-family: $header-font;
+    color: $headerFontColor;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+}
+
+.header-text {
+    font-family: $secondary-font;
+    color: $headerFontColor;
+    font-size: 14px;
+    text-align: center;
+}
+
+.prislistor {
+    display: flex;
+    justify-content: center;
+    width: 390px;
+  }
+  
+  table {
+    width: 150px;
+    display: inline;
+    justify-content: center;
+    flex-direction: column;
+  }
