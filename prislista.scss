@@ -7,11 +7,13 @@ body {
 }
 
 .wrapper {
-    width: 390px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
-
+//Hero section
 .hero {
-    background-image: url(./Prislistaimg/hero_img.png);
+    background-image: url(./Prislistaimg/hero_img1.png);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -37,15 +39,401 @@ h1 {
     text-align: center;
 }
 
-.prislistor {
+//Prislistor section
+
+#prislistor {
     display: flex;
     justify-content: center;
-    width: 390px;
+    flex-direction: column;
+    align-items: center;
+    width: 379px;
+    border-radius: 5px;
+    background-color: $cardBackgroundColor;
+    margin-top: 10px;
   }
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin-top: 10px;
+}
+
+.dot-text {
+    font-family: $secondary-font;
+    color: $headerFontColor;
+    font-size: 8px;
+}
+
+.dot1 {
+    font-family: 'Material Symbols Outlined';
+    color: $vegDot;
+    font-size: smaller;
+}
+
+.dot2 {
+    font-family: 'Material Symbols Outlined';
+    color: $meatDot;
+    font-size: smaller;
+}
+
+.dot3 {
+    font-family: 'Material Symbols Outlined';
+    color: $pigDot;
+    font-size: smaller;
+}
+
+.dot4 {
+    font-family: 'Material Symbols Outlined';
+    color: $chickenDot;
+    font-size: smaller;
+}
+
+.dot5 {
+    font-family: 'Material Symbols Outlined';
+    color: $fishDot;
+    font-size: smaller;
+}
+
+.prislista {
+    background-color: $cardColor;
+    width: 371px;
+    height: 319px;
+    font-size: 8px;
+    margin: 15.25px 0 15.25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+.prislista-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+//Kontakt info för alla medlemmar
+
+.kontakt {
+    width: 117px;
+    font-family: $secondary-font;
+    color: $primaryFontColor;
+    h3 {
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        margin: 5px;
+    }
+    p {
+        margin: 5px;
+        font-size: 7.5px;
+        line-height: 13px;
+    }
+    strong {
+        font-weight: bold;
+    }
+}
+
+.profil-kontakt {
+    width: 117px;
+    height: 194px;
+}
+
+.profile-filter {
+    display: flex;
+    justify-content: end;
+    align-items: center; 
+    margin-top: 5px;
+}
+
+//Profil och Logo section för alla medlemmar
+
+.profil {
+    width: 117px;
+    height: 91.44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $joesKitchen;
+    border-radius: 5px 0 0 0;
+}
+
+.cesans {
+    background-color: $cesans;
+}
+
+.chapoh {
+    background-color: $chapohFoo;
+}
+
+.charrata {
+    background-color: $charrata;
+}
+
+.votcan {
+    background-color: $votcan;
+}
+
+.meanburger{
+    background-color: $meanBurgers;
+}
+.ciaco{
+    background-color: $ciaco;
+}
+
+.gyro {
+    background-color: $gyroTruck;
+}
+
+.nacho {
+    background-color: $nachoMania;
+}
+
+.reklam {
+    background-color: $reklam;
+}
+
+.logo {
+    width: 71.77px;
+    height: 71.77px;
+    display: flex;
+    justify-content: center;
+    border-radius: 40px;
+    border: 2px solid $profileBorder;
+        img{
+        width: 57px;
+        height: 59px;
+        margin-top: 5px;
+        border-radius: 20px;
+        }
+    }
+
+.joelogo {
+    background-color: $joesKitchenLogo;
+    }
+
+.cesanslogo {
+    background-color: $cesansLogo;
+    }
+
+.chapohlogo {
+    background-color: $chapohFooLogo;
+    }
+
+.charratalogo {
+    background-color: $charrataLogo;
+    }
+
+.votcanlogo {
+    background-color: $votcanLogo;
+}
+
+.meanburgerLogo{
+    background-color: $meanBurgersLogo;
+}
+
+.ciacologo{
+    background-color: $ciacoLogo;
+}
+
+.gyrologo {
+    background-color: $gyroTruckLogo;
+}
+
+.nachologo {
+    background-color: $nachoManiaLogo;
+}
+
+.reklamlogo {
+    width: 71.77px;
+    height: 71.77px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    border: 2px solid $profileBorder;
+    background-color: $reklamLogo;
+}
+
+.dinlogga {
+    height: 50px;
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+    color: $headerFontColor;
+}
+
+//Bilder för alla medlemmar
+
+.mat-bilder4 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 371px;
+    height: 115px;
+
+    img{
+        width: 84.68px;
+        height: 84.68px;
+        box-shadow: 2.29px 2.29px 5px $boxShadow;
+        border-radius: 5px;
+    }
+
+}
+
+.mat-bild-stor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+
+    .bigger-img {
+    width: 146.47px;
+    height: 82.09px;
+    box-shadow: 2.29px 2.29px 5px $boxShadow;
+    border-radius: 5px;
+    }
+}
+
+.matbilder5 {
+    display: flex;
+    justify-content: space-around;
+    width: 371px;
+    height: 115px;
+
+
+.mat-bilder5 {
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    margin-top: 10px;
+    row-gap: 3px;
+    column-gap: 5px;
+    width: 201px;
+    height: 62.5px;
+    
+
+    img{
+        width: 90px;
+        height: 46px;
+        box-shadow: 2.29px 2.29px 5px $boxShadow;
+        border-radius: 3px;
+    }
+
+}
+
+}
+
+
+//Tabeller för medlemmar
+
+.pris-tabell {
+    width: 254px;
+    height: 204px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
   
   table {
-    width: 150px;
     display: inline;
     justify-content: center;
     flex-direction: column;
+    font-size: 14px;
+    
+    tr {
+        border-bottom: 1px solid $primaryFontColor;
+    }
+
+    td {
+        font-family: $secondary-font;
+        color: $primaryFontColor;
+        text-align: start;
+        padding: 2px;
+        vertical-align: bottom;
+        font-weight: 400;
+    }
+    p {
+        font-size: 10px;
+    }
   }
+
+  //Knapp för att beställa eller kontakta oss
+
+  .button {
+    width: 254px;
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  .beställ {
+    display: flex;
+    width: 52.2px;
+    height: 15.35px;
+    font-family: $secondary-font;
+    color: $primaryFontColor;
+    font-weight: bold;
+    font-size: 10px;
+    background-color: $buttonsColor;
+    border-radius: 4px;
+    border: 1px solid $primaryFontColor;
+    align-items: center;
+  }
+
+.kontakta-oss {
+    display: flex;
+    width: 85px;
+    height: 20px;
+    font-family: $secondary-font;
+    color: $primaryFontColor;
+    font-weight: bold;
+    font-size: 10px;
+    background-color: $buttonsColor;
+    border-radius: 4px;
+    border: 1px solid $primaryFontColor;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.button-kontakt {
+    width: 254px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+//Reklam text
+
+.reklam-prislista {
+    width: 254px;
+    height: 204px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reklam-text {
+    width: 228px;
+    font-family: $secondary-font;
+    color: $primaryFontColor;
+    text-align: start;
+    padding: 2px;
+    vertical-align: bottom;
+    font-weight: 400;
+
+    h4{
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 10px;
+    }
+}
