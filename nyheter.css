@@ -163,35 +163,6 @@ p {
   justify-content: space-between;
   padding: 1rem;
 }
-.news-header-info .dot-veg {
-  font-family: "Material Symbols Outlined";
-  color: #98BE6F;
-  font-size: smaller;
-}
-.news-header-info .dot-meat {
-  font-family: "Material Symbols Outlined";
-  color: #E5712A;
-  font-size: smaller;
-}
-.news-header-info .dot-pork {
-  font-family: "Material Symbols Outlined";
-  color: #F3C912;
-  font-size: smaller;
-}
-.news-header-info .dot-chicken {
-  font-family: "Material Symbols Outlined";
-  color: #E52A2A;
-  font-size: smaller;
-}
-.news-header-info .dot-fish {
-  font-family: "Material Symbols Outlined";
-  color: #2A8BE5;
-  font-size: smaller;
-}
-.news-header-info .dot-text {
-  font-size: 12px;
-  color: #FFF4DF;
-}
 
 #card-JK {
   width: 80%;
@@ -205,6 +176,7 @@ p {
   background-color: #FEF7EC;
   overflow: hidden;
   padding: 5px;
+  margin-top: 1rem;
   border-radius: 5px 5px 0 0;
 }
 
@@ -230,13 +202,13 @@ p {
 .profile-text-container {
   width: 100%;
   background-color: #FEF7EC; /*måste ändra så att den ligge specifikt för detta card sen*/
-  font-size: 10px;
 }
 
 .profile-text-content {
   overflow: hidden;
   white-space: nowrap;
   padding: 10px;
+  font-size: x-small;
 }
 
 .offer-container {
@@ -271,33 +243,102 @@ p {
   height: 100px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 .news-img-container .news-img-one {
   height: 100%;
   width: 100%;
+  border-radius: 5px;
   background-size: cover;
 }
 .news-img-container .news-img-two {
   height: 100%;
   width: 100%;
+  border-radius: 5px;
   background-size: cover;
 }
 .news-img-container .news-img-three {
   height: 100%;
   width: 100%;
   background-size: cover;
+  border-radius: 5px;
+  display: none;
 }
 .news-img-container .news-img-four {
   height: 100%;
   width: 100%;
   background-size: cover;
+  border-radius: 5px;
+  display: none;
 }
-.news-img-container .news-img-one-content, .news-img-container .news-img-two-content, .news-img-container .news-img-three-content, .news-img-container .news-img-four-content {
+.news-img-container .news-img-five {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  border-radius: 5px;
+  display: none;
+}
+.news-img-container .news-img-one-content, .news-img-container .news-img-two-content, .news-img-container .news-img-three-content, .news-img-container .news-img-four-content, .news-img-container .news-img-five-content {
   display: flex;
+  margin-inline: 0.1rem;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.profile-dots {
+  display: flex;
+  flex-direction: row;
+}
+
+/*Måste ligga under alla cards*/
+.dot-veg {
+  font-family: "Material Symbols Outlined";
+  color: #98BE6F;
+  font-size: smaller;
+}
+
+.dot-meat {
+  font-family: "Material Symbols Outlined";
+  color: #E5712A;
+  font-size: smaller;
+}
+
+.dot-pork {
+  font-family: "Material Symbols Outlined";
+  color: #F3C912;
+  font-size: smaller;
+}
+
+.dot-chicken {
+  font-family: "Material Symbols Outlined";
+  color: #E52A2A;
+  font-size: smaller;
+}
+
+.dot-fish {
+  font-family: "Material Symbols Outlined";
+  color: #2A8BE5;
+  font-size: smaller;
+}
+
+.dot-text {
+  font-size: 12px;
+  color: #FFF4DF;
+}
+
+/*ta bort innan merge*/
+.footer-section {
+  height: 100px;
 }/*# sourceMappingURL=nyheter.css.map */
