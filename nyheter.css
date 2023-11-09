@@ -164,7 +164,7 @@ p {
   padding: 1rem;
 }
 
-#card-JK {
+.all-cards {
   width: 80%;
 }
 
@@ -341,4 +341,61 @@ p {
 /*ta bort innan merge*/
 .footer-section {
   height: 100px;
-}/*# sourceMappingURL=nyheter.css.map */
+}
+
+/*bilder test*/
+#JK-images .news-img-three {
+  display: block;
+}
+
+#chapoh-images .news-img-three {
+  display: block;
+}
+
+#meanB-images .news-img-three {
+  display: block;
+}
+
+/*desktop*/
+@media screen and (min-width: 1023px) {
+  .hero-content {
+    height: 25rem;
+  }
+  .hero-content h2 {
+    font-size: 4rem;
+    padding: 6rem;
+  }
+  .hero-content .hero-text {
+    font-size: 1.8rem;
+    padding: 1rem;
+  }
+  .hero-content .hero-button {
+    padding: 1.2rem;
+    font-size: 1.8rem;
+  }
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /*desktop divs*/
+  .flex-parent {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+  }
+  .flex-child {
+    width: 50%;
+  }
+}
+/*    .all-cards {
+width: 700px;
+display: flex;
+justify-content: space-evenly;
+flex-direction: column;
+    }
+
+    .desktop-flex {
+        flex-basis: 300px;
+        flex-grow: 1;
+margin: 8px;
+    }*//*# sourceMappingURL=nyheter.css.map */
