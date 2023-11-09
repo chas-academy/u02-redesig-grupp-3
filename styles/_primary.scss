@@ -11,7 +11,6 @@ $headerFontColor: #FFF4DF;
 $primaryFontColor: #470B00;
 $redColor: #C60000;
 
-
 /*Colors*/
 $mainBackgroundColor: #FEF7EC;
 $cardBackgroundColor: #16262B;
@@ -21,13 +20,17 @@ $footerColor: #212121;
 $buttonsColor: #F9E7A4;
 $boxShadow: #000000; //42% på shadow.
 
+/* 
+$bg-color: #FEF7EC;
+$btn-color: #F3C912; 
+*/
+
 /*Dot colors*/
 $vegDot:#98BE6F;
 $meatDot: #E5712A;
 $pigDot: #F3C912;
 $chickenDot: #E52A2A;
 $fishDot: #2A8BE5;
-
 
 /*Members background color*/
 $joesKitchenLogo: #9BAA8C;
@@ -40,3 +43,11 @@ $meanBurgers: #6B8F9B;
 $ciaco: #841015;
 $gyroTruck: #D9913F;
 $nachoMania: #9A3B0A;
+
+/* Font sizes */
+$h1-size: 35px;
+$h2-size: 25px;
+
+/* Device breakpoints */
+$mobile: 420px;
+$desktop: 720px;
