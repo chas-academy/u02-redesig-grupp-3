@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -55,7 +56,8 @@ table {
 /*Header and secondary font copy paste i HTML:
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nobile:ital,wght@1,400;1,500;1,700&family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">*/
+<link href="https://fonts.googleapis.com/css2?family=Nobile:wght@400;500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+*/
 /*Fonts*/
 /*Colors*/
 /*Dot colors*/
@@ -65,11 +67,13 @@ body {
 }
 
 .wrapper {
-  width: 390px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .hero {
-  background-image: url(./Prislistaimg/hero_img.png);
+  background-image: url(./Prislistaimg/hero_img1.png);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -94,15 +98,374 @@ h1 {
   text-align: center;
 }
 
-.prislistor {
+#prislistor {
   display: flex;
   justify-content: center;
-  width: 390px;
+  flex-direction: column;
+  align-items: center;
+  width: 379px;
+  border-radius: 5px;
+  background-color: #16262B;
+  margin-top: 10px;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin-top: 10px;
+}
+
+.dot-text {
+  font-family: "Poppins", sans-serif;
+  color: #FFF4DF;
+  font-size: 8px;
+}
+
+.dot1 {
+  font-family: "Material Symbols Outlined";
+  color: #98BE6F;
+  font-size: smaller;
+}
+
+.dot2 {
+  font-family: "Material Symbols Outlined";
+  color: #E5712A;
+  font-size: smaller;
+}
+
+.dot3 {
+  font-family: "Material Symbols Outlined";
+  color: #F3C912;
+  font-size: smaller;
+}
+
+.dot4 {
+  font-family: "Material Symbols Outlined";
+  color: #E52A2A;
+  font-size: smaller;
+}
+
+.dot5 {
+  font-family: "Material Symbols Outlined";
+  color: #2A8BE5;
+  font-size: smaller;
+}
+
+.prislista {
+  background-color: #FEF7EC;
+  width: 371px;
+  height: 319px;
+  font-size: 8px;
+  margin: 15.25px 0 15.25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  flex-direction: column;
+}
+
+.prislista-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kontakt {
+  width: 117px;
+  font-family: "Poppins", sans-serif;
+  color: #470B00;
+}
+.kontakt h3 {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 5px;
+}
+.kontakt p {
+  margin: 5px;
+  font-size: 7.5px;
+  line-height: 13px;
+}
+.kontakt strong {
+  font-weight: bold;
+}
+
+.profil-kontakt {
+  width: 117px;
+  height: 194px;
+}
+
+.profile-filter {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.profil {
+  width: 117px;
+  height: 91.44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2D5653;
+  border-radius: 5px 0 0 0;
+}
+
+.cesans {
+  background-color: #A47355;
+}
+
+.chapoh {
+  background-color: #D05F2D;
+}
+
+.charrata {
+  background-color: #1E4B38;
+}
+
+.votcan {
+  background-color: #8FBA61;
+}
+
+.meanburger {
+  background-color: #6B8F9B;
+}
+
+.ciaco {
+  background-color: #841015;
+}
+
+.gyro {
+  background-color: #D9913F;
+}
+
+.nacho {
+  background-color: #9A3B0A;
+}
+
+.reklam {
+  background-color: #71848A;
+}
+
+.logo {
+  width: 71.77px;
+  height: 71.77px;
+  display: flex;
+  justify-content: center;
+  border-radius: 40px;
+  border: 2px solid #FFAB78;
+}
+.logo img {
+  width: 57px;
+  height: 59px;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+
+.joelogo {
+  background-color: #9BAA8C;
+}
+
+.cesanslogo {
+  background-color: #161B1D;
+}
+
+.chapohlogo {
+  background-color: #C34A2F;
+}
+
+.charratalogo {
+  background-color: #0A0E0F;
+}
+
+.votcanlogo {
+  background-color: #10191B;
+}
+
+.meanburgerLogo {
+  background-color: #0A252E;
+}
+
+.ciacologo {
+  background-color: #110C10;
+}
+
+.gyrologo {
+  background-color: #0E1216;
+}
+
+.nachologo {
+  background-color: #C36314;
+}
+
+.reklamlogo {
+  width: 71.77px;
+  height: 71.77px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  border: 2px solid #FFAB78;
+  background-color: #16262B;
+}
+
+.dinlogga {
+  height: 50px;
+  font-size: 12px;
+  text-align: center;
+  align-items: center;
+  color: #FFF4DF;
+}
+
+.mat-bilder4 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 371px;
+  height: 115px;
+}
+.mat-bilder4 img {
+  width: 84.68px;
+  height: 84.68px;
+  box-shadow: 2.29px 2.29px 5px #000000;
+  border-radius: 5px;
+}
+
+.mat-bild-stor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+}
+.mat-bild-stor .bigger-img {
+  width: 146.47px;
+  height: 82.09px;
+  box-shadow: 2.29px 2.29px 5px #000000;
+  border-radius: 5px;
+}
+
+.matbilder5 {
+  display: flex;
+  justify-content: space-around;
+  width: 371px;
+  height: 115px;
+}
+.matbilder5 .mat-bilder5 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 10px;
+  row-gap: 3px;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  width: 201px;
+  height: 62.5px;
+}
+.matbilder5 .mat-bilder5 img {
+  width: 90px;
+  height: 46px;
+  box-shadow: 2.29px 2.29px 5px #000000;
+  border-radius: 3px;
+}
+
+.pris-tabell {
+  width: 254px;
+  height: 204px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 table {
-  width: 150px;
   display: inline;
   justify-content: center;
   flex-direction: column;
+  font-size: 14px;
+}
+table tr {
+  border-bottom: 1px solid #470B00;
+}
+table td {
+  font-family: "Poppins", sans-serif;
+  color: #470B00;
+  text-align: start;
+  padding: 2px;
+  vertical-align: bottom;
+  font-weight: 400;
+}
+table p {
+  font-size: 10px;
+}
+
+.button {
+  width: 254px;
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.beställ {
+  display: flex;
+  width: 52.2px;
+  height: 15.35px;
+  font-family: "Poppins", sans-serif;
+  color: #470B00;
+  font-weight: bold;
+  font-size: 10px;
+  background-color: #F9E7A4;
+  border-radius: 4px;
+  border: 1px solid #470B00;
+  align-items: center;
+}
+
+.kontakta-oss {
+  display: flex;
+  width: 85px;
+  height: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #470B00;
+  font-weight: bold;
+  font-size: 10px;
+  background-color: #F9E7A4;
+  border-radius: 4px;
+  border: 1px solid #470B00;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.button-kontakt {
+  width: 254px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.reklam-prislista {
+  width: 254px;
+  height: 204px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.reklam-text {
+  width: 228px;
+  font-family: "Poppins", sans-serif;
+  color: #470B00;
+  text-align: start;
+  padding: 2px;
+  vertical-align: bottom;
+  font-weight: 400;
+}
+.reklam-text h4 {
+  font-size: 14px;
+  font-weight: bold;
+}
+.reklam-text p {
+  font-size: 10px;
 }/*# sourceMappingURL=prislista.css.map */
