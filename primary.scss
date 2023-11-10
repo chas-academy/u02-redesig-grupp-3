@@ -1,8 +1,12 @@
 /*Header and secondary font copy paste i HTML:
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nobile:ital,wght@1,400;1,500;1,700&family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">*/
+<link href="https://fonts.googleapis.com/css2?family=Nobile:wght@400;500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+*/
 
+// Mixin dimensions
+$mobile: 390px;
+$desktop: 720px;
 
 /*Fonts*/
 $header-font: 'Nobile', sans-serif;
@@ -20,6 +24,7 @@ $navColor: #FEF7EC;
 $footerColor: #212121;
 $buttonsColor: #F9E7A4;
 $boxShadow: #000000; //42% på shadow.
+$reklamBild: #2A2929;
 
 /*Dot colors*/
 $vegDot:#98BE6F;
@@ -33,10 +38,21 @@ $fishDot: #2A8BE5;
 $joesKitchenLogo: #9BAA8C;
 $joesKitchen: #2D5653;
 $cesans: #A47355;
+$cesansLogo: #161B1D;
 $chapohFoo: #D05F2D; 
+$chapohFooLogo: #C34A2F;
 $charrata: #1E4B38;
+$charrataLogo: #0A0E0F;
 $votcan: #8FBA61;
+$votcanLogo: #10191B;
 $meanBurgers: #6B8F9B;
+$meanBurgersLogo: #0A252E;
 $ciaco: #841015;
+$ciacoLogo: #110C10;
 $gyroTruck: #D9913F;
+$gyroTruckLogo: #0E1216;
 $nachoMania: #9A3B0A;
+$nachoManiaLogo: #C36314;
+$profileBorder: #FFAB78;
+$reklam: #71848A;
+$reklamLogo: #16262B;
