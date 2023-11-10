@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,29 +9,32 @@
   <body>
     <header>
       <section class="hero">
-        <div class="content-container">
-          <div class="card">
-            <h1>Expo</h1>
-            <p>
-              Upplev en smakfull och inspirerande resa med olika cateringföretag
-              på vår expo! Detta vill du inte missa! Låter det lockande? Tryck
-              nedan för att uppleva ditt nästa smakäventyr.
-            </p>
-            <a href="#" class="button">Närmast Event</a>
+        <div class="hero-content">
+          <h1 class="hero-heading">Expo</h1>
+          <p>
+            Upplev en smakfull och inspirerande resa med olika cateringföretag
+            på vår expo!
+          </p>
+          <p>
+            Detta vill du inte missa! Låter det lockande? Tryck nedan för att
+            uppleva ditt nästa smakäventyr.
+          </p>
+          <div class="hero-btn-container">
+            <a href="#event" class="button">Närmast Event</a>
           </div>
         </div>
       </section>
     </header>
     <main>
-      <section class="container-card">
-        <div class="card-content">
-          <div class="text-content">
-            <p>
-              Vår mässa är en fest av smaker där, deltagande företag<br> bjuder på
-              kulinariska mästerverk och överraskningar.
-            </p>
-            <h2>Veckans event</h2>
-            <h6>9/11/23-12/11/23</h6>
+      <section class="container">
+        <p class="container-heading">
+          Vår mässa är en fest av smaker där, deltagande företag <br />
+          bjuder på kulinariska mästerverk och överraskningar.
+        </p>
+        <div class="event">
+          <div class="event-content">
+            <h2 id="event" class="event-heading">Veckans event</h2>
+            <h6 class="sub-heading">9/11/23-12/11/23</h6>
             <ul>
               <li>Smakprov, monter 3B, kl: 11:00-13:00</li>
               <li>Joes kitchen, monter 4A, kl: 11:00-18:00</li>
@@ -43,18 +45,32 @@
               <li>Charrata, monter 9G, kl:11:30-18:30</li>
               <li>Gyros truck, monter 10H, kl:12:00-20:00</li>
             </ul>
-            <div class=""> <img src="/festligt.png" alt="festligt bild" /></div>
+          </div>
+          <div class="card-img-container">
+            <img src="/festligt.png" alt="festligt bild" class="card-img" />
+          </div>
+        </div>
 
-            <h2>Kommande Event</h2>
-            <ol> <u><li>RestoCulinar Matfestival</u> - <u>23/11/23 - 26/11/23</u></li>
-                <li><u>GourmentGalan av Resto Culinar</u> - <u>07/12/23 - 10/12/23</u> </li>
-                <li><u>Resto Rendezvous: Smaker från världen</u> - <u>07/12/23 - 10/12/23</u></li>
-                <li><u>CulinarExpo: Kulinariska Innovation</u> - <u>21/12/23 - 24/12/23</u></li>
-                <li><u>Global Gastronomi Fiesta av Resto Culinar</u> - <u>04/01/04 - 07/01/24</u> </li>
-                <li><u>RestoCulinar Artisanal Äventyr</u> -  <u> 18/01/24 - 21/01/24</u></li>
-                <li><u>Culinare Mästerverk Showcase</u> - <u>01/02/24 - 04/02/24</u></li>
-                <li><u>Resto fest: Tradition möter Modernitet</u> - <u>15/02/24 - 18/02/24</u></li></u></ol>
-              </div>
+        <div class="event">
+          <div class="event-content">
+            <h2 class="event-heading">Kommande Event</h2>
+            <ol class="event-list">
+              <li>RestoCulinar Matfestival - 23/11/23 - 26/11/23</li>
+              <li>GourmentGalan av Resto Culinar - 07/12/23 - 10/12/23</li>
+              <li>
+                Resto Rendezvous: Smaker från världen - 07/12/23 - 10/12/23
+              </li>
+              <li>CulinarExpo: Kulinariska Innovation - 21/12/23 - 24/12/23</li>
+              <li>
+                Global Gastronomi Fiesta av Resto Culinar - 04/01/04 - 07/01/24
+              </li>
+              <li>RestoCulinar Artisanal Äventyr - 18/01/24 - 21/01/24</li>
+              <li>Culinare Mästerverk Showcase - 01/02/24 - 04/02/24</li>
+              <li>
+                Resto fest: Tradition möter Modernitet - 15/02/24 - 18/02/24
+              </li>
+            </ol>
+          </div>
         </div>
       </section>
     </main>
