@@ -127,58 +127,6 @@ p {
   margin: 0;
   text-decoration: underline;
 }
-// .container-card {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   border-radius: 10px;
-//   background-color: rgb(35, 49, 45);
-//   color: white;
-//   padding: 20px;
-//   margin: 20px auto 40px;
-//   max-width: 80%;
-// }
-
-// .card-content {
-//   display: flex;
-//   max-width: 800px;
-// }
-
-// .text-content {
-//   position: relative;
-// }
-
-// .text-content h2,
-// .text-content h6 {
-//   text-align: center;
-// }
-
-// .text-content ul {
-//   list-style: none;
-//   border-left: 2px solid grey;
-//   padding-left: 20px;
-//   margin: 0;
-// }
-
-// .text-content ul li {
-//   position: relative;
-//   padding-left: 10px;
-// }
-
-// .text-content ul li::before {
-//   content: ".";
-//   position: absolute;
-//   left: -20px;
-//   top: 50%;
-//   width: 10px;
-//   height: 2px;
-//   transform: translateY(-50%);
-// }
-
-// .text-content ul li:first-child::before,
-// .text-content ul li:last-child::before {
-//   background: transparent;
-// }
 
 .card-content img {
   float: right;
