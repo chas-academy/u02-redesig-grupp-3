@@ -72,30 +72,138 @@ body {
   justify-content: center;
 }
 
-.hero {
-  background-image: url(./Prislistaimg/hero_img1.png);
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 252px;
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 83px;
+  padding: 5px;
+  background-color: #FFF4DF;
+}
+.header-section .logo-container {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  align-items: center;
+}
+.header-section .logonav {
+  width: 68px;
+  height: 68px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header-section .nav-bar {
+  display: flex;
+  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #FFF4DF;
+  padding-right: 20px;
+}
+.header-section .nav-bar .drop-btn {
+  color: black;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.header-section .nav-bar .dropdown {
+  position: relative;
+  z-index: 1;
+}
+.header-section .nav-bar .nav-links {
+  display: none;
+}
+.header-section .nav-bar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  right: 0;
+  width: 120px;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.header-section .nav-bar ul {
+  padding: 0;
+}
+.header-section .nav-bar li {
+  list-style: none;
+}
+.header-section .nav-bar .dropdown-content a {
+  display: block;
+  color: black;
+  font-size: 18px;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+.header-section .nav-bar .dropdown-content a a:hover {
+  background-color: #f1f1f1;
+}
+.header-section .nav-bar .dropdown:hover .dropdown-content {
+  display: block;
+}
+.header-section .nav-bar .dropdown:hover .drop-btn {
+  background-color: bisque;
+}
+@media screen and (min-width: 720px) {
+  .header-section .nav-bar .dropdown {
+    display: none;
+  }
+  .header-section .nav-bar .nav-links {
+    display: block;
+    width: 500px;
+  }
+  .header-section .nav-bar .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .header-section .nav-bar li {
+    transition: border 183ms ease-in-out, border-radius 183ms ease-in-out;
+  }
+  .header-section .nav-bar li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .header-section .nav-bar .nav-link-list {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.hero {
+  position: relative;
+}
+.hero img {
+  width: 100%;
+}
+
+.hero-text {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  right: 10%;
+  bottom: 25%;
 }
 
 h1 {
   font-family: "Nobile", sans-serif;
   color: #FFF4DF;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 37px;
   text-align: center;
 }
 
 .header-text {
   font-family: "Poppins", sans-serif;
   color: #FFF4DF;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
+  text-shadow: 1px 1px 2px #000000;
 }
 
 #prislistor {
@@ -176,7 +284,7 @@ h1 {
   font-family: "Poppins", sans-serif;
   color: #470B00;
 }
-.kontakt h3 {
+.kontakt h2, .kontakt h3 {
   text-align: center;
   font-size: 14px;
   font-weight: bold;
@@ -468,4 +576,324 @@ table p {
 }
 .reklam-text p {
   font-size: 10px;
+}
+
+/* Footer */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #212121;
+  color: #FFF4DF;
+  font-family: "Poppins", sans-serif;
+}
+.footer-container .footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 5px;
+}
+.footer-container .footer-content .footer-list-containers {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-top: 30px;
+}
+.footer-container .footer-content .footer-contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 450px;
+}
+.footer-container .footer-content .footer-list-content {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+  width: 180px;
+  padding: 10px;
+}
+.footer-container .footer-content .footer-list-content h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer-container .footer-content .footer-list-content .list-item {
+  font-size: 16px;
+  color: #FFF4DF;
+  text-decoration: none;
+  padding: 3px;
+}
+.footer-container .footer-content .contact {
+  flex-direction: column;
+  padding: 5px;
+  width: 190px;
+}
+.footer-container .footer-content .footer-socials-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  padding: 20px;
+}
+.footer-container .footer-content .footer-socials-list .socials-icon {
+  font-size: 25px;
+  color: #FFF4DF;
+}
+.footer-container .footer-copyright {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+
+@media screen and (min-width: 720px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121;
+    color: #FFF4DF;
+    font-family: "Poppins", sans-serif;
+  }
+  .footer-container .footer-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 5px;
+    margin-top: 10px;
+  }
+  .footer-container .footer-content .footer-list-containers {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footer-container .footer-content .footer-contact-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 450px;
+  }
+  .footer-container .footer-content .footer-socials-list {
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    padding: 20px;
+  }
+  .footer-container .footer-content .footer-socials-list .socials-icon {
+    font-size: 25px;
+    color: #FFF4DF;
+  }
+  .footer-container .footer-copyright {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .hero {
+    position: relative;
+  }
+  .hero img {
+    width: 100%;
+  }
+  .hero-text {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    right: 10%;
+    bottom: 25%;
+  }
+  h1 {
+    font-family: "Nobile", sans-serif;
+    color: #FFF4DF;
+    font-weight: bold;
+    font-size: 75px;
+    text-align: center;
+  }
+  .header-text {
+    font-family: "Poppins", sans-serif;
+    color: #FFF4DF;
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000000;
+  }
+  #prislistor {
+    width: 1500px;
+    margin: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .prislista {
+    display: flex;
+    align-items: flex-start;
+    width: 650px;
+    height: 250px;
+    margin: 10px;
+  }
+  .prislista-info {
+    height: 250px;
+  }
+  .filter {
+    justify-content: space-evenly;
+  }
+  .dot-text {
+    font-size: 14px;
+  }
+  .dot1 {
+    font-size: medium;
+  }
+  .dot2 {
+    font-size: medium;
+  }
+  .dot3 {
+    font-size: medium;
+  }
+  .dot4 {
+    font-size: medium;
+  }
+  .dot5 {
+    font-size: medium;
+  }
+  .kontakt {
+    width: 200px;
+  }
+  .kontakt h2, .kontakt h3 {
+    font-size: 15px;
+    width: 180px;
+  }
+  .kontakt p {
+    font-size: 10px;
+    width: 180px;
+  }
+  .profil-kontakt {
+    width: 180px;
+    height: 250px;
+  }
+  .profil {
+    width: 180px;
+    height: 140px;
+  }
+  .profile-filter {
+    width: 180px;
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 80px;
+  }
+  .logo img {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+  }
+  .mat-bilder4 {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    align-content: center;
+    width: 270px;
+    height: 250px;
+  }
+  .mat-bilder4 img {
+    width: 115px;
+    height: 115px;
+    box-shadow: 2.29px 2.29px 5px #000000;
+    border-radius: 5px;
+  }
+  .mat-bilder4 :hover {
+    transform: scale(2.2);
+  }
+  .mat-bild-stor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 85px;
+  }
+  .mat-bild-stor .bigger-img {
+    width: 146.47px;
+    height: 82.09px;
+    box-shadow: 2.29px 2.29px 5px #000000;
+    border-radius: 5px;
+  }
+  .mat-bild-stor :hover {
+    transform: scale(2.2);
+  }
+  .matbilder5 {
+    display: flex;
+    align-items: center;
+    width: 270px;
+    height: 250px;
+    flex-direction: column;
+  }
+  .matbilder5 .mat-bilder5 {
+    justify-items: center;
+    align-content: center;
+    row-gap: 6px;
+    width: 270px;
+    height: 150px;
+  }
+  .matbilder5 .mat-bilder5 img {
+    width: 110px;
+    height: 67.25px;
+    box-shadow: 2.29px 2.29px 5px #000000;
+    border-radius: 3px;
+  }
+  .matbilder5 .mat-bilder5 :hover {
+    transform: scale(2.5);
+  }
+  .pris-tabell {
+    width: 200px;
+    height: 250px;
+  }
+  table {
+    font-size: 14px;
+  }
+  table p {
+    font-size: 10px;
+  }
+  .button {
+    width: 200px;
+    justify-content: center;
+  }
+  .beställ {
+    width: 65px;
+    height: 20px;
+    font-size: 14px;
+  }
+  .kontakta-oss {
+    display: flex;
+    width: 110px;
+    height: 25px;
+    font-size: 14px;
+    margin: 0;
+  }
+  .button-kontakt {
+    width: 200px;
+    margin: 0;
+  }
+  .reklam-prislista {
+    display: flex;
+    justify-content: flex-start;
+    width: 200px;
+    height: 250px;
+  }
+  .reklam-text {
+    width: 200px;
+    font-family: "Poppins", sans-serif;
+    color: #470B00;
+    text-align: start;
+    padding: 5px;
+    vertical-align: bottom;
+    font-weight: 400;
+  }
+  .reklam-text h4 {
+    padding: 5px;
+  }
+  .reklam-text p {
+    padding: 5px;
+  }
 }/*# sourceMappingURL=prislista.css.map */
