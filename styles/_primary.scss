@@ -15,7 +15,6 @@ $headerFontColor: #FFF4DF;
 $primaryFontColor: #470B00;
 $redColor: #C60000;
 
-
 /*Colors*/
 $mainBackgroundColor: #FEF7EC;
 $cardBackgroundColor: #16262B;
@@ -26,13 +25,17 @@ $buttonsColor: #F9E7A4;
 $boxShadow: #000000; //42% på shadow.
 $reklamBild: #2A2929;
 
+/* 
+$bg-color: #FEF7EC;
+$btn-color: #F3C912; 
+*/
+
 /*Dot colors*/
 $vegDot:#98BE6F;
 $meatDot: #E5712A;
 $pigDot: #F3C912;
 $chickenDot: #E52A2A;
 $fishDot: #2A8BE5;
-
 
 /*Members background color*/
 $joesKitchenLogo: #9BAA8C;
@@ -50,9 +53,21 @@ $meanBurgersLogo: #0A252E;
 $ciaco: #841015;
 $ciacoLogo: #110C10;
 $gyroTruck: #D9913F;
+<<<<<<< HEAD:primary.scss
 $gyroTruckLogo: #0E1216;
 $nachoMania: #9A3B0A;
 $nachoManiaLogo: #C36314;
 $profileBorder: #FFAB78;
 $reklam: #71848A;
 $reklamLogo: #16262B;
+=======
+$nachoMania: #9A3B0A;
+
+/* Font sizes */
+$h1-size: 35px;
+$h2-size: 25px;
+
+/* Device breakpoints */
+$mobile: 420px;
+$desktop: 720px;
+>>>>>>> 3b980c0379db2028bd9d3b48624b0eba3e37949f:styles/_primary.scss
