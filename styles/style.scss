@@ -1,14 +1,11 @@
 @import "reset";
 @import "primary";
-@import "mixins";
-@import "carousel";
-@import "prislista";
 
 * {
     margin: 0 auto;
     box-sizing: border-box;
-}
 
+/* Header */
 .header-section {
     display: flex;
     justify-content: space-between;
@@ -61,7 +58,7 @@
             position: absolute;
             background-color: $cardColor;
             right: 0;
-            width: 120px;
+            width: 150px;
             border-radius: 5px;
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
             font-size: 16px;
@@ -96,7 +93,7 @@
             background-color: bisque;
         }
 
-        @include devices($desktop) {
+        @media screen and (min-width: 720px) {
             .dropdown {
                 display: none;
             }
@@ -151,6 +148,7 @@
         align-items: center;
         width: 100%;
         min-height: 345px;
+        max-height: 500px;
         height: auto;
         background-position: center;
         background-size: cover;
@@ -190,4 +188,132 @@
             line-height: 25px;
         }
     }
+}
+
+/* Footer */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $footerColor;
+    color: $headerFontColor;
+    font-family: $secondary-font;
+    
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        padding: 5px;
+
+        .footer-list-containers {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin-top: 30px;
+        }
+
+        .footer-contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 450px;
+        }
+
+        .footer-list-content {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.6;
+            width: 180px;
+            padding: 10px;
+
+            h4 {
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            .list-item {
+                font-size: 16px;
+                color: $headerFontColor;
+                text-decoration: none;
+                padding: 3px;
+            }
+        }
+
+        .contact {
+            flex-direction: column;
+            padding: 5px;
+            width: 190px;
+        }
+        
+        .footer-socials-list {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 200px;
+            padding: 20px;
+            
+            .socials-icon {
+                font-size: 25px;
+                color: $headerFontColor;
+            }
+        }
+    }
+    .footer-copyright {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 20px;
+    }
+}
+@include devices($desktop) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $footerColor;
+        color: $headerFontColor;
+        font-family: $secondary-font;
+        
+        .footer-content {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            padding: 5px;
+            margin-top: 10px;
+    
+            .footer-list-containers {
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+            }
+    
+            .footer-contact-container {
+                flex-wrap: wrap;
+                justify-content: space-between;
+                max-width: 450px;
+            }
+            
+            .footer-socials-list {
+                justify-content: space-around;
+                align-items: center;
+                width: 200px;
+                padding: 20px;
+                
+                .socials-icon {
+                    font-size: 25px;
+                    color: $headerFontColor;
+                }
+            }
+        }
+        .footer-copyright {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding: 20px;
+        }
+    }
+}
 }
