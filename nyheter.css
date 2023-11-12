@@ -262,21 +262,18 @@ p {
   width: 100%;
   background-size: cover;
   border-radius: 5px;
-  display: none;
 }
 .news-img-container .news-img-four {
   height: 100%;
   width: 100%;
   background-size: cover;
   border-radius: 5px;
-  display: none;
 }
 .news-img-container .news-img-five {
   height: 100%;
   width: 100%;
   background-size: cover;
   border-radius: 5px;
-  display: none;
 }
 .news-img-container .news-img-one-content, .news-img-container .news-img-two-content, .news-img-container .news-img-three-content, .news-img-container .news-img-four-content, .news-img-container .news-img-five-content {
   display: flex;
@@ -338,24 +335,27 @@ p {
   color: #FFF4DF;
 }
 
-/*ta bort innan merge*/
-.footer-section {
-  height: 100px;
+/*bilder mobile*/
+@media screen and (max-width: 760px) {
+  #JK-images .news-img-four {
+    display: none;
+  }
+  #cesan-images .news-img-three, #cesan-images .news-img-four, #cesan-images .news-img-five {
+    display: none;
+  }
+  #chapoh-images .news-img-four {
+    display: none;
+  }
+  #charrata-images .news-img-three, #charrata-images .news-img-four, #charrata-images .news-img-five {
+    display: none;
+  }
+  #votcan-images .news-img-three, #votcan-images .news-img-four, #votcan-images .news-img-five {
+    display: none;
+  }
+  #meanB-images .news-img-four {
+    display: none;
+  }
 }
-
-/*bilder test*/
-#JK-images .news-img-three {
-  display: block;
-}
-
-#chapoh-images .news-img-three {
-  display: block;
-}
-
-#meanB-images .news-img-three {
-  display: block;
-}
-
 /*desktop*/
 @media screen and (min-width: 1023px) {
   .hero-content {
@@ -373,26 +373,58 @@ p {
     padding: 1.2rem;
     font-size: 1.8rem;
   }
+  .news-header-info {
+    justify-content: flex-end;
+  }
   .wrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: normal;
+    margin: 1rem;
+  }
+  .all-cards {
+    width: 80%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex: 1 1 50%;
+  }
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    border-radius: 0;
+    overflow: visible;
+  }
+  .profile-img-container {
+    width: 150px;
+    height: 150px;
+  }
+  .profile-text-content {
+    white-space: wrap;
+  }
+  .offer-container {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  #JK-images {
+    display: flex;
   }
   /*desktop divs*/
-  .flex-parent {
-    display: flex;
-    flex-direction: row;
-    padding-top: 30px;
-  }
-  .flex-child {
-    width: 50%;
-  }
+  /* tagit bort tills vidare
+      .flex-parent {
+          display: flex;
+          flex-direction: row;
+          padding-top: 30px;
+      }
+
+
+      .flex-child {
+          width: 50%;
+      } */
 }
-/*    .all-cards {
-width: 700px;
-display: flex;
-justify-content: space-evenly;
-flex-direction: column;
-    }
+/*   
 
     .desktop-flex {
         flex-basis: 300px;

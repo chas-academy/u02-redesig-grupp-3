@@ -225,14 +225,12 @@ padding: 10px;
         width: 100%;
         background-size: cover;
         border-radius: 5px;
-        display: none;
     }
     .news-img-four {
         height: 100%;
         width: 100%;
         background-size: cover;
         border-radius: 5px;
-        display: none;
     }
     
     .news-img-five {
@@ -240,7 +238,6 @@ padding: 10px;
         width: 100%;
         background-size: cover;
         border-radius: 5px;
-        display: none;
     }
     
     .news-img-one-content, .news-img-two-content, .news-img-three-content, .news-img-four-content, .news-img-five-content { 
@@ -297,42 +294,51 @@ padding: 10px;
     color: $headerFontColor;
 }
 
-/*ta bort innan merge*/
-.footer-section {
-    height: 100px;
-}
 
-
-/*bilder test*/
-#JK-images {
-    .news-img-three {
-        display: block;
+/*bilder mobile*/
+@media screen and (max-width: 760px) {
+    #JK-images {
+        .news-img-four{
+            display: none;
+        }
+    
     }
-}
-
-#cesan-images {
-
-}
-
-#chapoh-images {
-    .news-img-three {
-        display: block;
+    
+    #cesan-images {
+        .news-img-three, .news-img-four, .news-img-five {
+            display: none;
+        }
     }
-}
+    
+    #chapoh-images {
+        .news-img-four{
+            display: none;
+        }
+    }
 
+    
 #charrata-images {
-
+    .news-img-three, .news-img-four, .news-img-five{
+        display: none;
+    }
 }
 
 #votcan-images {
-
+    .news-img-three, .news-img-four, .news-img-five{
+        display: none;
+    }
 }
 
 #meanB-images {
-    .news-img-three {
-        display: block;
+    .news-img-four {
+        display: none;
     }
 }
+    
+
+
+}
+
 
 /*desktop*/
 
@@ -356,32 +362,73 @@ padding: 10px;
 }
     }
 
+    .news-header-info {
+        justify-content: flex-end;
+    }
+
     .wrapper {
         display: flex;
-        flex-wrap: wrap;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: normal;
+        margin: 1rem;
     }
+    .all-cards {
+        width: 80%;
+        margin-bottom: 1rem;
+        display: flex;
+        flex: 1 1 50%;
+            }
+
+    .profile-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        border-radius: 0;
+        overflow: visible;
+    }        
+    .profile-img-container {
+        width: 150px;
+        height: 150px;
+    }
+    .profile-text-content {
+        white-space: wrap;
+    }
+    .offer-container {
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+#JK-images {
+    display: flex; 
+}
+    .news-img-container {
+
+    }
+
+
+
+
+    
+
 
     /*desktop divs*/
 
-
+/* tagit bort tills vidare
     .flex-parent {
         display: flex;
         flex-direction: row;
         padding-top: 30px;
     }
 
+
     .flex-child {
         width: 50%;
-    }
+    } */
 
 }
 
-/*    .all-cards {
-width: 700px;
-display: flex;
-justify-content: space-evenly;
-flex-direction: column;
-    }
+/*   
     
     .desktop-flex {
         flex-basis: 300px;
