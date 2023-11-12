@@ -1,5 +1,6 @@
 @import "reset";
 @import "primary";
+@import "mixinss";
 
 * {
     margin: 0 auto;
@@ -93,7 +94,7 @@
             background-color: bisque;
         }
 
-        @media screen and (min-width: 720px) {
+        @include devices($desktop) {
             .dropdown {
                 display: none;
             }
