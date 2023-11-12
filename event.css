@@ -89,7 +89,7 @@ p {
 }
 
 .event {
-  background-color: #f3f3f3;
+  background-color: #e3dbdb;
   padding: 1.5rem;
   color: rgb(48, 47, 47);
   width: 100%;
@@ -101,8 +101,8 @@ p {
 }
 
 .card-img-container {
-  width: 200px;
-  height: 100px;
+  width: 350px;
+  height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,6 +140,45 @@ p {
 
 .card-content img {
   float: right;
-  max-width: 40%;
+  max-width: 50%;
   height: auto;
+}
+
+.calender-container {
+  background-color: #470b00;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  margin: auto;
+}
+
+.calender-header h2 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.weekdays {
+  display: flex;
+  justify-content: space-around;
+}
+
+.weeks {
+  display: flex;
+  justify-content: space-around;
+}
+
+.day {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.day:hover {
+  background-color: #83807f;
 }/*# sourceMappingURL=event.css.map */
