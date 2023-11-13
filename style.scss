@@ -5,6 +5,7 @@
 * {
     margin: 0 auto;
     box-sizing: border-box;
+}
 
 /* Header */
 .header-section {
@@ -135,6 +136,7 @@
     }
 }
 
+/* Main */
 .hero-section {
     display: flex;
     justify-content: center;
@@ -233,10 +235,8 @@
         color: $primaryFontColor;
         margin-bottom: 30px;
         border-bottom: solid;
-    }
 
-    @include devices($desktop) {
-        .business-text-container {
+        @include devices($desktop) {
             font-size: 38px;
         }
     }
@@ -421,5 +421,4 @@
             padding: 20px;
         }
     }
-}
 }
