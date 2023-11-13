@@ -389,13 +389,15 @@ p {
     margin-bottom: 1rem;
     display: flex;
     flex: 1 1 50%;
+    height: auto;
   }
   .profile-container {
     display: flex;
     flex-direction: column;
     margin-top: 0;
-    border-radius: 0;
+    border-radius: 5px 0 0 5px;
     overflow: visible;
+    width: 10rem;
   }
   .profile-img-container {
     width: 150px;
@@ -404,12 +406,47 @@ p {
   .profile-text-content {
     white-space: wrap;
   }
+  .profile-text-content h3 {
+    font-size: medium;
+  }
   .offer-container {
     margin-bottom: 0;
-    border-radius: 0;
+    border-radius: 0 5px 5px 0;
+    margin-right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   #JK-images {
-    display: flex;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  #cesan-images {
+    display: contents;
+  }
+  #chapoh-images {
+    display: contents;
+  }
+  #charrata-images {
+    display: contents;
+  }
+  #votcan-images {
+    display: contents;
+  }
+  #meanB-images {
+    display: contents;
+  }
+  .news-img-container {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  /*minns inte varför dessa skulle ha olika namn från början men nu är det så*/
+  .news-img-one-content, .news-img-two-content, .news-img-three-content, .news-img-four-content, .news-img-five-content {
+    flex: 1 1 100px;
+  }
+  .news-img-one, .news-img-two, .news-img-three, .news-img-four, .news-img-five {
+    width: 100px;
+    height: 100px;
   }
   /*desktop divs*/
   /* tagit bort tills vidare
