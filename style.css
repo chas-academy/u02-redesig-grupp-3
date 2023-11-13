@@ -184,41 +184,60 @@ table {
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 345px;
-  max-height: 500px;
-  height: auto;
+  height: 345px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(/images/hero-img.png);
 }
+@media screen and (min-width: 720px) {
+  * .hero-section .hero-container {
+    flex-direction: row;
+    height: 600px;
+  }
+}
 * .hero-section .hero-container .hero-title {
-  display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px #470B00;
 }
 * .hero-section .hero-container .hero-title h1 {
   font-size: 37px;
   font-family: "Nobile", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   color: #FFF4DF;
+  text-indent: -10%;
 }
 * .hero-section .hero-container .hero-title h2 {
-  font-size: 35px;
+  font-size: 32px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #FFF4DF;
-  text-indent: 30%;
+  text-indent: 10%;
+}
+@media screen and (min-width: 720px) {
+  * .hero-section .hero-container .hero-title h1 {
+    font-size: 80px;
+  }
+  * .hero-section .hero-container .hero-title h2 {
+    font-size: 60px;
+  }
 }
 * .hero-section .hero-container .hero-text {
-  width: 70%;
+  width: 80%;
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 400;
   font-family: "Poppins", sans-serif;
   color: #FFF4DF;
-  line-height: 2.2;
+  line-height: 1.6;
+}
+@media screen and (min-width: 720px) {
+  * .hero-section .hero-container .hero-text {
+    width: 600px;
+    font-size: 30px;
+  }
 }
 * .business-section {
   display: flex;
@@ -227,61 +246,69 @@ table {
   align-items: center;
   width: 100%;
   min-height: 600px;
-  padding: 100px 20px 20px 20px;
+  padding: 50px 20px 50px 20px;
   background-color: #FEF7EC;
 }
 * .business-section .business-text-container {
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 90%;
   line-height: 1.8;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 20px;
   color: #470B00;
   margin-bottom: 30px;
   border-bottom: solid;
+}
+@media screen and (min-width: 720px) {
+  * .business-section .business-text-container {
+    font-size: 38px;
+  }
 }
 * .business-section .business-img-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 20px;
+  gap: 30px;
   width: 100%;
-  margin: 20px;
 }
 * .business-section .business-img-container .business-logo {
-  width: 350px;
-  height: 350px;
+  width: 320px;
+  height: 320px;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center center;
+  transition: transform 0.2s;
+}
+* .business-section .business-img-container .business-logo:hover {
+  transform: scale(1.1);
 }
 * .business-section .business-img-container #item1 {
-  background-size: 250px 250px;
+  background-size: 220px 220px;
   background-image: url(Prislistaimg/Joes_louisiana_kitchen.png);
   background-color: #9BAA8C;
 }
 * .business-section .business-img-container #item2 {
-  background-size: 300px 300px;
+  background-size: 280px 280px;
   background-image: url(Prislistaimg/Charcutcut.png);
   background-color: #0A0E0F;
 }
 * .business-section .business-img-container #item3 {
-  background-size: 300px 300px;
+  background-size: 280px 280px;
   background-image: url(Prislistaimg/medlem_14.png);
   background-color: #C34A2F;
 }
 @media screen and (min-width: 720px) {
   * .business-section .business-img-container .business-logo {
-    width: 380px;
-    height: 380px;
+    width: 350px;
+    height: 350px;
   }
   * .business-section .business-img-container #item1 {
-    background-size: 280px 280px;
+    background-size: 250px 250px;
   }
   * .business-section .business-img-container #item2, * .business-section .business-img-container #item3 {
-    background-size: 330px 330px;
+    background-size: 280px 280px;
   }
 }
 * .footer-container {
