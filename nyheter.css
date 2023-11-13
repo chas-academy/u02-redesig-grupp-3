@@ -418,8 +418,7 @@ p {
     justify-content: space-between;
   }
   #JK-images {
-    -o-object-fit: contain;
-       object-fit: contain;
+    display: contents;
   }
   #cesan-images {
     display: contents;
@@ -447,6 +446,16 @@ p {
   .news-img-one, .news-img-two, .news-img-three, .news-img-four, .news-img-five {
     width: 100px;
     height: 100px;
+  }
+}
+@media screen and (min-width: 1430px) {
+  .news-img-one-content, .news-img-two-content, .news-img-three-content, .news-img-four-content, .news-img-five-content {
+    flex: 1 1 100px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .news-img-one-content, .news-img-two-content, .news-img-three-content, .news-img-four-content, .news-img-five-content {
+    flex: 1 1 250px;
   }
   /*desktop divs*/
   /* tagit bort tills vidare
