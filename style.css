@@ -55,210 +55,12 @@ table {
 /*Header and secondary font copy paste i HTML:
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nobile:ital,wght@1,400;1,500;1,700&family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">*/
+<link href="https://fonts.googleapis.com/css2?family=Nobile:wght@400;500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+*/
 /*Fonts*/
 /*Colors*/
-/* 
-$bg-color: #FEF7EC;
-$btn-color: #F3C912; 
-*/
 /*Dot colors*/
 /*Members background color*/
-/* Font sizes */
-/* Device breakpoints */
-.carousel-section {
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-  position: relative;
-}
-
-.carousel-container {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.carousel-item {
-  width: 100%;
-  height: 200px;
-  background-size: cover;
-  background-position: center;
-}
-
-#item1 {
-  background-image: url(/images/logo.png);
-}
-
-#item2 {
-  background-image: url(/images/logo.png);
-}
-
-#item3 {
-  background-image: url(/images/logo.png);
-}
-
-/*#item4 {
-    background-image: url(/images/logo.png);
-}
-
-#item5 {
-    background-image: url(/images/logo.png);
-}
-
-#item6 {
-    background-image: url(/images/logo.png);
-}
-
-#item7 {
-    background-image: url(/images/logo.png);
-}
-
-#item8 {
-    background-image: url(/images/logo.png);
-}
-
-#item9 {
-    background-image: url(/images/logo.png);
-}*/
-@media screen and (min-width: 720px) {
-  .carousel-item {
-    width: 33.3333333333%;
-    max-width: 100%;
-    height: auto;
-  }
-  .carousel-container {
-    transition: transform(0);
-  }
-}
-.carousel-item:first-child {
-  margin-left: -100%;
-  transform: translateX(-10%);
-}
-
-/*@include devices($desktop) {
-    .carousel-item {
-        width: calc(100% / 3);
-        max-width: 100%;
-        object-fit: cover;
-        height: auto;
-        margin: 0 -50px;
-    }
-}*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/*Header and secondary font copy paste i HTML:
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nobile:ital,wght@1,400;1,500;1,700&family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">*/
-/*Fonts*/
-/*Colors*/
-/* 
-$bg-color: #FEF7EC;
-$btn-color: #F3C912; 
-*/
-/*Dot colors*/
-/*Members background color*/
-/* Font sizes */
-/* Device breakpoints */
-body {
-  background-color: #FEF7EC;
-}
-
-.wrapper {
-  width: 390px;
-}
-
-.hero {
-  background-image: url(./Prislistaimg/hero_img.png);
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 252px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-h1 {
-  font-family: "Nobile", sans-serif;
-  color: #FFF4DF;
-  font-weight: bold;
-  font-size: 32px;
-  text-align: center;
-}
-
-.header-text {
-  font-family: "Poppins", sans-serif;
-  color: #FFF4DF;
-  font-size: 14px;
-  text-align: center;
-}
-
-.prislistor {
-  display: flex;
-  justify-content: center;
-  width: 390px;
-}
-
-table {
-  width: 150px;
-  display: inline;
-  justify-content: center;
-  flex-direction: column;
-}
-
 * {
   margin: 0 auto;
   box-sizing: border-box;
@@ -417,6 +219,16 @@ table {
   font-family: "Poppins", sans-serif;
   color: #FFF4DF;
   line-height: 25px;
+}
+* .images-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+}
+* .images-section .images-container {
+  width: 100%;
 }
 * .footer-container {
   display: flex;
