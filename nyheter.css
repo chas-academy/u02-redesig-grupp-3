@@ -149,7 +149,7 @@ p {
   justify-content: center;
 }
 #news-section .news-section-background {
-  width: 95%;
+  width: 100%;
   background-color: #16262B;
   border-radius: 1rem;
 }
@@ -208,7 +208,7 @@ p {
   overflow: hidden;
   white-space: nowrap;
   padding: 10px;
-  font-size: x-small;
+  font-size: small;
 }
 
 .offer-container {
@@ -216,9 +216,12 @@ p {
   height: auto;
   background-color: #FEF7EC;
   padding: 10px;
-  font-size: smaller;
   border-radius: 0 0 5px 5px;
   margin-bottom: 1rem;
+}
+
+.offer-content-text {
+  font-weight: 400;
 }
 
 .offer-color-red {
@@ -250,30 +253,55 @@ p {
   width: 100%;
   border-radius: 5px;
   background-size: cover;
+  transition: transform 0.2s;
+  box-shadow: 2px 2px 5px black;
+}
+.news-img-container .news-img-one:hover {
+  transform: scale(2.1);
 }
 .news-img-container .news-img-two {
   height: 100%;
   width: 100%;
   border-radius: 5px;
   background-size: cover;
+  transition: transform 0.2s;
+  box-shadow: 2px 2px 5px black;
+}
+.news-img-container .news-img-two:hover {
+  transform: scale(2.1);
 }
 .news-img-container .news-img-three {
   height: 100%;
   width: 100%;
   background-size: cover;
   border-radius: 5px;
+  transition: transform 0.2s;
+  box-shadow: 2px 2px 5px black;
+}
+.news-img-container .news-img-three:hover {
+  transform: scale(2.1);
 }
 .news-img-container .news-img-four {
   height: 100%;
   width: 100%;
   background-size: cover;
   border-radius: 5px;
+  transition: transform 0.2s;
+  box-shadow: 2px 2px 5px black;
+}
+.news-img-container .news-img-four:hover {
+  transform: scale(2.1);
 }
 .news-img-container .news-img-five {
   height: 100%;
   width: 100%;
   background-size: cover;
   border-radius: 5px;
+  transition: transform 0.2s;
+  box-shadow: 2px 2px 5px black;
+}
+.news-img-container .news-img-five:hover {
+  transform: scale(2.1);
 }
 .news-img-container .news-img-one-content, .news-img-container .news-img-two-content, .news-img-container .news-img-three-content, .news-img-container .news-img-four-content, .news-img-container .news-img-five-content {
   display: flex;
@@ -336,7 +364,10 @@ p {
 }
 
 /*bilder mobile*/
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 980px) {
+  #news-section .news-section-background {
+    width: 420px;
+  }
   #JK-images .news-img-four {
     display: none;
   }
@@ -357,7 +388,7 @@ p {
   }
 }
 /*desktop*/
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 980px) {
   .hero-content {
     height: 25rem;
   }
@@ -373,13 +404,20 @@ p {
     padding: 1.2rem;
     font-size: 1.8rem;
   }
+  .hero-content {
+    width: 100%;
+    height: 100%;
+  }
+  #news-section .news-section-background {
+    width: 1000px;
+  }
   .news-header-info {
     justify-content: flex-end;
   }
   .wrapper {
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     align-items: normal;
     margin: 1rem;
@@ -388,7 +426,6 @@ p {
     width: 80%;
     margin-bottom: 1rem;
     display: flex;
-    flex: 1 1 50%;
     height: auto;
   }
   .profile-container {
@@ -449,31 +486,25 @@ p {
   }
 }
 @media screen and (min-width: 1430px) {
+  #news-section .news-section-background {
+    width: 1500px;
+  }
+  /*måste ändra så texten blir */
+  .hero-content {
+    width: 100%;
+    height: 100%;
+  }
+  .hero-content .hero-text-container {
+    width: 1500px;
+    height: 100%;
+  }
+  .wrapper {
+    justify-content: space-between;
+  }
+  .all-cards {
+    flex: 1 1 50%;
+  }
   .news-img-one-content, .news-img-two-content, .news-img-three-content, .news-img-four-content, .news-img-five-content {
     flex: 1 1 100px;
   }
-}
-@media screen and (min-width: 1700px) {
-  .news-img-one-content, .news-img-two-content, .news-img-three-content, .news-img-four-content, .news-img-five-content {
-    flex: 1 1 250px;
-  }
-  /*desktop divs*/
-  /* tagit bort tills vidare
-      .flex-parent {
-          display: flex;
-          flex-direction: row;
-          padding-top: 30px;
-      }
-
-
-      .flex-child {
-          width: 50%;
-      } */
-}
-/*   
-
-    .desktop-flex {
-        flex-basis: 300px;
-        flex-grow: 1;
-margin: 8px;
-    }*//*# sourceMappingURL=nyheter.css.map */
+}/*# sourceMappingURL=nyheter.css.map */
