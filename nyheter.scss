@@ -129,20 +129,68 @@ p {
     flex-direction: row;
     background-color: #FEF7EC;
     overflow: hidden;
-    padding: 5px;
     margin-top: 1rem;
     border-radius: 5px 5px 0 0;
 }
 
+#profile-background-JK {
+    background-color: #2D5653;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 160px;
+    align-items: center;
+}
+#profile-background-cesan {
+    background-color: #A47355;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 160px;
+    align-items: center;
+}
+#profile-background-chapoh {
+    background-color: #D05F2D;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 160px;
+    align-items: center;
+}
+#profile-background-charrata {
+    background-color: #1E4B38;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 160px;
+    align-items: center;
+}
+#profile-background-votcan {
+    background-color: #8FBA61;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 160px;
+    align-items: center;
+}
+#profile-background-mkburger {
+    background-color: #6B8F9B;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 160px;
+    align-items: center;
+}
 
 .profile-img-container {
     display: flex;
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: $joesKitchen; /*måste ändra så att den ligge specifikt för detta card sen*/
+    background-color: #9BAA8C;
     flex-direction: row;
     align-items: flex-start;
+    border: 2px solid #FFAB78;
 }
 
 
@@ -333,7 +381,24 @@ padding: 10px;
         }
        
     } 
-
+    #profile-background-JK {
+        height: 120px;
+    }
+    #profile-background-cesan {
+      height: 120px;
+    }
+    #profile-background-chapoh {
+      height: 120px;
+    }
+    #profile-background-charrata {
+        height: 120px;
+    }
+    #profile-background-votcan {
+        height: 120px;
+    }
+    #profile-background-mkburger {
+       height: 120px;
+    }
     #JK-images {
         .news-img-four{
             display: none;
@@ -438,10 +503,7 @@ padding: 10px;
         overflow: visible;
         width: 10rem;
     }        
-    .profile-img-container {
-        width: 150px;
-        height: 150px;
-    }
+    
     .profile-text-content {
         white-space: wrap;
 
