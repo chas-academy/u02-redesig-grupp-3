@@ -1,4 +1,8 @@
-@import "reset"; 
+@import "reset";
+@import "primary";
+@import "mixinss";
+@import "nav-footer";
+
 
 * {
     margin: 0 auto;
@@ -15,136 +19,136 @@
     width: 100%;
     overflow: hidden;
     background-position: center center;
-}
 
-.hero-title {
-    text-align: center;
-    color: antiquewhite;
-    font-size: 80px;
-    font-family: 'nobile', sans-serif;
-    text-shadow: 1px 1px 2px black;
-    font-weight: bold;
-  }
-
-.hero-text {
-    color: antiquewhite;
-    font-size: 30px;
-    font-family: 'poppins', sans-serif;
-    max-width: 60%;
-    text-align: center;
-    text-shadow: 1px 1px 2px black;
-    margin: 15px;
-  }
-
-.hero-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: auto;
-    min-height: 600px;
-    justify-content: center;
-    width: fit-content;
-  }
-
-@media screen and (max-width: 420px) {
-    
-    .hero-image {
-        height: 500px;
+    .hero-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        min-height: 600px;
+        justify-content: center;
+        width: fit-content;
     }
-    
+
     .hero-title {
-        font-size: 50px;
-        text-align: center;
-        font-weight: bold;
+       text-align: center;
+       color: antiquewhite;
+       font-size: 80px;
+       font-family: 'nobile', sans-serif;
+       text-shadow: 1px 1px 2px black;
+       font-weight: bold;
     }
 
     .hero-text {
-        font-size: 20px;
-        text-align: center;
-        margin: 15px;
-        min-width: 90%;
+       color: antiquewhite;
+       font-size: 30px;
+       font-family: 'poppins', sans-serif;
+       max-width: 60%;
+       text-align: center;
+       text-shadow: 1px 1px 2px black;
+       margin: 15px;
     }
-}  
 
-  .container {
+    @media screen and (max-width: 420px) {
+        height: 500px;
+        
+        
+        .hero-title {
+            font-size: 50px;
+            text-align: center;
+            font-weight: bold;
+        }
+    
+        .hero-text {
+            font-size: 20px;
+            text-align: center;
+            margin: 15px;
+            min-width: 90%;
+        }
+    }  
+}
+
+.container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
 
-.card {
-    width: 250px;
-    background-color: #FEF7EC;
-    border-radius: 10px;
-    margin: 10px;
-    margin: auto;
-    display: inline-block;
-}
+    .card-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 60vw;
+        background-color: #16262B;
+        margin: 35px;
+        padding: 40px;
+        border-radius: 10px;
+        gap: 20px;
+        row-gap: 50px;
+    
 
-.image {
-    height: 260px;
-    background-size: cover;
-    margin: 15px;
-    border-radius: 10px;
-    background-position: center;
-}
+        .card {
+           width: 250px;
+           background-color: #FEF7EC;
+           border-radius: 10px;
+           margin: 10px;
+           margin: auto;
+           display: inline-block;
+        }
 
-.card-1 {
-    background-image: url(img-medlemmar/Joes_louisiana_kitchen.png);
-    background-color: #9BAA8C;
-}
+        .image {
+           height: 260px;
+           background-size: cover;
+           margin: 15px;
+           border-radius: 10px;
+           background-position: center;
+        }
 
-.card-2 {
-    background-image: url(img-medlemmar/cesans.png);
-}
+        .card-1 {
+           background-image: url(img-medlemmar/Joes_louisiana_kitchen.png);
+           background-color: #9BAA8C;
+        }
 
-.card-3 {
-    background-image: url(img-medlemmar/charrata.png);
-}
+        .card-2 {
+           background-image: url(img-medlemmar/cesans.png);
+        }
 
-.card-4 {
-    background-image: url(img-medlemmar/ciaco.png);
-}
+        .card-3 {
+           background-image: url(img-medlemmar/charrata.png);
+        }
 
-.card-5 {
-    background-image: url(img-medlemmar/mean_burgers.png);
-}
+        .card-4 {
+           background-image: url(img-medlemmar/ciaco.png);
+        }
 
-.card-6 {
-    background-image: url(img-medlemmar/Gyro_truck.png);
-}
+        .card-5 {
+           background-image: url(img-medlemmar/mean_burgers.png);
+        }
 
-.card-7 {
-    background-image: url(img-medlemmar/chapoh-foo.png);
-}
+        .card-6 {
+           background-image: url(img-medlemmar/Gyro_truck.png);
+        }
 
-.card-8 {
-    background-image: url(img-medlemmar/votcan.png);
-}
+        .card-7 {
+           background-image: url(img-medlemmar/chapoh-foo.png);
+        }
 
-.card-9 {
-    background-image: url(img-medlemmar/Nacho_mania.png);
-}
+        .card-8 {
+           background-image: url(img-medlemmar/votcan.png);
+        }
+
+        .card-9 {
+           background-image: url(img-medlemmar/Nacho_mania.png);
+        }
 
 
-.content {
-    margin: 10px;
-    text-align: center;
-}
+        .content {
+           margin: 10px;
+           text-align: center;
+        
 
-.card-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 60vw;
-    background-color: #16262B;
-    margin: 35px;
-    padding: 40px;
-    border-radius: 10px;
-    gap: 20px;
-    row-gap: 50px;
-}
-
-strong {
-    font-weight: bold;
+           strong {
+              font-weight: bold;
+            }
+        }
+    }
 }
