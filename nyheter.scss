@@ -1,5 +1,7 @@
 @import "reset";
 @import "primary";
+@import "mixinss";
+@import "nav-footer";
 
 * {
     margin: 0 auto;
@@ -39,6 +41,10 @@ background-color: $mainBackgroundColor;
         flex-wrap: wrap;
         width: 70%;
         font-size: small;
+        p {
+            font-family: $secondary-font;
+            color: $primaryFontColor;
+        }
         
         .hero-text-color {
             color: $headerFontColor;
@@ -53,6 +59,7 @@ background-color: $mainBackgroundColor;
             margin-top: 1rem;
             padding: 0.5rem;
             border-radius: 0.5rem;
+            
         
         }
 }
@@ -71,10 +78,6 @@ h3 {
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
-p {
-    font-family: $secondary-font;
-    color: $primaryFontColor;
-}
 #news-section {
     .news-section-background{
         width: 100%;
@@ -86,6 +89,7 @@ p {
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 .news-header-info {
     display: flex;
@@ -185,7 +189,15 @@ p {
     white-space: nowrap;
     padding: 10px;
     font-size: small;
-}
+    p {
+        font-family: $secondary-font;
+        color: $primaryFontColor;
+        strong {
+            font-weight: 600;
+        }
+    }
+    }
+    
 .offer-container {
 width: 100%;
 height: auto;
@@ -194,6 +206,10 @@ padding: 10px;
     border-radius: 0 0 5px 5px;
     margin-bottom: 1rem;
     .offer-content-text {
+        p {
+            font-family: $secondary-font;
+            color: $primaryFontColor;
+        }
         font-weight: 400;
         .offer-color-red {
             color: $redColor;
@@ -337,7 +353,7 @@ padding: 10px;
 
 
 /*bilder mobile*/
-@media screen and (max-width: 980px) {
+@include maxWidth($mobileLarge) {
 
     #news-section {
         .news-section-background{
@@ -402,7 +418,7 @@ padding: 10px;
 
 /*desktop*/
 
-@media screen and (min-width: 980px) {
+@include devices ($mobileLarge) {
     .hero-content {
         height: 25rem;
         
@@ -504,7 +520,7 @@ display: contents;
     height: 100px;
     }
 }
-    @media screen and (min-width: 1430px) {
+    @include devices ($desktopLarge) {
         #news-section {
             .news-section-background{
                 width: 1500px;
