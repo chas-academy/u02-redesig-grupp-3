@@ -6,7 +6,10 @@
 
 // Mixin dimensions
 $mobile: 390px;
+$mobileLarge: 980px;
 $desktop: 720px;
+$desktopLarge: 1430px;
+
 
 /*Fonts*/
 $header-font: 'Nobile', sans-serif;
@@ -25,6 +28,7 @@ $footerColor: #212121;
 $buttonsColor: #F9E7A4;
 $boxShadow: #000000; //42% på shadow.
 $reklamBild: #2A2929;
+$colorGradiant:rgba(33, 33, 33, 0.79);
 
 /*Dot colors*/
 $vegDot:#98BE6F;

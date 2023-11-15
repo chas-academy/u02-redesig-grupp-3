@@ -1,0 +1,155 @@
+* {
+margin: 0 auto;
+box-sizing: border-box;
+}
+
+body {
+    background: #fef7ec;
+}
+/*mobile first*/
+header {
+    width: auto;
+    height: 50px;
+}
+
+/* obs ska läggas till fler rubriker här men lägger enbart till img nu så jag har den klar*/
+#hero-section {
+    width: 100%;
+    height: auto;
+}
+
+
+.hero-img-container {
+width: 100%;
+height: 250px;
+}
+
+.hero-img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-image: url(https://cdn.discordapp.com/attachments/1166415781282717879/1167461961546600468/midtards_banner_for_symbolizing_new_fresh_and_look_here_group_o_9cba5b3a-6f98-4190-a71d-3c9399509921.png?ex=654e36ae&is=653bc1ae&hm=2e91b05e4775d8fc84ff1c600ae2455966b6cf3df029172a388415d422493022&);
+}
+
+.hero-text-container {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+
+.hero-text-header {
+display: flex;
+}
+
+.hero-text {
+
+}
+
+.hero-button {
+
+}
+
+#news-section {
+    border: solid 2px;
+    height: auto;
+    width: 90vw;
+    margin-top: 20px;
+    background-color: #16262B;
+}
+
+.news-header-info {
+    border:solid 1px;
+    display: flex;
+    margin: 1rem;
+    margin-bottom: 2rem;
+    color:white;
+}
+
+#card-JK {
+    border:solid 1px;
+    width: 80vw;
+}
+
+.profile-container {
+    height:100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-img-container {
+    width: 100%;
+    padding: 10px;
+    background-color: #2D5653; /*måste ändra så att den ligge specifikt för detta card sen*/
+}
+
+.profile-img{
+    height: 100%;
+    border: solid 1px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    width: 83px;
+    
+}
+
+.profile-text-container {
+    width: 100%;
+    background-color: #AAE1DD; /*måste ändra så att den ligge specifikt för detta card sen*/
+}
+
+.profile-text-content {
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 80%;
+    padding: 10px;
+}
+
+.offer-container {
+width: 100%;
+height: auto;
+border: solid 1px;
+background-color: #FEF7EC;
+}
+
+.offer-content-text {
+
+}
+
+.card-button {
+    display: flex;
+    background-color: #F9E7A4;
+}
+/*space mellan bilderna så bakgrunden syns*/
+.news-img-container {
+    width: 100%;
+    height:100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.news-img-one {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-image: url(https://cdn.discordapp.com/attachments/1166343969932857446/1168951572756185128/cajun_special_4.png?ex=6553a1fd&is=65412cfd&hm=c245bc3f79bc715c5f42e21a301f1833701cf173c8860c98ba3c9ff286cf0910&);
+}
+
+.news-img-two {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-image: url(https://cdn.discordapp.com/attachments/1166343969932857446/1168951571833421895/cajun_special_2.png?ex=6553a1fc&is=65412cfc&hm=6ad7a41c290f5130be74297ba94e5b35c9c5eb2d6e0f91575ff9ce4b7327efee&);
+}
+.news-img-three {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-image: url(https://cdn.discordapp.com/attachments/1166343969932857446/1168951572282232882/cajun_special_3.png?ex=6553a1fc&is=65412cfc&hm=61b33812e873009461681e59287d18521e2ea4839ca88eccb8e7cbeacd5cc671&);
+}
+.news-img-four {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-image: url(https://cdn.discordapp.com/attachments/1166343969932857446/1168951571212681288/cajun_special_1.png?ex=6553a1fc&is=65412cfc&hm=5b4ef74a6a9ab238940433b77f2210d2d604eece60995de84bc076f4aaed7cf4&);
+}

@@ -7,43 +7,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nobile:wght@400;500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0">
+    <script src="https://kit.fontawesome.com/9a3df41f01.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="prislista.css">
     <title>Resto Culinair - Prislista</title>
 </head>
 <body>
-        <header class="header-section">
-            <div class="logo-container">
-                <img class="logonav" src="/images/logo.png" alt="logo" />
+    <header class="header-section">
+        <div class="nav-logo-container">
+            <a href="index.html">
+                <img class="nav-logo" src="/images/logo.png" alt="logo" />
+            </a>
+        </div>
+        <nav class="nav-bar">
+            <div class="dropdown">
+                <i class="fa fa-bars fa-lg drop-btn"></i>
+                <ul class="dropdown-content">
+                  <li><a href="index.html">Startsida</a></li>
+                  <li><a href="nyheter.html">Nyheter</a></li>
+                  <li><a href="medlemmar.html">Medlemslista</a></li>
+                  <li><a class="active" href="prislista.html">Prislista</a></li>
+                  <li><a href="events.html">Events</a></li>
+                  <li><a href="omoss.html">Om oss</a></li>
+                  <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
             </div>
-            <nav class="nav-bar">
-                <div class="dropdown">
-                    <svg class="drop-btn" viewBox="0 0 100 80" width="40" height="40">
-                        <rect width="100" height="20" rx="5"></rect>
-                        <rect y="30" width="100" height="20" rx="5"></rect>
-                        <rect y="60" width="100" height="20" rx="5"></rect>
-                      </svg>
-                    <ul class="dropdown-content">
-                      <li><a href="#nyheter">Nyheter</a></li>
-                      <li><a href="#medlemslista">Medlemslista</a></li>
-                      <li><a href="#prislista">Prislista</a></li>
-                      <li><a href="#events">Events</a></li>
-                      <li><a href="#omoss">Om oss</a></li>
-                      <li><a href="#kontakt">Kontakt</a></li>
-                    </ul>
-                </div>
-                <div class="nav-links">
-                    <ul class="nav-link-list">
-                        <li><a href="#nyheter">Nyheter</a></li>
-                        <li><a href="#medlemslista">Medlemslista</a></li>
-                        <li><a href="#prislista">Prislista</a></li>
-                        <li><a href="#events">Events</a></li>
-                        <li><a href="#omoss">Om oss</a></li>
-                        <li><a href="#kontakt">Kontakt</a></li>
-                    </ul>
-                </div>
-              </nav>
-            </header>
-
+            <div class="nav-links">
+                <ul class="nav-link-list">
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="nyheter.html">Nyheter</a></li>
+                    <li><a href="medlemmar.html">Medlemslista</a></li>
+                    <li><a class="active" href="prislista.html">Prislista</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="omoss.html">Om oss</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+          </nav>
+    </header>
             <section class="hero-section">
                 <div class="hero">
                     <img src="./Prislistaimg/hero_img1.png" alt="Bild på salami och ost">
@@ -637,47 +637,49 @@
             </section>
         </section>
     </main>
+    
     <footer class="footer-container">
         <div class="footer-content">
           <div class="footer-list-containers">
             <div class="footer-list-content">
-                <a class="list-item" href="#nyheter">Nyheter</a>
-                <a class="list-item" href="#medlemslista">Medlemslista</a>
-                <a class="list-item" href="#prislista">Prislista</a>
-                <a class="list-item" href="#events">Events</a>
-                <a class="list-item" href="#omoss">Om oss</a>
-                <a class="list-item" href="#kontakt">Kontakt</a>
+                <a class="list-item" href="nyheter.html">Nyheter</a>
+                <a class="list-item" href="medlemmar.html">Medlemslista</a>
+                <a class="list-item" href="prislista.html">Prislista</a>
+                <a class="list-item" href="events.html">Events</a>
+                <a class="list-item" href="omoss.html">Om oss</a>
+                <a class="list-item" href="kontakt.html">Kontakt</a>
             </div>
             <div class="footer-contact-container">
-                <div class="footer-list-content contact">
+                <address class="footer-list-content contact">
                     <h4>Adress:</h4>
                     <p>Industrieterrein Klein</p>
                     <p>GentGrensstraat 4</p>
                     <p>2200 Herentals</p> 
-                </div>
+                </address>
                 <div class="footer-list-content contact">
                     <h4>Telefon:</h4>
-                    <p>Tel: 014/248.446</p>
+                    <a class="list-item" href="tel:014/248.446">014/248.446</a>
                     <h4>Mailadress:</h4>
-                    <p>resto@culinair.nl</p>
+                    <a class="list-item" href="mailto:resto@culinair.nl">resto@culinair.nl</a>
                 </div>
             </div>
           </div>
           <div class="footer-socials-list">
-              <a class="socials-icon" href="https://www.google.com/">
+              <a class="socials-icon" aria-label="Link to our Facebook" href="https://giphy.com/gifs/starwars-movie-star-wars-3ornka9rAaKRA2Rkac">
                 <i class="fa fa-facebook"></i>
               </a>
-              <a class="socials-icon" href="https://www.google.com/">
+              <a class="socials-icon" aria-label="Link to our Instagram" href="https://www.youtube.com/watch?v=oHg5SJYRHA0">
                 <i class="fa fa-instagram"></i>
               </a>
-              <a class="socials-icon" href="https://www.google.com/">
+              <a class="socials-icon" aria-label="Link to our LinkedIn" href="https://giphy.com/gifs/reactionseditor-3oKIPf3C7HqqYBVcCk">
                 <i class="fa fa-linkedin"></i>
               </a>
             </div>
         </div>
         <div class="footer-copyright">
-          <p>copyright © 2023 all rights reserved</p>
-      </div>
-    </footer>
+            <p>copyright © 2023 all rights reserved</p>
+        </div>
+      </footer>
+
 </body>
 </html>
