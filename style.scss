@@ -1,1 +1,171 @@
+@import "reset";
+@import "primary";
+@import "mixinss";
+@import "nav-footer";
 
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Main */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 345px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.45), 
+        rgba(0, 0, 0, 0.45)), url(/images/hero-img.png);
+
+        @include devices($desktop) {
+            flex-direction: row;
+            height: 600px;
+        }
+
+        .hero-title {
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text-shadow: 1px 1px 2px $primaryFontColor;
+
+            h1 {
+                font-size: 37px;
+                font-family: $header-font;
+                font-weight: 600;
+                color: $headerFontColor;
+                text-indent: -10%;
+            }
+
+            h2 {
+                font-size: 32px;
+                font-family: $secondary-font;
+                font-weight: 600;
+                color: $headerFontColor;
+                text-indent: 10%;
+            }
+            
+            @include devices($desktop) {
+                h1 {
+                    font-size: 80px;
+                }
+
+                h2 {
+                    font-size: 60px;
+                }
+            }
+        }
+
+        .hero-text {
+            width: 80%;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 400;
+            font-family: $secondary-font;
+            color: $headerFontColor;
+            line-height: 1.6;
+        }
+
+        @include devices($desktop) {
+            .hero-text {
+                width: 600px;
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+.business-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 700px;
+    padding: 35px 20px 50px 20px;
+    background-color: $mainBackgroundColor;
+
+    .business-text-container {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        line-height: 1.8;
+        font-family: $secondary-font;
+        font-weight: 600;
+        font-size: 20px;
+        color: $primaryFontColor;
+        margin-bottom: 30px;
+        border-bottom: solid;
+
+        @include devices($desktop) {
+            font-size: 38px;
+        }
+    }
+
+    .business-img-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 30px;
+        width: 100%;
+
+        .business-logo {
+            width: 320px;
+            height: 320px;
+            border-radius: 50%;
+            border: 2px solid $profileBorder;
+            background-repeat: no-repeat;
+            background-position: center center;
+            transition: transform .2s;
+        }
+
+        .business-logo:hover {
+            transform: scale(1.1);
+            box-shadow: 15px 20px 30px rgba(0, 0, 0, 0.400);
+        }
+
+        #item1 {
+            background-size: 220px 220px;
+            background-image: url(Prislistaimg/Joes_louisiana_kitchen.png);
+            background-color: $joesKitchenLogo;
+        }
+
+        #item2 {
+            background-size: 280px 280px;
+            background-image: url(Prislistaimg/Charcutcut.png);
+            background-color: $charrataLogo;
+        }
+
+        #item3 {
+            background-size: 280px 280px;
+            background-image: url(Prislistaimg/medlem_14.png);
+            background-color: $chapohFooLogo;
+        }
+
+        @include devices($desktop) {
+            .business-logo {
+                width: 350px;
+                height: 350px;
+            }
+
+            #item1 {
+                background-size: 250px 250px;
+            }
+
+            #item2, #item3 {
+                background-size: 280px 280px;
+            }
+        }
+    }
+}

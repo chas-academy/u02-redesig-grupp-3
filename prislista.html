@@ -3,412 +3,683 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nobile:wght@400;500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0">
+    <script src="https://kit.fontawesome.com/9a3df41f01.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="prislista.css">
     <title>Resto Culinair - Prislista</title>
 </head>
 <body>
-    
-    <div>
-        <hero><img src="" alt="Bild på en ostbricka"></hero>
-        <h1>Prislista</h1>
-        <p>Nedan finner ni våra medlemmars prislistor där priserna är per person</p>
-    </div>
+    <header class="header-section">
+        <div class="nav-logo-container">
+            <a href="index.html">
+                <img class="nav-logo" src="/images/logo.png" alt="logo" />
+            </a>
+        </div>
+        <nav class="nav-bar">
+            <div class="dropdown">
+                <i class="fa fa-bars fa-lg drop-btn"></i>
+                <ul class="dropdown-content">
+                  <li><a href="index.html">Startsida</a></li>
+                  <li><a href="nyheter.html">Nyheter</a></li>
+                  <li><a href="medlemslista.html">Medlemslista</a></li>
+                  <li><a class="active" href="prislista.html">Prislista</a></li>
+                  <li><a href="events.html">Events</a></li>
+                  <li><a href="omoss.html">Om oss</a></li>
+                  <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="nav-links">
+                <ul class="nav-link-list">
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="nyheter.html">Nyheter</a></li>
+                    <li><a href="medlemslista.html">Medlemslista</a></li>
+                    <li><a class="active" href="prislista.html">Prislista</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="omoss.html">Om oss</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+          </nav>
+    </header>
+            <section class="hero-section">
+                <div class="hero">
+                    <img src="./Prislistaimg/hero_img1.png" alt="Bild på salami och ost">
+                    <div class="hero-text">
+                    <h1>Prislista</h1>
+                    <p class="header-text">Nedan finner ni våra medlemmars prislistor där priserna är per person</p>
+                </div>
+                </div>
+            </section>
 
     <main class="wrapper">
 
         <section id="prislistor">
 
             <div class="filter">
-                <div class="dot1">DOT</div><p>- Veg</p>
-                <div class="dot2">DOT</div><p>- Kött</p>
-                <div class="dot3">DOT</div><p>- Gris</p>
-                <div class="dot4">DOT</div><p>- Kyckling</p>
-                <div class="dot5">DOT</div><p>- Fisk/Skaldjur</p>
+                <div class="dot1">circle</div><p class="dot-text">- Veg</p>
+                <div class="dot2">circle</div><p class="dot-text">- Kött</p>
+                <div class="dot3">circle</div><p class="dot-text">- Gris</p>
+                <div class="dot4">circle</div><p class="dot-text">- Kyckling</p>
+                <div class="dot5">circle</div><p class="dot-text">- Fisk/Skaldjur</p>
             </div>
 
-            <div class="JoesKitchen">
+            <section class="prislista">
+                <div class="prislista-info">
                 <div class="profil-kontakt">
                     <div class="profil">
-                        <img src="" alt="Logga för Joe's Kitchen">
+                        <div class="logo joelogo">
+                        <img src="./Prislistaimg/Joes_louisiana_kitchen.png" alt="Logga för Joe's Kitchen">
+                        </div>
                     </div>
                     <div class="kontakt">
-                        <h3>Joe's Kitchen</h3> 
-                        <div class="dot5">DOT</div> <div class="dot4">DOT</div> <div class="dot2">DOT</div>
+                        <div class="profile-filter">
+                        <div class="dot5">circle</div> <div class="dot4">circle</div> <div class="dot2">circle</div>
+                        </div>
+                        <h2>Joe's Kitchen</h2> 
                         <p><strong>Tel - </strong> 078 562 22 93 <br>
                         <strong>Email - </strong> Joes.kitchen@gmail.com <br>
                         <strong>Adress - </strong>Drottninggatan 67,<br>
                         111 36 Stockholm</p>
                     </div>
                 </div>
-                <div class="mat-bilder">
-                    <img src="" alt="Bild på gumbo">
-                    <img src="" alt="Bild på fried catfish">
-                    <img src="" alt="Bild på jambalaya">
-                    <img src="" alt="Bild på kräftor">
-                </div>
                 <div class="pris-tabell">
                     <table>
                         <tr>
-                            <th class="mat">Gumbo Buffé <br>
-                            ris/bulgur</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
+                            <td class="mat">Gumbo Buffé <br>
+                            <p>ris/bulgur</p></td>
+                            <td class="pris">349:-</td>
                         </tr>
-                    </table>
-                </div>
-            </div>
-            <div class="Cesans">
-                <div class="profil-kontakt">
-                    <div class="profil">
-                        <img src="" alt="Logga för Cesans">
-                    </div>
-                    <div class="kontakt">
-                        <h3>Cesans</h3> 
-                        <div class="dot5">DOT</div> <div class="dot3">DOT</div> <div class="dot2">DOT</div> <div class="dot1">DOT</div>
-                        <p><strong>Tel - </strong> 078 562 22 93 <br>
-                        <strong>Email - </strong> Joes.kitchen@gmail.com <br>
-                        <strong>Adress - </strong>Drottninggatan 67,<br>
-                        111 36 Stockholm</p>
-                    </div>
-                </div>
-                <div class="mat-bilder">
-                    <img src="" alt="Bild på gumbo">
-                    <img src="" alt="Bild på fried catfish">
-                    <img src="" alt="Bild på jambalaya">
-                    <img src="" alt="Bild på kräftor">
-                </div>
-                <div class="pris-tabell">
-                    <table>
                         <tr>
-                            <th class="mat">Gumbo Buffé <br>
-                            ris/bulgur</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
+                            <td class="mat">Fried Catfish <br>
+                            <p>pommes/klyftpotatis</p></td>
+                            <td class="pris">399:-</td>
                         </tr>
-                    </table>
-                </div>
-            </div>
-            <div class="JoesKitchen">
-                <div class="profil-kontakt">
-                    <div class="profil">
-                        <img src="" alt="Logga för Joe's Kitchen">
-                    </div>
-                    <div class="kontakt">
-                        <h3>Joe's Kitchen</h3> 
-                        <div class="dot5">DOT</div> <div class="dot4">DOT</div> <div class="dot2">DOT</div>
-                        <p><strong>Tel - </strong> 078 562 22 93 <br>
-                        <strong>Email - </strong> Joes.kitchen@gmail.com <br>
-                        <strong>Adress - </strong>Drottninggatan 67,<br>
-                        111 36 Stockholm</p>
-                    </div>
-                </div>
-                <div class="mat-bilder">
-                    <img src="" alt="Bild på gumbo">
-                    <img src="" alt="Bild på fried catfish">
-                    <img src="" alt="Bild på jambalaya">
-                    <img src="" alt="Bild på kräftor">
-                </div>
-                <div class="pris-tabell">
-                    <table>
                         <tr>
-                            <th class="mat">Gumbo Buffé <br>
-                            ris/bulgur</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <div class="JoesKitchen">
-                <div class="profil-kontakt">
-                    <div class="profil">
-                        <img src="" alt="Logga för Joe's Kitchen">
-                    </div>
-                    <div class="kontakt">
-                        <h3>Joe's Kitchen</h3> 
-                        <div class="dot5">DOT</div> <div class="dot4">DOT</div> <div class="dot2">DOT</div>
-                        <p><strong>Tel - </strong> 078 562 22 93 <br>
-                        <strong>Email - </strong> Joes.kitchen@gmail.com <br>
-                        <strong>Adress - </strong>Drottninggatan 67,<br>
-                        111 36 Stockholm</p>
-                    </div>
-                </div>
-                <div class="mat-bilder">
-                    <img src="" alt="Bild på gumbo">
-                    <img src="" alt="Bild på fried catfish">
-                    <img src="" alt="Bild på jambalaya">
-                    <img src="" alt="Bild på kräftor">
-                </div>
-                <div class="pris-tabell">
-                    <table>
+                            <td class="mat">Jambalaya <br>
+                            <p>ris/bulgur</p></td>
+                            <td class="pris">249:-</td>
                         <tr>
-                            <th class="mat">Gumbo Buffé <br>
-                            ris/bulgur</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
+                            <td class="mat">Cajun Kräftor <br>
+                            <p>potatis/korv/majs/paprika</p></td>
+                            <td class="pris">499:-</td>
                         </tr>
-                    </table>
-                </div>
-            </div>
-            <div class="JoesKitchen">
-                <div class="profil-kontakt">
-                    <div class="profil">
-                        <img src="" alt="Logga för Joe's Kitchen">
-                    </div>
-                    <div class="kontakt">
-                        <h3>Joe's Kitchen</h3> 
-                        <div class="dot5">DOT</div> <div class="dot4">DOT</div> <div class="dot2">DOT</div>
-                        <p><strong>Tel - </strong> 078 562 22 93 <br>
-                        <strong>Email - </strong> Joes.kitchen@gmail.com <br>
-                        <strong>Adress - </strong>Drottninggatan 67,<br>
-                        111 36 Stockholm</p>
-                    </div>
-                </div>
-                <div class="mat-bilder">
-                    <img src="" alt="Bild på gumbo">
-                    <img src="" alt="Bild på fried catfish">
-                    <img src="" alt="Bild på jambalaya">
-                    <img src="" alt="Bild på kräftor">
-                </div>
-                <div class="pris-tabell">
-                    <table>
                         <tr>
-                            <th class="mat">Gumbo Buffé <br>
-                            ris/bulgur</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
+                            <td class="mat">Blandat Catering <br>
+                            <p>blandning av ovanstående</p></td>
+                            <td class="pris">559:-</td>
                         </tr>
                     </table>
-                </div>
-            </div>
-            <div class="JoesKitchen">
-                <div class="profil-kontakt">
-                    <div class="profil">
-                        <img src="" alt="Logga för Joe's Kitchen">
-                    </div>
-                    <div class="kontakt">
-                        <h3>Joe's Kitchen</h3> 
-                        <div class="dot5">DOT</div> <div class="dot4">DOT</div> <div class="dot2">DOT</div>
-                        <p><strong>Tel - </strong> 078 562 22 93 <br>
-                        <strong>Email - </strong> Joes.kitchen@gmail.com <br>
-                        <strong>Adress - </strong>Drottninggatan 67,<br>
-                        111 36 Stockholm</p>
+                    <div class="button">
+                    <button class="beställ">Beställ</button>
                     </div>
                 </div>
-                <div class="mat-bilder">
-                    <img src="" alt="Bild på gumbo">
-                    <img src="" alt="Bild på fried catfish">
-                    <img src="" alt="Bild på jambalaya">
-                    <img src="" alt="Bild på kräftor">
-                </div>
-                <div class="pris-tabell">
-                    <table>
-                        <tr>
-                            <th class="mat">Gumbo Buffé <br>
-                            ris/bulgur</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <div class="JoesKitchen">
-                <div class="profil-kontakt">
-                    <div class="profil">
-                        <img src="" alt="Logga för Joe's Kitchen">
-                    </div>
-                    <div class="kontakt">
-                        <h3>Joe's Kitchen</h3> 
-                        <div class="dot5">DOT</div> <div class="dot4">DOT</div> <div class="dot2">DOT</div>
-                        <p><strong>Tel - </strong> 078 562 22 93 <br>
-                        <strong>Email - </strong> Joes.kitchen@gmail.com <br>
-                        <strong>Adress - </strong>Drottninggatan 67,<br>
-                        111 36 Stockholm</p>
-                    </div>
-                </div>
-                <div class="mat-bilder">
-                    <img src="" alt="Bild på gumbo">
-                    <img src="" alt="Bild på fried catfish">
-                    <img src="" alt="Bild på jambalaya">
-                    <img src="" alt="Bild på kräftor">
-                </div>
-                <div class="pris-tabell">
-                    <table>
-                        <tr>
-                            <th class="mat">Gumbo Buffé <br>
-                            ris/bulgur</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <div class="JoesKitchen">
-                <div class="profil-kontakt">
-                    <div class="profil">
-                        <img src="" alt="Logga för Joe's Kitchen">
-                    </div>
-                    <div class="kontakt">
-                        <h3>Joe's Kitchen</h3> 
-                        <div class="dot5">DOT</div> <div class="dot4">DOT</div> <div class="dot2">DOT</div>
-                        <p><strong>Tel - </strong> 078 562 22 93 <br>
-                        <strong>Email - </strong> Joes.kitchen@gmail.com <br>
-                        <strong>Adress - </strong>Drottninggatan 67,<br>
-                        111 36 Stockholm</p>
-                    </div>
-                </div>
-                <div class="mat-bilder">
-                    <img src="" alt="Bild på gumbo">
-                    <img src="" alt="Bild på fried catfish">
-                    <img src="" alt="Bild på jambalaya">
-                    <img src="" alt="Bild på kräftor">
-                </div>
-                <div class="pris-tabell">
-                    <table>
-                        <tr>
-                            <th class="mat">Gumbo Buffé <br>
-                            ris/bulgur</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <div class="JoesKitchen">
-                <div class="profil-kontakt">
-                    <div class="profil">
-                        <img src="" alt="Logga för Joe's Kitchen">
-                    </div>
-                    <div class="kontakt">
-                        <h3>Joe's Kitchen</h3> 
-                        <div class="dot5">DOT</div> <div class="dot4">DOT</div> <div class="dot2">DOT</div>
-                        <p><strong>Tel - </strong> 078 562 22 93 <br>
-                        <strong>Email - </strong> Joes.kitchen@gmail.com <br>
-                        <strong>Adress - </strong>Drottninggatan 67,<br>
-                        111 36 Stockholm</p>
-                    </div>
-                </div>
-                <div class="mat-bilder">
-                    <img src="" alt="Bild på gumbo">
-                    <img src="" alt="Bild på fried catfish">
-                    <img src="" alt="Bild på jambalaya">
-                    <img src="" alt="Bild på kräftor">
-                </div>
-                <div class="pris-tabell">
-                    <table>
-                        <tr>
-                            <th class="mat">Gumbo Buffé <br>
-                            ris/bulgur</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <div class="JoesKitchen">
-                <div class="profil-kontakt">
-                    <div class="profil">
-                        <img src="" alt="Logga för Joe's Kitchen">
-                    </div>
-                    <div class="kontakt">
-                        <h3>Joe's Kitchen</h3> 
-                        <div class="dot5">DOT</div> <div class="dot4">DOT</div> <div class="dot2">DOT</div>
-                        <p><strong>Tel - </strong> 078 562 22 93 <br>
-                        <strong>Email - </strong> Joes.kitchen@gmail.com <br>
-                        <strong>Adress - </strong>Drottninggatan 67,<br>
-                        111 36 Stockholm</p>
-                    </div>
-                </div>
-                <div class="mat-bilder">
-                    <img src="" alt="Bild på gumbo">
-                    <img src="" alt="Bild på fried catfish">
-                    <img src="" alt="Bild på jambalaya">
-                    <img src="" alt="Bild på kräftor">
-                </div>
-                <div class="pris-tabell">
-                    <table>
-                        <tr>
-                            <th class="mat">Gumbo Buffé <br>
-                            ris/bulgur</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                            <th class="mat">Gumbo Buffé</th>
-                            <th class="pris">349:-</th>
-                        </tr>
-                    </table>
+                <div class="mat-bilder4">
+                    <img src="./Prislistaimg/louisiana_1.png" alt="Bild på gumbo">
+                    <img src="./Prislistaimg/louisiana_2.png" alt="Bild på fried catfish">
+                    <img src="./Prislistaimg/louisiana_3.png" alt="Bild på jambalaya">
+                    <img src="./Prislistaimg/louisiana_4.png" alt="Bild på Cajun kräftor">
                 </div>
             </div>
         </section>
-
+            <section class="prislista">
+                <div class="prislista-info">
+                <div class="profil-kontakt">
+                    <div class="profil cesans">
+                        <div class="logo cesanslogo">
+                        <img src="./Prislistaimg/medlem_13.png" alt="Cesans Logga">
+                        </div>
+                    </div>
+                    <div class="kontakt">
+                        <div class="profile-filter">
+                            <div class="dot5">circle</div> <div class="dot3">circle</div> <div class="dot2">circle</div> <div class="dot1">circle</div>
+                        </div>
+                        <h3>Cesans</h3> 
+                        <p><strong>Tel - </strong>072 764 18 42<br>
+                        <strong>Email - </strong>Cesans@gmail.com<br>
+                        <strong>Adress - </strong>Stråkvägen  3,<br> 
+                        169 35 Solna</p>
+                    </div>
+                </div>
+                <div class="pris-tabell">
+                    <table>
+                        <tr>
+                            <td class="mat">Rostbiff Buffé <br>
+                            <p>sallad/grönsaker/bröd</p></td>
+                            <td class="pris">369:-</td>
+                        </tr>
+                        <tr>
+                            <td class="mat">Chark <br>
+                            <p>blandat kött/ost/bröd/dip</p></td>
+                            <td class="pris">329:-</td>
+                        </tr>
+                        <tr>
+                            <td class="mat">Fisk Buffé <br>
+                            <p>grönsaker/bär/ost/dip</p></td>
+                            <td class="pris">249:-</td>
+                        </tr>
+                        <tr>
+                            <td class="mat">Vegetarisk <br>
+                            <p>grönsaker/bröd/dip</p></td>
+                            <td class="pris">249:-</td>
+                        </tr>
+                        <tr>
+                            <td class="mat">Mix Catering <br>
+                            <p>Mix av ovanstående</p></td>
+                            <td class="pris">349:-</td>
+                        </tr>
+                    </table>
+                    <div class="button">
+                        <button class="beställ">Beställ</button>
+                    </div>
+                </div>
+            <div class="matbilder5">
+            <div class="mat-bild-stor">
+                <img class="bigger-img" src="./Prislistaimg/catering 4.png" alt="Bild på rostbiff buffé">
+            </div>
+            <div class="mat-bilder5">
+                <img src="./Prislistaimg/catering_3.png" alt="Bild på rostbiff buffé">
+                <img src="./Prislistaimg/catering.png" alt="Bild på chark bricka">
+                <img src="./Prislistaimg/cesans_veg.png" alt="Bild på fisk buffé">
+                <img src="./Prislistaimg/veg_catering.png" alt="Bild på vegitarisk buffé">
+            </div>
+            </div>
+        </div>
+    </section>
+            <section class="prislista">
+                <div class="prislista-info">
+                <div class="profil-kontakt">
+                    <div class="profil chapoh">
+                        <div class="logo chapohlogo">
+                        <img src="./Prislistaimg/medlem_14.png" alt="Chapoh Foo logga">
+                        </div>
+                    </div>
+                    <div class="kontakt">
+                        <div class="profile-filter">
+                        <div class="dot4">circle</div>
+                        </div>
+                        <h3>Chapoh Foo</h3>
+                        <p><strong>Tel - </strong>073 649 43 58<br>
+                        <strong>Email - </strong>chapohfoo@gmail.com<br>
+                        <strong>Adress - </strong>Rosenlundsgatan 28 A,<br>
+                        118 53 Stockholm</p>
+                    </div>
+                </div>
+                <div class="pris-tabell">
+                    <table>
+                        <tr>
+                            <td class="mat">Whole Chicken<br>
+                            <p>potatis/majs/grönsaker</p></td>
+                            <td class="pris">299:-</td>
+                        </tr>
+                        <tr>
+                            <td class="mat">Chicken tdighs <br>
+                            <p>bulgur/majs/grönsaker</p></td>
+                            <td class="pris">219:-</td>
+                        </tr>
+                        <tr>
+                            <td class="mat">Fried Chicken <br>
+                            <p>ris/bulgur/pommes</p></td>
+                            <td class="pris">199:-</td>
+                        </tr>
+                        <tr>
+                            <td class="mat">Chicken Wings <br>
+                            <p>celleri/ranch sauce</p></td>
+                            <td class="pris">249:-</td>
+                        </tr>
+                        <tr>
+                            <td class="mat">Chicken Mix <br>
+                            <p>Blandning av ovanstående</p></td>
+                            <td class="pris">499:-</td>
+                        </tr>
+                    </table>
+                    <div class="button">
+                        <button class="beställ">Beställ</button>
+                    </div>
+                </div>
+                <div class="mat-bilder4">
+                    <img src="./Prislistaimg/chicken_6.png" alt="Bild på Whole chicken buffé">
+                    <img src="./Prislistaimg/chicken_1.png" alt="Bild på Chicken thighs">
+                    <img src="./Prislistaimg/chicken_9.png" alt="Bild på Fried Chicken">
+                    <img src="./Prislistaimg/chicken_wings.png" alt="Bild på Chicken Wings">
+                </div>
+            </div>
+        </section>
+            <section class="prislista">
+                <div class="prislista-info">
+                <div class="profil-kontakt">
+                    <div class="profil charrata">
+                        <div class="logo charratalogo">
+                        <img src="./Prislistaimg/Charcutcut.png" alt="Charrata Logga">
+                        </div>
+                    </div>
+                    <div class="kontakt">
+                        <div class="profile-filter">
+                            <div class="dot4">circle</div><div class="dot3">circle</div><div class="dot2">circle</div><div class="dot5">circle</div>
+                        </div>
+                        <h3>Charrata</h3>
+                        <p><strong>Tel - </strong>076 689 32 41<br>
+                        <strong>Email - </strong>Charrata@gmail.com<br>
+                        <strong>Adress - </strong>Tellusgången 30,<br>
+                        126 37 Hägersten</p>
+                    </div>
+                </div>
+                <div class="pris-tabell">
+                    <table>
+                        <tr>
+                            <td class="mat">Chark bricka<br>
+                            <p>ost/vindruvor</p> <br>
+                            <ul class="">
+                                <li><p>Salami/brie</p></li>
+                                <li><p>Lufttorkad</p></li>
+                                <li><p>Bresola</p></li>
+                                <li><p>Mix - </p><div class="redText"><p>Extra 59:-</p></div></li>
+                            </ul></td>
+                            <td class="pris">299:-</td>
+                        </tr>
+                        <tr>
+                            <td class="mat">Veg Bricka <br>
+                            <p>ost/oliver/bröd</p></td>
+                            <td class="pris">199:-</td>
+                        </tr>
+                        <tr>
+                            <td class="mat">Mix Catering <br>
+                            <p>Blandning av ovanstående</p></td>
+                            <td class="pris">399:-</td>
+                        </tr>
+                    </table>
+                    <div class="button">
+                        <button class="beställ">Beställ</button>
+                    </div>
+                </div>
+                <div class="matbilder5">
+                    <div class="mat-bild-stor">
+                        <img class="bigger-img" src="./Prislistaimg/table_5.png" alt="Bild på Chark bricka">
+                    </div>
+                <div class="mat-bilder5">
+                    <img src="./Prislistaimg/table_4.png" alt="Bild på Chark bricka">
+                    <img src="./Prislistaimg/table 3.png" alt="Bild på Chark bricka">
+                    <img src="./Prislistaimg/table_1.png" alt="Bild på Chark bricka">
+                    <img src="./Prislistaimg/charatta_food.png" alt="Bild på Vegetarisk chark bricka">
+                </div>
+                </div>
+            </div>
+        </section>
+            <section class="prislista">
+                <div class="prislista-info">
+                <div class="profil-kontakt">
+                    <div class="profil votcan">
+                        <div class="logo votcanlogo">
+                        <img src="./Prislistaimg/veg_logo.png" alt="Votcan Logga">
+                        </div>
+                    </div>
+                    <div class="kontakt">
+                        <div class="profile-filter">
+                            <div class="dot1">circle</div>
+                        </div>
+                        <h3>Votcan</h3>
+                        <p><strong>Tel - </strong>079 467 89 12<br>
+                        <strong>Email - </strong>Votcan@gmail.com<br>
+                        <strong>Adress - </strong>Spångavägen 138,<br>
+                        168 59 Bromma</p>
+                    </div>
+                </div>
+                <div class="pris-tabell">
+                    <table>
+                        <tr>
+                            <td class="mat">Vegetariskt<br>
+                            <p>ost/oliver/grönsaker</p></td>
+                            <td class="pris">149:-</td>
+                        </tr>
+                        <tr>
+                            <td class="mat">Veg Special <br>
+                            <p>rökt lax/ost/Vindruvor</p></td>
+                            <td class="pris">199:-</td>
+                        </tr>
+                        <tr>
+                            <td class="mat">Veg mix <br>
+                            <p>Mix av det bästa vi har<br>
+                            att erbjuda</p></td>
+                            <td class="pris">259:-</td>
+                        </tr>
+                    </table>
+                    <div class="button">
+                        <button class="beställ">Beställ</button>
+                    </div>
+                </div>
+                <div class="matbilder5">
+                    <div class="mat-bild-stor">
+                        <img class="bigger-img" src="./Prislistaimg/veg_food_4.png" alt="Bild på Vegetarisk Buffé">
+                    </div>
+                <div class="mat-bilder5">
+                    <img src="./Prislistaimg/veg2.png" alt="Bild på Vegetarisk Buffé">
+                    <img src="./Prislistaimg/veg1.png" alt="Bild på Vegetarisk Buffé">
+                    <img src="./Prislistaimg/veg_food_3.png" alt="Bild på Vegetarisk Buffé">
+                    <img src="./Prislistaimg/veg3.png" alt="Bild på Vegetarisk Buffé">
+                </div>
+                </div>
+                </div>
+            </section>
+            <section class="prislista">
+                <div class="prislista-info">
+                <div class="profil-kontakt">
+                    <div class="profil meanburger">
+                        <div class="logo meanburgerLogo">
+                        <img src="./Prislistaimg/mean_burgers.png" alt="Mean Burger's Logga">
+                        </div>
+                    </div>
+                    <div class="kontakt">
+                        <div class="profile-filter">
+                            <div class="dot2">circle</div>
+                        </div>
+                        <h3>Mean Burger's</h3>
+                        <p><strong>Tel - </strong>072 349 85 27<br>
+                        <strong>Email - </strong>MeanBurger@gmail.com<br>
+                        <strong>Adress - </strong>Sveavägen 85,<br>
+                        113 50 Stockholm</p>
+                    </div>
+                </div>
+                <div class="pris-tabell">
+                    <table>
+                        <tr>
+                            <td class="mat">Cheese Burger<br>
+                            <p>enkel/dubbel/trippel</p></td>
+                            <td class="pris">99:-</td>
+                        </tr>
+                        <tr>
+                            <td class="mat">Bacon Burger <br>
+                            <p>enkel/dubbel/trippel</p></td>
+                            <td class="pris">109:-</td>
+                        </tr>
+                        <tr>
+                            <td class="mat">Tryffel Burger <br>
+                            <p>enkel/dubbel/trippel</p></td>
+                            <td class="pris">119:-</td>
+                        </tr>
+                        <tr>
+                            <td class="mat">Cheese Fries <br>
+                            <p>hackad lök/bacon</p></td>
+                            <td class="pris">59:-</td>
+                        </tr>
+                        <tr>
+                            <td class="mat">Fries <br>
+                            <p>dip sås ink</p></td>
+                            <td class="pris">29:-</td>
+                            <td class="extrakött">extra kött 15:-</td>
+                        </tr>
+                    </table>
+                    <div class="button">
+                        <button class="beställ">Beställ</button>
+                    </div>
+                </div>
+                <div class="mat-bilder4">
+                    <img src="./Prislistaimg/burgers_2.png" alt="Bild på en dubbel burgare">
+                    <img src="./Prislistaimg/burgers_3.png" alt="Bild på en bacon burgare">
+                    <img src="./Prislistaimg/burger_cheese_fries_1.png" alt="Bild på cheese fries med bacon bitar">
+                    <img src="./Prislistaimg/burgers_4.png" alt="Bild på en tryffel burgare med stekt lök">
+                </div>
+                </div>
+            </section>
+            <section class="prislista">
+                <div class="prislista-info">
+                <div class="profil-kontakt">
+                    <div class="profil ciaco">
+                        <div class="logo ciacologo">
+                        <img src="./Prislistaimg/medlem_16.png" alt="Ciaco logga">
+                        </div>
+                    </div>
+                    <div class="kontakt">
+                        <div class="profile-filter">
+                            <div class="dot4">circle</div><div class="dot3">circle</div><div class="dot2">circle</div><div class="dot1">circle</div>
+                        </div>
+                        <h3>Ciaco</h3>
+                        <p><strong>Tel - </strong>076 718 85 43<br>
+                        <strong>Email - </strong>Ciaco@gmail.com<br>
+                        <strong>Adress - </strong>Stora Nygatan 20,<br>
+                        111 27 Stockholm</p>
+                    </div>
+                </div>
+                <div class="pris-tabell">
+                    <table>
+                        <tr>
+                            <td class="mat">Pasta <br>
+                            <p>carbonara/alfredo/al forno</p></td>
+                            <td class="pris">129:-</td>
+                        </tr>
+                        <tr>
+                            <td class="mat">Oxfile Pasta <br>
+                            <p>Oxfile med krämig sås</p></td>
+                            <td class="pris">149:-</td>
+                        </tr>
+                        <tr>
+                            <td class="mat">Italienska Pizzor <br>
+                            <p>margarita/capricciosa/diavola</p></td>
+                            <td class="pris">119:-</td>
+                        </tr>
+                        <tr>
+                            <td class="mat">Pasta Buffé <br>
+                            <p>blandinga av vår bästa pasta</p></td>
+                            <td class="pris">179:-</td>
+                        </tr>
+                        <tr>
+                            <td class="mat">Pizza Buffé <br>
+                            <p>mix av våra italienska pizzor</p></td>
+                            <td class="pris">159:-</td>
+                        </tr>
+                    </table>
+                    <div class="button">
+                        <button class="beställ">Beställ</button>
+                    </div>
+                </div>
+                <div class="mat-bilder4">
+                    <img src="./Prislistaimg/pasta_3.png" alt="Bild på Pasta Buffé">
+                    <img src="./Prislistaimg/pasta_5.png" alt="Bild på Pasta carbonara">
+                    <img src="./Prislistaimg/pizza_1.png" alt="Bild på Pizza buffé">
+                    <img src="./Prislistaimg/pizza_5.png" alt="Bild på en italiensk pizza">
+                </div>
+                </div>
+            </section>
+            <section class="prislista">
+                <div class="prislista-info">
+                <div class="profil-kontakt">
+                    <div class="profil gyro">
+                        <div class="logo gyrologo">
+                        <img src="./Prislistaimg/Gyro_truck.png" alt="Gyro Truck Logga">
+                        </div>
+                    </div>
+                    <div class="kontakt">
+                        <div class="profile-filter">
+                            <div class="dot4">circle</div> <div class="dot3">circle</div> <div class="dot2">circle</div>
+                        </div>
+                        <h3>Gyro Truck</h3> 
+                        <p><strong>Tel - </strong>073 357 94 56<br>
+                        <strong>Email - </strong>Gyrotruck@gmail.com<br>
+                        <strong>Adress - </strong>Storgatan 15A,<br>
+                        151 72 Södertälje</p>
+                    </div>
+                </div>
+                <div class="pris-tabell">
+                    <table>
+                        <tr>
+                            <td class="mat">Biff gyros<br>
+                            <p>grönsaker/valfri sås</p></td>
+                            <td class="pris">119:-</td>
+                        </tr>
+                        <tr>
+                            <td class="mat">Fläsk gyros <br>
+                            <p>grönsaker/valfri sås</p></td>
+                            <td class="pris">109:-</td>
+                        </tr>
+                        <tr>
+                            <td class="mat">Kyckling gyros <br>
+                            <p>grönsaker/valfri sås</p></td>
+                            <td class="pris">99:-</td>
+                        </tr>
+                        <tr>
+                            <td class="mat">Gyros catering <br>
+                            <p>blandning av vår gyros</p></td>
+                            <td class="pris">109:-</td>
+                        </tr>
+                        <tr>
+                            <td class="mat">Hyr Gyro Truck <br>
+                            <p>hyr oss till evenemang</p></td>
+                            <td class="pris">1500:-</td>
+                        </tr>
+                        <tr>
+                            <td class="timpris">Hyra är till timpris!</td>
+                        </tr>
+                    </table>
+                    <div class="button">
+                        <button class="beställ">Beställ</button>
+                    </div>
+                </div>
+                <div class="mat-bilder4">
+                    <img src="./Prislistaimg/gyros_1.png" alt="Bild på en Gyros rulle">
+                    <img src="./Prislistaimg/gyros_2.png" alt="Bild på en gyros rulle">
+                    <img src="./Prislistaimg/gyros_7.png" alt="Bild på gyros med bröd">
+                    <img src="./Prislistaimg/gyros_4.png" alt="Bild på en gyros rulle">
+                </div>
+                </div>
+            </section>
+            <section class="prislista">
+                <div class="prislista-info">
+                <div class="profil-kontakt">
+                    <div class="profil nacho">
+                        <div class="logo nachologo">
+                        <img src="./Prislistaimg/Nacho_mania.png" alt="Nacho Mania">
+                        </div>
+                    </div>
+                    <div class="kontakt">
+                        <div class="profile-filter">
+                            <div class="dot5">circle</div> <div class="dot4">circle</div> <div class="dot2">circle</div>
+                        </div>
+                        <h3>Nacho Mania</h3>
+                        <p><strong>Tel - </strong>078 168 79 68<br>
+                        <strong>Email - </strong>Nachomania@gmail.com<br>
+                        <strong>Adress - </strong>Nyängsvägen 3,<br>
+                        146 30 Tullinge</p>
+                    </div>
+                </div>
+                <div class="pris-tabell">
+                    <table>
+                        <tr>
+                            <td class="mat">Nacho<br>
+                            <p>köttfärs/grönsaker/sås</p></td>
+                            <td class="pris">119:-</td>
+                        </tr>
+                        <tr>
+                            <td class="mat">Chicken nachos <br>
+                            <p>ost/grönsaker/sås</p></td>
+                            <td class="pris">99:-</td>
+                        </tr>
+                        <tr>
+                            <td class="mat">Pork Nacho <br>
+                            <p>grönsaker/jalapeños/sås</p></td>
+                            <td class="pris">109:-</td>
+                        </tr>
+                        <tr>
+                            <td class="mat">Nacho Special <br>
+                            <p>valfritt kött/extra allt</p></td>
+                            <td class="pris">139:-</td>
+                        </tr>
+                        <tr>
+                            <td class="mat">Nacho catering <br>
+                            <p>mix av våra nachos</p></td>
+                            <td class="pris">129:-</td>
+                        </tr>
+                    </table>
+                    <div class="button">
+                        <button class="beställ">Beställ</button>
+                    </div>
+                </div>
+                <div class="mat-bilder4">
+                    <img src="./Prislistaimg/natchos_5.png" alt="Bild på en nacho tallrik">
+                    <img src="./Prislistaimg/natchos_7.png" alt="Bild på en nacho tallrik">
+                    <img src="./Prislistaimg/natchos_3.png" alt="Bild på en kyckling nacho tallrik">
+                    <img src="./Prislistaimg/veg_natchos_1.png" alt="Bild på vegetarisk nacho tallrik">
+                </div>
+                </div>
+            </section>
+            <section class="prislista">
+                <div class="prislista-info">
+                <div class="profil-kontakt">
+                    <div class="profil reklam">
+                        <div class="reklamlogo">
+                        <p class="dinlogga">Vill du att<br>din logga<br>ska synas<br>här?</p>
+                        </div>
+                    </div>
+                    <div class="kontakt">
+                    
+                    </div>
+                </div>
+                <div class="reklam-prislista">
+                    <div class="reklam-text">
+                    <h4><strong>Bli synlig i matens värld med Resto Culinair!</strong></h4> <br> <br>
+                    <p>Förvandla ditt cateringföretag till en <br>succéhistoria. Gå med i vårt exklusiva nätverk<br> och nå ut till tusentals matälskare dagligen. <br><br>
+                    <br>
+                    ✨Din passion. Din presentation. Din publik.✨
+                    <br><br>
+                    Låt oss lyfta fram ditt mästerverk på vår plattform.<br>
+                    Bli medlem nu och ge ditt företag den uppmärksamhet det förtjänar! 🔥</p>
+                    </div>
+                    <div class="button-kontakt">
+                        <button class="kontakta-oss">Kontakta oss</button>
+                    </div>
+                </div>
+                <div class="mat-bilder4">
+                    <img src="./Prislistaimg/grey-img1.png" alt="Grey image">
+                    <img src="./Prislistaimg/grey-img1.png" alt="BGrey image">
+                    <img src="./Prislistaimg/grey-img1.png" alt="Grey image">
+                    <img src="./Prislistaimg/grey-img1.png" alt="Grey image">
+                </div>
+            </section>
+        </section>
     </main>
     
+    <footer class="footer-container">
+        <div class="footer-content">
+          <div class="footer-list-containers">
+            <div class="footer-list-content">
+                <a class="list-item" href="nyheter.html">Nyheter</a>
+                <a class="list-item" href="medlemslista.html">Medlemslista</a>
+                <a class="list-item" href="prislista.html">Prislista</a>
+                <a class="list-item" href="events.html">Events</a>
+                <a class="list-item" href="omoss.html">Om oss</a>
+                <a class="list-item" href="kontakt.html">Kontakt</a>
+            </div>
+            <div class="footer-contact-container">
+                <address class="footer-list-content contact">
+                    <h4>Adress:</h4>
+                    <p>Industrieterrein Klein</p>
+                    <p>GentGrensstraat 4</p>
+                    <p>2200 Herentals</p> 
+                </address>
+                <div class="footer-list-content contact">
+                    <h4>Telefon:</h4>
+                    <a class="list-item" href="tel:014/248.446">014/248.446</a>
+                    <h4>Mailadress:</h4>
+                    <a class="list-item" href="mailto:resto@culinair.nl">resto@culinair.nl</a>
+                </div>
+            </div>
+          </div>
+          <div class="footer-socials-list">
+              <a class="socials-icon" aria-label="Link to our Facebook" href="https://giphy.com/gifs/starwars-movie-star-wars-3ornka9rAaKRA2Rkac">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a class="socials-icon" aria-label="Link to our Instagram" href="https://www.youtube.com/watch?v=oHg5SJYRHA0">
+                <i class="fa fa-instagram"></i>
+              </a>
+              <a class="socials-icon" aria-label="Link to our LinkedIn" href="https://giphy.com/gifs/reactionseditor-3oKIPf3C7HqqYBVcCk">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>copyright © 2023 all rights reserved</p>
+        </div>
+      </footer>
+
 </body>
 </html>
