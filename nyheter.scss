@@ -5,19 +5,6 @@
     margin: 0 auto;
     box-sizing: border-box;
 }
-/*tillfälligt tills nav*/
-
-.header-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 83px;
-    padding: 5px;
-    background-color: #FFF4DF;
-
-    /*ta bort ovan sen inför merge*/
-}
 body {
 background-color: $mainBackgroundColor;
 }
@@ -88,9 +75,6 @@ p {
     font-family: $secondary-font;
     color: $primaryFontColor;
 }
-
-
-
 #news-section {
     .news-section-background{
         width: 100%;
@@ -103,9 +87,6 @@ p {
     display: flex;
     justify-content: center;
 }
-
-
-
 .news-header-info {
     display: flex;
     flex-direction: row;
@@ -195,24 +176,16 @@ p {
         object-fit: contain;
     }
 }
-
-
-
-
 .profile-text-container {
     width: 100%;
     background-color: $cardColor; 
-    .profile-text-content {
-        overflow: hidden;
-        white-space: nowrap;
-        padding: 10px;
-        font-size: small;
-    }
 }
-
-
-
-
+.profile-text-content {
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px;
+    font-size: small;
+}
 .offer-container {
 width: 100%;
 height: auto;
@@ -329,6 +302,7 @@ padding: 10px;
 .profile-dots{
     display: flex;
     flex-direction: row;
+}
 /*Måste ligga under alla cards*/
 .dot-veg {
     font-family: 'Material Symbols Outlined';
@@ -360,9 +334,6 @@ padding: 10px;
     color: $headerFontColor;
 }
 
-}
-
-
 
 
 /*bilder mobile*/
@@ -372,16 +343,15 @@ padding: 10px;
         .news-section-background{
             width: 420px;
         }
-       
     } 
     #profile-background-JK {
         height: 120px;
     }
     #profile-background-cesan {
-      height: 120px;
+        height: 120px;
     }
     #profile-background-chapoh {
-      height: 120px;
+        height: 120px;
     }
     #profile-background-charrata {
         height: 120px;
@@ -390,7 +360,7 @@ padding: 10px;
         height: 120px;
     }
     #profile-background-mkburger {
-       height: 120px;
+        height: 120px;
     }
     #JK-images {
         .news-img-four{
