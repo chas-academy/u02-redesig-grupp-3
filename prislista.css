@@ -76,7 +76,6 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   height: 83px;
   padding: 5px;
   background-color: #FEF7EC;
@@ -284,6 +283,7 @@ table {
 }
 
 body {
+  background-color: #C60000;
   background-color: #FEF7EC;
   box-sizing: border-box;
   margin: 0 auto;
