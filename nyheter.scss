@@ -1,1 +1,549 @@
+@import "reset";
+@import "primary";
+@import "mixinss";
+@import "nav-footer";
 
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+body {
+background-color: $mainBackgroundColor;
+}
+.hero-content {
+    width: 100%;
+    height: 10rem;
+
+    .hero-img-container {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        background-size: cover;
+        background-image: url(nyheter-img/hero-shadow-img.png);
+    }
+    
+
+    .hero-text-container {
+        display: flex;
+        flex-direction: row;
+        color: #FFF4DF;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .hero-text-header {
+        display: flex;
+        }
+        
+        
+        .hero-text {
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        font-size: small;
+        p {
+            font-family: $secondary-font;
+            color: $primaryFontColor;
+        }
+        
+        .hero-text-color {
+            color: $headerFontColor;
+        }
+        }
+        
+        .hero-button {
+            background-color: $buttonsColor;
+            color: $primaryFontColor;
+            font-family: $secondary-font;
+            margin: inherit;
+            margin-top: 1rem;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            
+        
+        }
+}
+
+
+
+h2 {
+    font-family: $header-font;
+    font-size: xx-large;
+    padding: 1rem;
+}
+
+h3 {
+    font-family: $secondary-font;
+    font-size: large;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+#news-section {
+    .news-section-background{
+        width: 100%;
+    background-color: $cardBackgroundColor;
+    border-radius: 1rem;
+    }
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.news-header-info {
+    display: flex;
+    flex-direction: row;
+    /* margin: 1rem; */
+    /* margin-bottom: 2rem; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.all-cards {
+    width: 80%;
+}
+.profile-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: #FEF7EC;
+    overflow: hidden;
+    margin-top: 1rem;
+    border-radius: 5px 5px 0 0;
+}
+
+#profile-background-JK {
+    background-color: #2D5653;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 160px;
+    align-items: center;
+}
+#profile-background-cesan {
+    background-color: #A47355;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 160px;
+    align-items: center;
+}
+#profile-background-chapoh {
+    background-color: #D05F2D;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 160px;
+    align-items: center;
+}
+#profile-background-charrata {
+    background-color: #1E4B38;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 160px;
+    align-items: center;
+}
+#profile-background-votcan {
+    background-color: #8FBA61;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 160px;
+    align-items: center;
+}
+#profile-background-mkburger {
+    background-color: #6B8F9B;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 160px;
+    align-items: center;
+}
+.profile-img-container {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #9BAA8C;
+    flex-direction: row;
+    align-items: flex-start;
+    border: 2px solid #FFAB78;
+    .profile-img{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        width: 250px;
+        object-fit: contain;
+    }
+}
+.profile-text-container {
+    width: 100%;
+    background-color: $cardColor; 
+}
+.profile-text-content {
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px;
+    font-size: small;
+    p {
+        font-family: $secondary-font;
+        color: $primaryFontColor;
+        strong {
+            font-weight: 600;
+        }
+    }
+    }
+    
+.offer-container {
+width: 100%;
+height: auto;
+background-color: $cardColor;
+padding: 10px;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 1rem;
+    .offer-content-text {
+        p {
+            font-family: $secondary-font;
+            color: $primaryFontColor;
+        }
+        font-weight: 400;
+        .offer-color-red {
+            color: $redColor;
+        }
+    }
+}
+
+
+
+
+.card-button {
+    display: flex;
+    background-color: $buttonsColor;
+    color: $primaryFontColor;
+    font-family: $secondary-font;
+    border-radius: 8px;
+    font-size: medium;
+    font-weight: 600;
+    padding: 5px;
+    margin-top: 10px;
+}
+/*space mellan bilderna så bakgrunden syns*/
+.news-img-container {
+    width: 100%;
+    height:100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .news-img-one {
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+        background-size: cover;
+        transition: transform .2s;
+        box-shadow: 2px 2px 5px black;
+    }
+    
+    .news-img-one:hover {
+        transform: scale(2.1);
+    }
+    
+    .news-img-two {
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+        background-size: cover;
+        transition: transform .2s;
+        box-shadow: 2px 2px 5px black;
+    }
+    .news-img-two:hover {
+        transform: scale(2.1);
+    }
+    
+    .news-img-three {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        border-radius: 5px;
+        transition: transform .2s;
+        box-shadow: 2px 2px 5px black;
+    }
+    .news-img-three:hover {
+        transform: scale(2.1);
+    }
+    .news-img-four {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        border-radius: 5px;
+        transition: transform .2s;
+        box-shadow: 2px 2px 5px black;
+    }
+    .news-img-four:hover {
+        transform: scale(2.1);
+    }
+    .news-img-five {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        border-radius: 5px;
+        transition: transform .2s;
+        box-shadow: 2px 2px 5px black;
+    }
+    .news-img-five:hover {
+        transform: scale(2.1);
+    }
+    
+    .news-img-one-content, .news-img-two-content, .news-img-three-content, .news-img-four-content, .news-img-five-content { 
+        display: flex;
+        margin-inline: 0.1rem;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.profile-header {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.profile-dots{
+    display: flex;
+    flex-direction: row;
+}
+/*Måste ligga under alla cards*/
+.dot-veg {
+    font-family: 'Material Symbols Outlined';
+    color: $vegDot;
+    font-size: smaller;
+}
+.dot-meat {
+    font-family: 'Material Symbols Outlined';
+    color: $meatDot;
+    font-size: smaller;
+}
+.dot-pork {
+    font-family: 'Material Symbols Outlined';
+    color: $pigDot;
+    font-size: smaller;
+}
+.dot-chicken {
+    font-family: 'Material Symbols Outlined';
+    color: $chickenDot;
+    font-size: smaller;
+}
+.dot-fish {
+    font-family: 'Material Symbols Outlined';
+    color: $fishDot;
+    font-size: smaller;
+}
+.dot-text {
+    font-size: 12px;
+    color: $headerFontColor;
+}
+
+
+
+/*bilder mobile*/
+@include maxWidth($mobileLarge) {
+
+    #news-section {
+        .news-section-background{
+            width: 420px;
+        }
+    } 
+    #profile-background-JK {
+        height: 120px;
+    }
+    #profile-background-cesan {
+        height: 120px;
+    }
+    #profile-background-chapoh {
+        height: 120px;
+    }
+    #profile-background-charrata {
+        height: 120px;
+    }
+    #profile-background-votcan {
+        height: 120px;
+    }
+    #profile-background-mkburger {
+        height: 120px;
+    }
+    #JK-images {
+        .news-img-four{
+            display: none;
+        }
+    
+    }
+    
+    #cesan-images {
+        .news-img-three, .news-img-four, .news-img-five {
+            display: none;
+        }
+    }
+    #chapoh-images {
+        .news-img-four{
+            display: none;
+        }
+    }
+#charrata-images {
+    .news-img-three, .news-img-four, .news-img-five{
+        display: none;
+    }
+}
+#votcan-images {
+    .news-img-three, .news-img-four, .news-img-five{
+        display: none;
+    }
+}
+#meanB-images {
+    .news-img-four {
+        display: none;
+    }
+}
+    
+
+
+}
+
+
+/*desktop*/
+
+@include devices ($mobileLarge) {
+    .hero-content {
+        height: 25rem;
+        
+    
+        h2{
+            font-size: 4rem;
+            padding: 6rem;
+        }
+        
+.hero-text {
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+.hero-button {
+    padding: 1.2rem;
+    font-size: 1.8rem;
+}
+    }
+    .hero-content {
+        width: 100%;
+        height: 100%;
+    }
+#news-section {
+    .news-section-background{
+        width: 1000px;
+    }
+}
+    .news-header-info {
+        justify-content: flex-end;
+    }
+    .wrapper {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        flex-direction: row;
+        align-items: normal;
+        margin: 1rem;
+    }
+    .all-cards {
+        width: 80%;
+        margin-bottom: 1rem;
+        display: flex;
+        height: auto;
+            }
+    .profile-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        border-radius: 5px 0 0 5px;
+        overflow: visible;
+        width: 10rem;
+    }        
+    .profile-text-content {
+        white-space: wrap;
+        h3 {
+            font-size: medium;
+        }
+    }
+    .offer-container {
+        margin-bottom: 0;
+        border-radius: 0 5px 5px 0;
+        margin-right: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+#JK-images {
+display: contents;
+}
+#cesan-images {
+    display: contents;
+    
+    
+}
+#chapoh-images {
+    display: contents;
+}
+#charrata-images {
+    display: contents;
+    
+}
+#votcan-images {
+    display: contents;
+}
+#meanB-images {
+    display: contents;
+}
+    .news-img-container {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    /*minns inte varför dessa skulle ha olika namn från början men nu är det så*/
+    .news-img-one-content, .news-img-two-content, .news-img-three-content, .news-img-four-content, .news-img-five-content {
+        flex: 1 1 100px;
+    }
+    .news-img-one, .news-img-two, .news-img-three, .news-img-four, .news-img-five {
+    width: 100px;
+    height: 100px;
+    }
+}
+    @include devices ($desktopLarge) {
+        #news-section {
+            .news-section-background{
+                width: 1500px;
+            }
+        } /*måste ändra så texten blir */
+        .hero-content {
+            width: 100%;
+            height: 100%;
+        .hero-text-container {
+                
+                width: 1500px;
+                height: 100%;
+            }
+        }
+        .wrapper {
+            justify-content: space-between;
+        }
+        .all-cards {
+            flex: 1 1 50%;
+                }
+        .news-img-one-content, .news-img-two-content, .news-img-three-content, .news-img-four-content, .news-img-five-content {
+            flex: 1 1 100px;
+        }     
+    }
+
+    

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -55,7 +56,849 @@ table {
 /*Header and secondary font copy paste i HTML:
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nobile:ital,wght@1,400;1,500;1,700&family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">*/
+<link href="https://fonts.googleapis.com/css2?family=Nobile:wght@400;500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+*/
 /*Fonts*/
 /*Colors*/
-/*Members background color*//*# sourceMappingURL=prislista.css.map */
+/*Dot colors*/
+/*Members background color*/
+/*Header and secondary font copy paste i HTML:
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nobile:wght@400;500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+*/
+/*Fonts*/
+/*Colors*/
+/*Dot colors*/
+/*Members background color*/
+/* Header */
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 83px;
+  padding: 5px;
+  background-color: #FEF7EC;
+}
+.header-section .nav-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 720px) {
+  .header-section .nav-logo-container {
+    transition: transform 0.2s;
+  }
+  .header-section .nav-logo-container:hover {
+    transform: scale(1.2);
+  }
+}
+.header-section .nav-logo {
+  width: 68px;
+  height: 68px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header-section .nav-bar {
+  display: flex;
+  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #FEF7EC;
+  padding-right: 20px;
+}
+.header-section .nav-bar .drop-btn {
+  color: #470B00;
+  padding: 8px;
+  font-size: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.header-section .nav-bar .drop-btn:hover {
+  transform: scale(1.2);
+}
+.header-section .nav-bar .dropdown {
+  position: relative;
+  z-index: 1;
+}
+.header-section .nav-bar .nav-links {
+  display: none;
+}
+.header-section .nav-bar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FEF7EC;
+  right: 0;
+  width: 150px;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+.header-section .nav-bar ul {
+  padding: 0;
+}
+.header-section .nav-bar li {
+  list-style: none;
+}
+.header-section .nav-bar .dropdown-content a {
+  display: block;
+  color: #470B00;
+  font-size: 18px;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+.header-section .nav-bar .dropdown:hover .dropdown-content {
+  display: block;
+}
+.header-section .nav-bar .dropdown:hover .drop-btn {
+  background-color: #FEF7EC;
+}
+@media screen and (min-width: 720px) {
+  .header-section .nav-bar .dropdown {
+    display: none;
+  }
+  .header-section .nav-bar .nav-links {
+    display: block;
+    width: 600px;
+  }
+  .header-section .nav-bar .nav-links a {
+    text-decoration: none;
+    color: #470B00;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+  }
+  .header-section .nav-bar .nav-links a.active {
+    text-decoration: underline;
+  }
+  .header-section .nav-bar li {
+    transition: transform 0.2s ease;
+  }
+  .header-section .nav-bar li:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  .header-section .nav-bar li a {
+    text-decoration: none;
+    color: #470B00;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+  }
+  .header-section .nav-bar .nav-link-list {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/* Footer */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #212121;
+  color: #FFF4DF;
+  font-family: "Poppins", sans-serif;
+}
+.footer-container .footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 5px;
+}
+.footer-container .footer-content .footer-list-containers {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-top: 30px;
+}
+.footer-container .footer-content .footer-contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 450px;
+}
+.footer-container .footer-content .footer-list-content {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+  width: 180px;
+  padding: 10px;
+}
+.footer-container .footer-content .footer-list-content h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer-container .footer-content .footer-list-content .list-item {
+  font-size: 16px;
+  color: #FFF4DF;
+  text-decoration: none;
+  padding: 3px;
+  transition: transform 0.2s ease;
+}
+.footer-container .footer-content .footer-list-content .list-item:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+  font-weight: 500;
+}
+.footer-container .footer-content .contact {
+  flex-direction: column;
+  padding: 5px;
+  width: 190px;
+}
+.footer-container .footer-content .footer-socials-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  padding: 20px;
+}
+.footer-container .footer-content .footer-socials-list .socials-icon {
+  font-size: 25px;
+  color: #FFF4DF;
+  transition: transform 0.2s ease;
+}
+.footer-container .footer-content .footer-socials-list .socials-icon:hover {
+  transform: scale(1.4);
+}
+@media screen and (min-width: 720px) {
+  .footer-container .footer-content {
+    margin-top: 10px;
+  }
+  .footer-container .footer-content .footer-list-containers {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.footer-container .footer-copyright {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+
+body {
+  background-color: #FEF7EC;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero {
+  position: relative;
+}
+.hero img {
+  width: 100%;
+}
+
+.hero-text {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  right: 10%;
+  bottom: 25%;
+}
+
+h1 {
+  font-family: "Nobile", sans-serif;
+  color: #FFF4DF;
+  font-weight: bold;
+  font-size: 37px;
+  text-align: center;
+}
+
+.header-text {
+  font-family: "Poppins", sans-serif;
+  color: #FFF4DF;
+  font-size: 16px;
+  text-align: center;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+#prislistor {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 379px;
+  border-radius: 5px;
+  background-color: #16262B;
+  margin-top: 10px;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin-top: 10px;
+}
+
+.dot-text {
+  font-family: "Poppins", sans-serif;
+  color: #FFF4DF;
+  font-size: 8px;
+}
+
+.dot1 {
+  font-family: "Material Symbols Outlined";
+  color: #98BE6F;
+  font-size: smaller;
+}
+
+.dot2 {
+  font-family: "Material Symbols Outlined";
+  color: #E5712A;
+  font-size: smaller;
+}
+
+.dot3 {
+  font-family: "Material Symbols Outlined";
+  color: #F3C912;
+  font-size: smaller;
+}
+
+.dot4 {
+  font-family: "Material Symbols Outlined";
+  color: #E52A2A;
+  font-size: smaller;
+}
+
+.dot5 {
+  font-family: "Material Symbols Outlined";
+  color: #2A8BE5;
+  font-size: smaller;
+}
+
+.prislista {
+  background-color: #FEF7EC;
+  width: 371px;
+  height: 319px;
+  font-size: 8px;
+  margin: 15.25px 0 15.25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  flex-direction: column;
+}
+
+.prislista-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kontakt {
+  width: 117px;
+  font-family: "Poppins", sans-serif;
+  color: #470B00;
+}
+.kontakt h2, .kontakt h3 {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 5px;
+}
+.kontakt p {
+  margin: 5px;
+  font-size: 7.5px;
+  line-height: 13px;
+}
+.kontakt strong {
+  font-weight: bold;
+}
+
+.profil-kontakt {
+  width: 117px;
+  height: 194px;
+}
+
+.profile-filter {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.profil {
+  width: 117px;
+  height: 91.44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2D5653;
+  border-radius: 5px 0 0 0;
+}
+
+.cesans {
+  background-color: #A47355;
+}
+
+.chapoh {
+  background-color: #D05F2D;
+}
+
+.charrata {
+  background-color: #1E4B38;
+}
+
+.votcan {
+  background-color: #8FBA61;
+}
+
+.meanburger {
+  background-color: #6B8F9B;
+}
+
+.ciaco {
+  background-color: #841015;
+}
+
+.gyro {
+  background-color: #D9913F;
+}
+
+.nacho {
+  background-color: #9A3B0A;
+}
+
+.reklam {
+  background-color: #71848A;
+}
+
+.logo {
+  width: 71.77px;
+  height: 71.77px;
+  display: flex;
+  justify-content: center;
+  border-radius: 40px;
+  border: 2px solid #FFAB78;
+}
+.logo img {
+  width: 57px;
+  height: 59px;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+
+.joelogo {
+  background-color: #9BAA8C;
+}
+
+.cesanslogo {
+  background-color: #161B1D;
+}
+
+.chapohlogo {
+  background-color: #C34A2F;
+}
+
+.charratalogo {
+  background-color: #0A0E0F;
+}
+
+.votcanlogo {
+  background-color: #10191B;
+}
+
+.meanburgerLogo {
+  background-color: #0A252E;
+}
+
+.ciacologo {
+  background-color: #110C10;
+}
+
+.gyrologo {
+  background-color: #0E1216;
+}
+
+.nachologo {
+  background-color: #C36314;
+}
+
+.reklamlogo {
+  width: 71.77px;
+  height: 71.77px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  border: 2px solid #FFAB78;
+  background-color: #16262B;
+}
+
+.dinlogga {
+  height: 50px;
+  font-size: 12px;
+  text-align: center;
+  align-items: center;
+  color: #FFF4DF;
+}
+
+.mat-bilder4 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 371px;
+  height: 115px;
+}
+.mat-bilder4 img {
+  width: 84.68px;
+  height: 84.68px;
+  box-shadow: 2.29px 2.29px 5px #000000;
+  border-radius: 5px;
+}
+
+.mat-bild-stor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+}
+.mat-bild-stor .bigger-img {
+  width: 146.47px;
+  height: 82.09px;
+  box-shadow: 2.29px 2.29px 5px #000000;
+  border-radius: 5px;
+}
+
+.matbilder5 {
+  display: flex;
+  justify-content: space-around;
+  width: 371px;
+  height: 115px;
+}
+.matbilder5 .mat-bilder5 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 10px;
+  row-gap: 3px;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  width: 201px;
+  height: 62.5px;
+}
+.matbilder5 .mat-bilder5 img {
+  width: 90px;
+  height: 46px;
+  box-shadow: 2.29px 2.29px 5px #000000;
+  border-radius: 3px;
+}
+
+.pris-tabell {
+  width: 254px;
+  height: 204px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+table {
+  display: inline;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 14px;
+}
+table tr {
+  border-bottom: 1px solid #470B00;
+}
+table td {
+  font-family: "Poppins", sans-serif;
+  color: #470B00;
+  text-align: start;
+  padding: 2px;
+  vertical-align: bottom;
+  font-weight: 400;
+}
+table p {
+  font-size: 10px;
+}
+
+.button {
+  width: 254px;
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.beställ {
+  display: flex;
+  width: 52.2px;
+  height: 15.35px;
+  font-family: "Poppins", sans-serif;
+  color: #470B00;
+  font-weight: bold;
+  font-size: 10px;
+  background-color: #F9E7A4;
+  border-radius: 4px;
+  border: 1px solid #470B00;
+  align-items: center;
+}
+
+.kontakta-oss {
+  display: flex;
+  width: 85px;
+  height: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #470B00;
+  font-weight: bold;
+  font-size: 10px;
+  background-color: #F9E7A4;
+  border-radius: 4px;
+  border: 1px solid #470B00;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.button-kontakt {
+  width: 254px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.reklam-prislista {
+  width: 254px;
+  height: 204px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.reklam-text {
+  width: 228px;
+  font-family: "Poppins", sans-serif;
+  color: #470B00;
+  text-align: start;
+  padding: 2px;
+  vertical-align: bottom;
+  font-weight: 400;
+}
+.reklam-text h4 {
+  font-size: 14px;
+  font-weight: bold;
+}
+.reklam-text p {
+  font-size: 10px;
+}
+
+@media screen and (min-width: 720px) {
+  .hero {
+    position: relative;
+  }
+  .hero img {
+    width: 100%;
+  }
+  .hero-text {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    right: 10%;
+    bottom: 25%;
+  }
+  h1 {
+    font-family: "Nobile", sans-serif;
+    color: #FFF4DF;
+    font-weight: bold;
+    font-size: 75px;
+    text-align: center;
+  }
+  .header-text {
+    font-family: "Poppins", sans-serif;
+    color: #FFF4DF;
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000000;
+  }
+  #prislistor {
+    width: 1500px;
+    margin: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .prislista {
+    display: flex;
+    align-items: flex-start;
+    width: 650px;
+    height: 250px;
+    margin: 10px;
+  }
+  .prislista-info {
+    height: 250px;
+  }
+  .filter {
+    justify-content: space-evenly;
+  }
+  .dot-text {
+    font-size: 14px;
+  }
+  .dot1 {
+    font-size: medium;
+  }
+  .dot2 {
+    font-size: medium;
+  }
+  .dot3 {
+    font-size: medium;
+  }
+  .dot4 {
+    font-size: medium;
+  }
+  .dot5 {
+    font-size: medium;
+  }
+  .kontakt {
+    width: 200px;
+  }
+  .kontakt h2, .kontakt h3 {
+    font-size: 15px;
+    width: 180px;
+  }
+  .kontakt p {
+    font-size: 10px;
+    width: 180px;
+  }
+  .profil-kontakt {
+    width: 180px;
+    height: 250px;
+  }
+  .profil {
+    width: 180px;
+    height: 140px;
+  }
+  .profile-filter {
+    width: 180px;
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 80px;
+  }
+  .logo img {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+  }
+  .mat-bilder4 {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    align-content: center;
+    width: 270px;
+    height: 250px;
+  }
+  .mat-bilder4 img {
+    width: 115px;
+    height: 115px;
+    box-shadow: 2.29px 2.29px 5px #000000;
+    border-radius: 5px;
+  }
+  .mat-bilder4 :hover {
+    transform: scale(2.2);
+  }
+  .mat-bild-stor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 85px;
+  }
+  .mat-bild-stor .bigger-img {
+    width: 146.47px;
+    height: 82.09px;
+    box-shadow: 2.29px 2.29px 5px #000000;
+    border-radius: 5px;
+  }
+  .mat-bild-stor :hover {
+    transform: scale(2.2);
+  }
+  .matbilder5 {
+    display: flex;
+    align-items: center;
+    width: 270px;
+    height: 250px;
+    flex-direction: column;
+  }
+  .matbilder5 .mat-bilder5 {
+    justify-items: center;
+    align-content: center;
+    row-gap: 6px;
+    width: 270px;
+    height: 150px;
+  }
+  .matbilder5 .mat-bilder5 img {
+    width: 110px;
+    height: 67.25px;
+    box-shadow: 2.29px 2.29px 5px #000000;
+    border-radius: 3px;
+  }
+  .matbilder5 .mat-bilder5 :hover {
+    transform: scale(2.5);
+  }
+  .pris-tabell {
+    width: 200px;
+    height: 250px;
+  }
+  table {
+    font-size: 14px;
+  }
+  table p {
+    font-size: 10px;
+  }
+  .button {
+    width: 200px;
+    justify-content: center;
+  }
+  .beställ {
+    width: 65px;
+    height: 20px;
+    font-size: 14px;
+  }
+  .kontakta-oss {
+    display: flex;
+    width: 110px;
+    height: 25px;
+    font-size: 14px;
+    margin: 0;
+  }
+  .button-kontakt {
+    width: 200px;
+    margin: 0;
+  }
+  .reklam-prislista {
+    display: flex;
+    justify-content: flex-start;
+    width: 200px;
+    height: 250px;
+  }
+  .reklam-text {
+    width: 200px;
+    font-family: "Poppins", sans-serif;
+    color: #470B00;
+    text-align: start;
+    padding: 5px;
+    vertical-align: bottom;
+    font-weight: 400;
+  }
+  .reklam-text h4 {
+    padding: 5px;
+  }
+  .reklam-text p {
+    padding: 5px;
+  }
+}/*# sourceMappingURL=prislista.css.map */
