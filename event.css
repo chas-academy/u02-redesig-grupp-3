@@ -140,6 +140,7 @@ p {
 }
 
 .calender-container {
+  box-sizing: border-box;
   background-color: #470b00;
   border-radius: 10px;
   width: 30%;
@@ -147,15 +148,22 @@ p {
   margin: auto;
 }
 
-.calender-header h2 {
+.calender-heading {
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  color: #5b5b5b;
+  margin-top: 0;
+  font-size: 1.5rem;
 }
 
 .weekdays {
   display: flex;
   justify-content: space-around;
+  color: #5b5b5b;
+  margin-top: 0;
+}
+
+.weekday-special {
+  color: #17a1fa;
 }
 
 .weeks {
@@ -163,10 +171,22 @@ p {
   justify-content: space-around;
 }
 
+.weeks .day:nth-child(3),
+.weeks .day:nth-child(4),
+.weeks .day:nth-child(5) {
+  color: white;
+}
+
+.weeks .day:nth-child(6),
+.weeks .day:nth-child(7) {
+  color: #17a1fa;
+}
+
 .day {
   display: inline-block;
   width: 20px;
   height: 20px;
+  color: #5b5b5b;
   text-align: center;
   line-height: 20px;
   margin: 7px;
@@ -174,6 +194,34 @@ p {
   transition: background-color 0.3s;
 }
 
+.day-special {
+  color: #fff;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin: 7px;
+}
+
+.day-first {
+  color: #5b5b5b;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin: 7px;
+}
+
 .day:hover {
-  background-color: #fff;
+  background-color: #ffab78;
+}
+
+.day-special:hover {
+  background-color: #ffab78;
+}
+
+.day-first:hover {
+  background-color: #ffab78;
 }/*# sourceMappingURL=event.css.map */
