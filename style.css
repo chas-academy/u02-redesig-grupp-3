@@ -61,6 +61,15 @@ table {
 /*Colors*/
 /*Dot colors*/
 /*Members background color*/
+/*Header and secondary font copy paste i HTML:
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nobile:wght@400;500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+*/
+/*Fonts*/
+/*Colors*/
+/*Dot colors*/
+/*Members background color*/
 /* Header */
 .header-section {
   display: flex;
@@ -221,7 +230,7 @@ table {
   width: 180px;
   padding: 10px;
 }
-.footer-container .footer-content .footer-list-content h4 {
+.footer-container .footer-content .footer-list-content h4, .footer-container .footer-content .footer-list-content .h4-footer-contact {
   font-size: 18px;
   font-weight: 600;
 }
