@@ -243,8 +243,7 @@ p {
   align-items: flex-start;
   border: 2px solid #FFAB78;
 }
-
-.profile-img {
+.profile-img-container .profile-img {
   height: 100%;
   display: flex;
   justify-content: center;
@@ -255,10 +254,9 @@ p {
 
 .profile-text-container {
   width: 100%;
-  background-color: #FEF7EC; /*måste ändra så att den ligge specifikt för detta card sen*/
+  background-color: #FEF7EC;
 }
-
-.profile-text-content {
+.profile-text-container .profile-text-content {
   overflow: hidden;
   white-space: nowrap;
   padding: 10px;
@@ -273,12 +271,10 @@ p {
   border-radius: 0 0 5px 5px;
   margin-bottom: 1rem;
 }
-
-.offer-content-text {
+.offer-container .offer-content-text {
   font-weight: 400;
 }
-
-.offer-color-red {
+.offer-container .offer-content-text .offer-color-red {
   color: #C60000;
 }
 
@@ -379,40 +375,34 @@ p {
 .profile-dots {
   display: flex;
   flex-direction: row;
+  /*Måste ligga under alla cards*/
 }
-
-/*Måste ligga under alla cards*/
-.dot-veg {
+.profile-dots .dot-veg {
   font-family: "Material Symbols Outlined";
   color: #98BE6F;
   font-size: smaller;
 }
-
-.dot-meat {
+.profile-dots .dot-meat {
   font-family: "Material Symbols Outlined";
   color: #E5712A;
   font-size: smaller;
 }
-
-.dot-pork {
+.profile-dots .dot-pork {
   font-family: "Material Symbols Outlined";
   color: #F3C912;
   font-size: smaller;
 }
-
-.dot-chicken {
+.profile-dots .dot-chicken {
   font-family: "Material Symbols Outlined";
   color: #E52A2A;
   font-size: smaller;
 }
-
-.dot-fish {
+.profile-dots .dot-fish {
   font-family: "Material Symbols Outlined";
   color: #2A8BE5;
   font-size: smaller;
 }
-
-.dot-text {
+.profile-dots .dot-text {
   font-size: 12px;
   color: #FFF4DF;
 }

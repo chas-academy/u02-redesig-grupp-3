@@ -118,10 +118,7 @@ p {
 
 .all-cards {
     width: 80%;
-
 }
-
-
 .profile-container {
     width: 100%;
     height: auto;
@@ -181,7 +178,6 @@ p {
     width: 160px;
     align-items: center;
 }
-
 .profile-img-container {
     display: flex;
     width: 100px;
@@ -191,31 +187,31 @@ p {
     flex-direction: row;
     align-items: flex-start;
     border: 2px solid #FFAB78;
+    .profile-img{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        width: 250px;
+        object-fit: contain;
+    }
 }
 
 
-.profile-img{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    width: 250px;
-    object-fit: contain;
-}
 
 
 .profile-text-container {
     width: 100%;
-    background-color: $cardColor; /*måste ändra så att den ligge specifikt för detta card sen*/
+    background-color: $cardColor; 
+    .profile-text-content {
+        overflow: hidden;
+        white-space: nowrap;
+        padding: 10px;
+        font-size: small;
+    }
 }
 
 
-.profile-text-content {
-    overflow: hidden;
-    white-space: nowrap;
-    padding: 10px;
-    font-size: small;
 
-}
 
 .offer-container {
 width: 100%;
@@ -224,16 +220,15 @@ background-color: $cardColor;
 padding: 10px;
     border-radius: 0 0 5px 5px;
     margin-bottom: 1rem;
+    .offer-content-text {
+        font-weight: 400;
+        .offer-color-red {
+            color: $redColor;
+        }
+    }
 }
 
-.offer-content-text {
-    font-weight: 400;
-}
 
-
-.offer-color-red {
-    color: $redColor;
-}
 
 
 .card-button {
@@ -254,7 +249,6 @@ padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-
     .news-img-one {
         height: 100%;
         width: 100%;
@@ -291,7 +285,6 @@ padding: 10px;
     .news-img-three:hover {
         transform: scale(2.1);
     }
-    
     .news-img-four {
         height: 100%;
         width: 100%;
@@ -303,8 +296,6 @@ padding: 10px;
     .news-img-four:hover {
         transform: scale(2.1);
     }
-    
-    
     .news-img-five {
         height: 100%;
         width: 100%;
@@ -338,8 +329,6 @@ padding: 10px;
 .profile-dots{
     display: flex;
     flex-direction: row;
-}
-
 /*Måste ligga under alla cards*/
 .dot-veg {
     font-family: 'Material Symbols Outlined';
@@ -370,6 +359,10 @@ padding: 10px;
     font-size: 12px;
     color: $headerFontColor;
 }
+
+}
+
+
 
 
 /*bilder mobile*/
@@ -411,26 +404,21 @@ padding: 10px;
             display: none;
         }
     }
-    
     #chapoh-images {
         .news-img-four{
             display: none;
         }
     }
-
-    
 #charrata-images {
     .news-img-three, .news-img-four, .news-img-five{
         display: none;
     }
 }
-
 #votcan-images {
     .news-img-three, .news-img-four, .news-img-five{
         display: none;
     }
 }
-
 #meanB-images {
     .news-img-four {
         display: none;
@@ -467,9 +455,7 @@ padding: 10px;
     .hero-content {
         width: 100%;
         height: 100%;
-    
     }
-    
 #news-section {
     .news-section-background{
         width: 1000px;
@@ -478,7 +464,6 @@ padding: 10px;
     .news-header-info {
         justify-content: flex-end;
     }
-
     .wrapper {
         display: flex;
         flex-flow: column wrap;
@@ -492,9 +477,7 @@ padding: 10px;
         margin-bottom: 1rem;
         display: flex;
         height: auto;
-
             }
-
     .profile-container {
         display: flex;
         flex-direction: column;
@@ -503,10 +486,8 @@ padding: 10px;
         overflow: visible;
         width: 10rem;
     }        
-    
     .profile-text-content {
         white-space: wrap;
-
         h3 {
             font-size: medium;
         }
@@ -522,13 +503,11 @@ padding: 10px;
 #JK-images {
 display: contents;
 }
-
 #cesan-images {
     display: contents;
     
     
 }
-
 #chapoh-images {
     display: contents;
 }
@@ -539,35 +518,27 @@ display: contents;
 #votcan-images {
     display: contents;
 }
-
 #meanB-images {
     display: contents;
 }
-
     .news-img-container {
         flex-wrap: wrap;
         height: 100%;
-
     }
     /*minns inte varför dessa skulle ha olika namn från början men nu är det så*/
     .news-img-one-content, .news-img-two-content, .news-img-three-content, .news-img-four-content, .news-img-five-content {
         flex: 1 1 100px;
     }
-
     .news-img-one, .news-img-two, .news-img-three, .news-img-four, .news-img-five {
     width: 100px;
     height: 100px;
     }
-
 }
-
-
     @media screen and (min-width: 1430px) {
         #news-section {
             .news-section-background{
                 width: 1500px;
             }
-           
         } /*måste ändra så texten blir */
         .hero-content {
             width: 100%;
@@ -580,13 +551,10 @@ display: contents;
         }
         .wrapper {
             justify-content: space-between;
-           
         }
         .all-cards {
             flex: 1 1 50%;
-    
                 }
-              
         .news-img-one-content, .news-img-two-content, .news-img-three-content, .news-img-four-content, .news-img-five-content {
             flex: 1 1 100px;
         }     
