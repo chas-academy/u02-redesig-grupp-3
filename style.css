@@ -292,7 +292,6 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height: auto;
 }
 .hero-section .hero-container {
@@ -305,7 +304,7 @@ table {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(/images/hero-img.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(images/hero-img.png);
 }
 @media screen and (min-width: 720px) {
   .hero-section .hero-container {
