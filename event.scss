@@ -27,10 +27,8 @@ body {
   display: flex;
   flex-direction: column;
   background-color: rgba(34, 27, 27, 0.6);
-  padding: 20px;
   text-align: left;
   width: 50%;
-  height: 100%;
 }
 .hero-btn-container {
   display: flex;
@@ -63,64 +61,6 @@ p {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   background-color: black;
-}
-/* media quierie for responsivenes*/
-@media only screen and (max-width: 390px) {
-  .hero {
-    flex-direction: row;
-    align-items: left;
-  }
-
-  .hero-heading {
-    font-size: 1.5rem;
-  }
-
-  .hero-content {
-    width: 50%;
-    padding: 10px;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  p {
-    font-size: 0.9rem;
-  }
-
-  .button {
-    padding: 8px 16px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero {
-    flex-direction: row;
-    align-items: left;
-    padding: 30px 0;
-  }
-
-  .hero-heading {
-    font-size: 3.5rem;
-  }
-
-  .hero-content {
-    width: 50%;
-    padding: 30px;
-  }
-
-  h1 {
-    font-size: 3.5rem;
-  }
-
-  p {
-    font-size: 1.1rem;
-  }
-
-  .button {
-    padding: 12px 25px;
-    font-size: 1rem;
-  }
 }
 
 .container {
@@ -273,4 +213,60 @@ p {
 
 .day-first:hover {
   background-color: #ffab78;
+}
+
+/* media quierie for responsivenes*/
+@media only screen and (min-width: 390px) {
+  .hero {
+    flex-direction: row;
+    align-items: left;
+  }
+
+  .hero-heading {
+    font-size: 1.5rem;
+  }
+
+  .hero-content {
+    width: 50%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .button {
+    padding: 8px 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    flex-direction: row;
+  }
+
+  .hero-heading {
+    font-size: 3.5rem;
+  }
+
+  .hero-content {
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
 }
