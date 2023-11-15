@@ -231,7 +231,7 @@ table {
   width: 180px;
   padding: 10px;
 }
-.footer-container .footer-content .footer-list-content h4 {
+.footer-container .footer-content .footer-list-content h4, .footer-container .footer-content .footer-list-content .h4-footer-contact {
   font-size: 18px;
   font-weight: 600;
 }
@@ -285,6 +285,8 @@ table {
 
 body {
   background-color: #FEF7EC;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .wrapper {
