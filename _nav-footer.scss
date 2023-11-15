@@ -1,10 +1,5 @@
-@import "reset";
 @import "primary";
 @import "mixinss";
-
-* {
-    margin: 0 auto;
-    box-sizing: border-box;
 
 /* Header */
 .header-section {
@@ -16,13 +11,21 @@
     padding: 5px;
     background-color: $navColor;
 
-    .logo-container {
+    .nav-logo-container {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include devices($desktop) {
+            transition: transform .2s;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
     }
 
-    .logo {
+    .nav-logo {
         width: 68px;
         height: 68px;
         object-fit: cover;
@@ -39,10 +42,15 @@
         .drop-btn {
             color: $primaryFontColor;
             padding: 8px;
-            font-size: 16px;
+            font-size: 30px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            transition: transform .2s;
+
+            &:hover {
+                transform: scale(1.2);
+            }
         }
     
         .dropdown {
@@ -80,10 +88,6 @@
             font-size: 18px;
             padding: 12px 16px;
             text-decoration: none;
-    
-            a:hover {
-                background-color: #f1f1f1;
-            }
         }
     
         .dropdown:hover .dropdown-content {
@@ -91,7 +95,7 @@
         }
     
         .dropdown:hover .drop-btn {
-            background-color: bisque;
+            background-color: $navColor;
         }
 
         @include devices($desktop) {
@@ -101,7 +105,7 @@
         
             .nav-links {
                 display: block;
-                width: 500px;
+                width: 600px;
             }
         
             .nav-links a {
@@ -109,10 +113,20 @@
                 color: $primaryFontColor;
                 font-size: 18px;
                 font-family: $secondary-font;
+
+                &.active {
+                    text-decoration: underline;
+                }
             }
         
             li {
-                transition: border 183ms ease-in-out, border-radius 183ms ease-in-out;
+                transition: transform .2s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                    text-decoration: underline;
+                    font-weight: 500;
+                }
             }
     
             li a {
@@ -121,11 +135,6 @@
                 font-size: 18px;
                 font-family: $secondary-font;
             }
-              
-            // li:hover {
-            //     border: 2px solid rgba(252, 151, 104, 1);
-            //     border-radius: 4px;
-            // }
         
             .nav-link-list {
                 display: flex;
@@ -135,61 +144,6 @@
     }
 }
 
-.hero-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-
-    .hero-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        min-height: 345px;
-        max-height: 500px;
-        height: auto;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.45), 
-        rgba(0, 0, 0, 0.45)), url(/images/hero-img.png);
-
-        .hero-title {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            margin-bottom: 15px;
-
-            h1 {
-                font-size: $h1-size;
-                font-family: $header-font;
-                font-weight: 500;
-                color: $headerFontColor;
-            }
-
-            h2 {
-                font-size: $h2-size;
-                font-family: $secondary-font;
-                font-weight: 600;
-                color: $headerFontColor;
-                text-indent: 30%;
-            }
-        }
-
-        .hero-text {
-            width: 70%;
-            text-align: center;
-            font-size: 16px;
-            font-family: $secondary-font;
-            color: $headerFontColor;
-            line-height: 25px;
-        }
-    }
-}
 
 /* Footer */
 .footer-container {
@@ -240,6 +194,13 @@
                 color: $headerFontColor;
                 text-decoration: none;
                 padding: 3px;
+                transition: transform .2s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                    text-decoration: underline;
+                    font-weight: 500;
+                }
             }
         }
 
@@ -259,62 +220,28 @@
             .socials-icon {
                 font-size: 25px;
                 color: $headerFontColor;
+                transition: transform .2s ease;
+
+                &:hover {
+                    transform: scale(1.4);
+                }
             }
         }
-    }
-    .footer-copyright {
-        margin-top: 15px;
-        margin-bottom: 15px;
-        padding: 20px;
-    }
-}
-@include devices($desktop) {
-    .footer-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: $footerColor;
-        color: $headerFontColor;
-        font-family: $secondary-font;
         
-        .footer-content {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 90%;
-            padding: 5px;
+        @include devices($desktop) {
             margin-top: 10px;
-    
+            
             .footer-list-containers {
                 flex-direction: row;
                 justify-content: space-between;
                 width: 100%;
             }
-    
-            .footer-contact-container {
-                flex-wrap: wrap;
-                justify-content: space-between;
-                max-width: 450px;
-            }
-            
-            .footer-socials-list {
-                justify-content: space-around;
-                align-items: center;
-                width: 200px;
-                padding: 20px;
-                
-                .socials-icon {
-                    font-size: 25px;
-                    color: $headerFontColor;
-                }
-            }
-        }
-        .footer-copyright {
-            margin-top: 15px;
-            margin-bottom: 15px;
-            padding: 20px;
         }
     }
-}
+    
+    .footer-copyright {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 20px;
+    }
 }

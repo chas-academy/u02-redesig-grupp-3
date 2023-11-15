@@ -1,0 +1,424 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Header and secondary font copy paste i HTML:
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nobile:wght@400;500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+*/
+/*Fonts*/
+/*Colors*/
+/*Dot colors*/
+/*Members background color*/
+/* Header */
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 83px;
+  padding: 5px;
+  background-color: #FEF7EC;
+}
+.header-section .nav-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 720px) {
+  .header-section .nav-logo-container {
+    transition: transform 0.2s;
+  }
+  .header-section .nav-logo-container:hover {
+    transform: scale(1.2);
+  }
+}
+.header-section .nav-logo {
+  width: 68px;
+  height: 68px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header-section .nav-bar {
+  display: flex;
+  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #FEF7EC;
+  padding-right: 20px;
+}
+.header-section .nav-bar .drop-btn {
+  color: #470B00;
+  padding: 8px;
+  font-size: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.header-section .nav-bar .drop-btn:hover {
+  transform: scale(1.2);
+}
+.header-section .nav-bar .dropdown {
+  position: relative;
+  z-index: 1;
+}
+.header-section .nav-bar .nav-links {
+  display: none;
+}
+.header-section .nav-bar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FEF7EC;
+  right: 0;
+  width: 150px;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+.header-section .nav-bar ul {
+  padding: 0;
+}
+.header-section .nav-bar li {
+  list-style: none;
+}
+.header-section .nav-bar .dropdown-content a {
+  display: block;
+  color: #470B00;
+  font-size: 18px;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+.header-section .nav-bar .dropdown:hover .dropdown-content {
+  display: block;
+}
+.header-section .nav-bar .dropdown:hover .drop-btn {
+  background-color: #FEF7EC;
+}
+@media screen and (min-width: 720px) {
+  .header-section .nav-bar .dropdown {
+    display: none;
+  }
+  .header-section .nav-bar .nav-links {
+    display: block;
+    width: 600px;
+  }
+  .header-section .nav-bar .nav-links a {
+    text-decoration: none;
+    color: #470B00;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+  }
+  .header-section .nav-bar .nav-links a.active {
+    text-decoration: underline;
+  }
+  .header-section .nav-bar li {
+    transition: transform 0.2s ease;
+  }
+  .header-section .nav-bar li:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  .header-section .nav-bar li a {
+    text-decoration: none;
+    color: #470B00;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+  }
+  .header-section .nav-bar .nav-link-list {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/* Footer */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #212121;
+  color: #FFF4DF;
+  font-family: "Poppins", sans-serif;
+}
+.footer-container .footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 5px;
+}
+.footer-container .footer-content .footer-list-containers {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-top: 30px;
+}
+.footer-container .footer-content .footer-contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 450px;
+}
+.footer-container .footer-content .footer-list-content {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+  width: 180px;
+  padding: 10px;
+}
+.footer-container .footer-content .footer-list-content h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer-container .footer-content .footer-list-content .list-item {
+  font-size: 16px;
+  color: #FFF4DF;
+  text-decoration: none;
+  padding: 3px;
+  transition: transform 0.2s ease;
+}
+.footer-container .footer-content .footer-list-content .list-item:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+  font-weight: 500;
+}
+.footer-container .footer-content .contact {
+  flex-direction: column;
+  padding: 5px;
+  width: 190px;
+}
+.footer-container .footer-content .footer-socials-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  padding: 20px;
+}
+.footer-container .footer-content .footer-socials-list .socials-icon {
+  font-size: 25px;
+  color: #FFF4DF;
+  transition: transform 0.2s ease;
+}
+.footer-container .footer-content .footer-socials-list .socials-icon:hover {
+  transform: scale(1.4);
+}
+@media screen and (min-width: 720px) {
+  .footer-container .footer-content {
+    margin-top: 10px;
+  }
+  .footer-container .footer-content .footer-list-containers {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.footer-container .footer-copyright {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Main */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.hero-section .hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 345px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(/images/hero-img.png);
+}
+@media screen and (min-width: 720px) {
+  .hero-section .hero-container {
+    flex-direction: row;
+    height: 600px;
+  }
+}
+.hero-section .hero-container .hero-title {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-shadow: 1px 1px 2px #470B00;
+}
+.hero-section .hero-container .hero-title h1 {
+  font-size: 37px;
+  font-family: "Nobile", sans-serif;
+  font-weight: 600;
+  color: #FFF4DF;
+  text-indent: -10%;
+}
+.hero-section .hero-container .hero-title h2 {
+  font-size: 32px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #FFF4DF;
+  text-indent: 10%;
+}
+@media screen and (min-width: 720px) {
+  .hero-section .hero-container .hero-title h1 {
+    font-size: 80px;
+  }
+  .hero-section .hero-container .hero-title h2 {
+    font-size: 60px;
+  }
+}
+.hero-section .hero-container .hero-text {
+  width: 80%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: #FFF4DF;
+  line-height: 1.6;
+}
+@media screen and (min-width: 720px) {
+  .hero-section .hero-container .hero-text {
+    width: 600px;
+    font-size: 30px;
+  }
+}
+
+.business-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 700px;
+  padding: 35px 20px 50px 20px;
+  background-color: #FEF7EC;
+}
+.business-section .business-text-container {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  line-height: 1.8;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #470B00;
+  margin-bottom: 30px;
+  border-bottom: solid;
+}
+@media screen and (min-width: 720px) {
+  .business-section .business-text-container {
+    font-size: 38px;
+  }
+}
+.business-section .business-img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 30px;
+  width: 100%;
+}
+.business-section .business-img-container .business-logo {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  border: 2px solid #FFAB78;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: transform 0.2s;
+}
+.business-section .business-img-container .business-logo:hover {
+  transform: scale(1.1);
+  box-shadow: 15px 20px 30px rgba(0, 0, 0, 0.4);
+}
+.business-section .business-img-container #item1 {
+  background-size: 220px 220px;
+  background-image: url(Prislistaimg/Joes_louisiana_kitchen.png);
+  background-color: #9BAA8C;
+}
+.business-section .business-img-container #item2 {
+  background-size: 280px 280px;
+  background-image: url(Prislistaimg/Charcutcut.png);
+  background-color: #0A0E0F;
+}
+.business-section .business-img-container #item3 {
+  background-size: 280px 280px;
+  background-image: url(Prislistaimg/medlem_14.png);
+  background-color: #C34A2F;
+}
+@media screen and (min-width: 720px) {
+  .business-section .business-img-container .business-logo {
+    width: 350px;
+    height: 350px;
+  }
+  .business-section .business-img-container #item1 {
+    background-size: 250px 250px;
+  }
+  .business-section .business-img-container #item2, .business-section .business-img-container #item3 {
+    background-size: 280px 280px;
+  }
+}/*# sourceMappingURL=style.css.map */
