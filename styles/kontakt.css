@@ -298,7 +298,7 @@ body {
 
 body::before {
   content: ""; /* creates additional content before or after the content of element. */
-  background-image: url("kontaktimg/stockholmcity.jpg");
+  background-image: url(/kontaktimg/stockholmcity.jpg);
   opacity: 60%;
   position: fixed;
   top: 0;
