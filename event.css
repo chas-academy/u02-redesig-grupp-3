@@ -220,6 +220,92 @@ ol {
   list-style: revert;
 }
 
+.calender-container {
+  background-color: #470b00;
+  border-radius: 10px;
+  width: 90%;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.calender-heading {
+  text-align: center;
+  color: #5b5b5b;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+.weekdays {
+  display: flex;
+  justify-content: space-around;
+  color: #5b5b5b;
+  margin-top: 0;
+}
+
+.weekday-special {
+  color: #17a1fa;
+}
+
+.weeks {
+  display: flex;
+  justify-content: space-around;
+}
+
+.weeks .day:nth-child(3),
+.weeks .day:nth-child(4),
+.weeks .day:nth-child(5) {
+  color: white;
+}
+
+.weeks .day:nth-child(6),
+.weeks .day:nth-child(7) {
+  color: #17a1fa;
+}
+
+.day {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  color: #5b5b5b;
+  text-align: center;
+  line-height: 20px;
+  margin: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.day-special {
+  color: #fff;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin: 7px;
+}
+
+.day-first {
+  color: #5b5b5b;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin: 7px;
+}
+
+.day:hover {
+  background-color: #ffab78;
+}
+
+.day-special:hover {
+  background-color: #ffab78;
+}
+
+.day-first:hover {
+  background-color: #ffab78;
+}
+
 @media screen and (min-width: 720px) {
   .hero {
     display: flex;
