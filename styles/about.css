@@ -75,7 +75,6 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   height: 83px;
   padding: 5px;
   background-color: #FEF7EC;
@@ -283,128 +282,203 @@ table {
 }
 
 * {
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  box-sizing: border-box;
 }
 
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(img-medlemmar/hero-medlemslista.png);
-  height: auto;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  overflow: hidden;
-  background-position: center center;
-}
-.hero-image .hero-container {
-  display: flex;
-  align-items: center;
+body {
+  /* display: flex; */
   flex-direction: column;
-  height: auto;
-  min-height: 600px;
-  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: ""; /* creates additional content before or after the content of element. */
+  opacity: 60%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  z-index: -1;
+}
+
+/* Main Content Mobile Style*/
+.sectionA {
+  display: flex;
+  flex-direction: column;
+  background-image: url("aboutimg/officespace.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FEF7EC;
+  height: 50vw;
+}
+
+.officepic-container {
+  background-color: rgba(33, 33, 33, 0.79);
+  align-items: left;
+  height: 100%;
   width: -moz-fit-content;
   width: fit-content;
-}
-.hero-image .hero-title {
-  text-align: center;
-  color: antiquewhite;
-  font-size: 80px;
-  font-family: "nobile", sans-serif;
-  text-shadow: 1px 1px 2px black;
-  font-weight: bold;
-}
-.hero-image .hero-text {
-  color: antiquewhite;
-  font-size: 30px;
-  font-family: "poppins", sans-serif;
-  max-width: 60%;
-  text-align: center;
-  text-shadow: 1px 1px 2px black;
-  margin: 15px;
-}
-@media screen and (max-width: 420px) {
-  .hero-image {
-    height: 500px;
-  }
-  .hero-image .hero-title {
-    font-size: 50px;
-    text-align: center;
-    font-weight: bold;
-  }
-  .hero-image .hero-text {
-    font-size: 20px;
-    text-align: center;
-    margin: 15px;
-    min-width: 90%;
-  }
+  margin-right: 50%;
+  top: 0;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+/* .omossklick{
+    height: auto;
+    padding-top: 30%;
+} */
+.omoss {
+  font-size: 5vw;
+  font-family: "Nobile", sans-serif;
+  margin-left: 25px;
+  margin-top: 35%;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-.container .card-box {
+
+.klick {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 60vw;
-  background-color: #16262B;
-  margin: 35px;
-  padding: 40px;
-  border-radius: 10px;
-  gap: 20px;
-  row-gap: 50px;
+  align-items: center;
+  justify-content: center; /* Center the content horizontally */
+  height: 30px;
 }
-.container .card-box .card {
-  width: 250px;
-  background-color: #FEF7EC;
-  border-radius: 10px;
-  margin: 10px;
-  margin: auto;
+
+.klicka-button {
   display: inline-block;
+  padding: 5px;
+  background-color: #F3C912;
+  color: #000000;
+  text-decoration: none;
+  border: 1px solid #FEF7EC;
+  border-radius: 5px;
+  font-size: 12px;
+  transition: background-color 0.3s, color 0.3s;
 }
-.container .card-box .image {
-  height: 260px;
-  background-size: cover;
-  margin: 15px;
-  border-radius: 10px;
-  background-position: center;
+
+.klicka-button:hover {
+  background-color: #F3C912;
+  color: #161B1D;
 }
-.container .card-box .card-1 {
-  background-image: url(img-medlemmar/Joes_louisiana_kitchen.png);
-  background-color: #9BAA8C;
+
+.sectionB {
+  background-color: #16262B;
+  color: #470B00;
+  display: flex;
+  justify-content: space-between;
+  background-color: none;
 }
-.container .card-box .card-2 {
-  background-image: url(img-medlemmar/cesans.png);
-}
-.container .card-box .card-3 {
-  background-image: url(img-medlemmar/charrata.png);
-}
-.container .card-box .card-4 {
-  background-image: url(img-medlemmar/ciaco.png);
-}
-.container .card-box .card-5 {
-  background-image: url(img-medlemmar/mean_burgers.png);
-}
-.container .card-box .card-6 {
-  background-image: url(img-medlemmar/Gyro_truck.png);
-}
-.container .card-box .card-7 {
-  background-image: url(img-medlemmar/chapoh-foo.png);
-}
-.container .card-box .card-8 {
-  background-image: url(img-medlemmar/votcan.png);
-}
-.container .card-box .card-9 {
-  background-image: url(img-medlemmar/Nacho_mania.png);
-}
-.container .card-box .content {
-  margin: 10px;
+
+h3.headerOmOss {
+  margin-top: 35px;
+  font-family: "Nobile", sans-serif;
   text-align: center;
-}
-.container .card-box .content strong {
   font-weight: bold;
-}/*# sourceMappingURL=medlemmar.css.map */
+  font-size: larger;
+}
+
+.longText {
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  line-height: 1.5;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-indent: 10px;
+}
+
+.sectionBright {
+  margin-bottom: 20px;
+}
+
+.groupphoto {
+  display: flex;
+  height: 200px;
+  width: 350px;
+  box-shadow: 0px 0px 10px #000000 0, 0, 0, 0.5;
+  margin-left: 20px;
+}
+
+/* Main Content Desktop media */
+@media screen and (min-width: 720px) {
+  .officepic-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    top: 0;
+  }
+  .omoss {
+    /* margin-top: 20px;
+    margin-bottom: 15px; */
+    margin: 20px;
+    padding-left: 65px;
+    /* font-size: 5.3vw; */
+  }
+  .klick {
+    height: 70px;
+  }
+  .klicka-button {
+    margin-left: 0;
+    padding: 15px;
+    font-size: 22px;
+    border-radius: 10px;
+  }
+  .sectionB {
+    display: flex;
+    background-color: #16262B;
+    margin: 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-radius: 30px;
+    font-size: 20px;
+  }
+  .leftRight {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF4DF;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 30px;
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+  }
+  .sectionBleft {
+    flex: 1;
+    width: 50%;
+    margin-right: 20px;
+  }
+  .sectionBright {
+    padding: 10px;
+    width: 50%;
+  }
+  .longText {
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-indent: 10px;
+  }
+  h3.headerOmOss {
+    margin: 0;
+  }
+  .groupphoto {
+    margin-top: 20px;
+    margin-left: 35px;
+    height: 20vw;
+    width: 26vw;
+  }
+}/*# sourceMappingURL=about.css.map */

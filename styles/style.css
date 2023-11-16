@@ -75,7 +75,6 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   height: 83px;
   padding: 5px;
   background-color: #FEF7EC;
@@ -292,7 +291,6 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height: auto;
 }
 .hero-section .hero-container {
@@ -406,17 +404,17 @@ table {
 }
 .business-section .business-img-container #item1 {
   background-size: 220px 220px;
-  background-image: url(Prislistaimg/Joes_louisiana_kitchen.png);
+  background-image: url(/Prislistaimg/Joes_louisiana_kitchen.png);
   background-color: #9BAA8C;
 }
 .business-section .business-img-container #item2 {
   background-size: 280px 280px;
-  background-image: url(Prislistaimg/Charcutcut.png);
+  background-image: url(/Prislistaimg/Charcutcut.png);
   background-color: #0A0E0F;
 }
 .business-section .business-img-container #item3 {
   background-size: 280px 280px;
-  background-image: url(Prislistaimg/medlem_14.png);
+  background-image: url(/Prislistaimg/medlem_14.png);
   background-color: #C34A2F;
 }
 @media screen and (min-width: 720px) {
