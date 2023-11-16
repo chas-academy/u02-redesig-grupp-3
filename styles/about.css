@@ -311,7 +311,7 @@ body::before {
 .sectionA {
   display: flex;
   flex-direction: column;
-  background-image: url(/aboutimg/officespace.png);
+  background-image: url(../aboutimg/officespace.png);
   background-repeat: no-repeat;
   background-size: cover;
   color: #FEF7EC;
