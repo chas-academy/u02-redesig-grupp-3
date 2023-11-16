@@ -64,7 +64,7 @@ Vi planerar att använda följande verktyg för att strukturera vårt arbete:
 - Vi har planerat att bli klara med tre punkter till på tisdag, men är öppna för att det kan ta längre tid med tanke på den nya informationen om vi fortsätter med restaurang- eller grossistinriktning.
 
 
-*Måndag 23/10:*  
+*Måndag 23/10:*
 Deltagare: Joseph, Felicia, Denjin, Emilia, Brian, Samira
 
 
@@ -74,6 +74,49 @@ Deltagare: Joseph, Felicia, Denjin, Emilia, Brian, Samira
 - Dagens planering inkluderar arbete med personas och design.
 - Alla har bjudits in till Trello och GitHub i grupp 3 för att gemensamt hantera lo-fi och high-fi design.
 - Vårt mål är att designa sex sidor, och planen är att påbörja HTML-arbetet på torsdag.
+
+Såhär har vi tänkt att sidan ska se ut nedanför :
+
+# Restoculinair
+
+Sidor/Navigation
+
+1. **Landing Page - Startsida:**
+   - Användare ska kunna navigera mellan olika kategorier på sidan.
+   - Medlemslista med information om 9 kunder.
+   - Användare ska kunna se information och välja cateringföretag baserat på plats.
+   - Kontaktformulär för cateringförfrågningar.
+
+2. **Nyheter:**
+   - 3-5 kunder presenteras på sidan.
+   - Användaren ska kunna se erbjudanden och nyheter från olika cateringfirmor och välja dem som intresserar dem.
+
+3. **Events:**
+   - Information om expo och mässor.
+   - Kommande evenemang med kalender och lista över utställare.
+   - Användare ska kunna se och delta i olika events.
+   - Företagsanvändare kan anmäla sitt cateringföretag och ställa ut på mässor.
+
+4. **Prislista:**
+   - Tabellformat för tydlig information.
+
+5. **Om oss:**
+   - En mer utförlig beskrivning av företaget.
+
+## Search-funktion för olika städer:
+   - Möjlighet att söka efter cateringföretag i olika städer, t.ex. Göteborg.
+
+*Om tid finns:*
+   - Möjligtvis lösa det med CSS genom att dölja oönskade alternativ och visa de relevanta.
+
+## Aktuellt status:
+   - Efter feedback på måndag eftermiddag har vi definierat Restoculinair som en samlingsplats för cateringföretag.
+   - Skapat personas och påbörjat user stories.
+   - Definierat innehållet på sidorna.
+   - Lo-fi skiss för desktop på whiteboardtavlan har skapats.
+   - Felicia har påbörjat en high-fi-design i Figma.
+   - Även om vi inte hann med allt vi hade planerat idag, är vi på god väg med att bygga grunden för projektet.
+
 
 
 *Tisdag 24/10:*
@@ -204,3 +247,8 @@ Deltagare: Emilia, Felicia, Joseph, Samira, Brian, Denjin
 
 Retrospektiv:
 Reflektion över projektet med insikter om strukturfel och nödvändiga justeringar i designen. Förberedelse för slutlig merge och avslutning av projektet.
+
+
+## Länkar
+#### Github Projects
+https://github.com/orgs/chas-academy/projects/61

@@ -75,7 +75,6 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   height: 83px;
   padding: 5px;
   background-color: #FEF7EC;
@@ -283,147 +282,128 @@ table {
 }
 
 * {
-  /* margin: 0 auto; */
-  box-sizing: border-box;
+  margin: 0 auto;
 }
 
-body {
-  /* display: flex; */
-  flex-direction: column;
-  font-family: "Poppins", sans-serif;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-body::before {
-  content: ""; /* creates additional content before or after the content of element. */
-  background-image: url("kontaktimg/stockholmcity.jpg");
-  opacity: 60%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 150%;
-  z-index: -1;
-}
-
-/* main content Desktop & :-moz-user-disabled */
-.ContactAll {
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img-medlemmar/hero-medlemslista.png);
+  height: auto;
+  background-size: cover;
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 30px;
-  margin-bottom: 60px;
-}
-
-.kontaktoss {
-  font-family: "Nobile", sans-serif;
-  font-weight: bold;
-  font-size: larger;
-  margin-bottom: 20px;
-  margin-top: 30px;
-}
-
-.contactinfo {
-  flex: 1;
-  background-color: #FFF4DF;
-  padding-top: 60px;
-  padding-bottom: 40px;
-  padding-left: 40px;
-  padding-right: 30px;
-  line-height: 1.5;
-  margin-bottom: 40px;
-  margin-left: 30px;
-  margin-right: 30px;
-  order: 1;
-  width: 90%;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  color: #470B00;
-}
-
-.facebookinstagram {
-  margin-top: 30px;
-  /* mix-blend-mode:soft-light; */
-}
-
-.contactform {
-  background: linear-gradient(#FFF4DF, #FFF4DF) 0 60px/100% 900px no-repeat, linear-gradient(#470B00, #470B00) 0 0px/100% 60px no-repeat;
-  padding-top: 70px;
-  padding-bottom: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-left: 30px;
-  margin-right: 30px;
-  /* margin-top: 40px; */
-  border-radius: 25px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  order: 2;
-  width: 90%;
-}
-
-.bold-word {
-  font-weight: bold;
-}
-
-.form-group {
-  margin: 10px 0;
-}
-
-.sicka {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.sicka input[type=submit] {
-  width: 170px;
-  height: 30px;
-  background-color: #470B00;
-  color: #f1f1f1;
-  border-radius: 13px;
-}
-
-.form-control {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(34, 34, 34, 0.399); /* Add a shadow */
+  overflow: hidden;
+  background-position: center center;
+}
+.hero-image .hero-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  min-height: 600px;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.hero-image .hero-title {
+  text-align: center;
+  color: antiquewhite;
+  font-size: 80px;
+  font-family: "nobile", sans-serif;
+  text-shadow: 1px 1px 2px black;
+  font-weight: bold;
+}
+.hero-image .hero-text {
+  color: antiquewhite;
+  font-size: 30px;
+  font-family: "poppins", sans-serif;
+  max-width: 60%;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+  margin: 15px;
+}
+@media screen and (max-width: 420px) {
+  .hero-image {
+    height: 500px;
+  }
+  .hero-image .hero-title {
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .hero-image .hero-text {
+    font-size: 20px;
+    text-align: center;
+    margin: 15px;
+    min-width: 90%;
+  }
 }
 
-/* main content Desktop */
-@media screen and (min-width: 720px) {
-  .contactinfo {
-    margin-left: 0px;
-    margin-bottom: 0px;
-  }
-  .kontaktoss {
-    padding-top: 50px;
-    font-size: xx-large;
-  }
-  .facebookinstagram {
-    margin-top: 30px;
-    /* mix-blend-mode:color-dodge; */
-  }
-  .contactform {
-    flex: 1;
-    padding-left: 60px;
-    padding-right: 60px;
-    margin-left: 20px;
-    margin-right: 40px;
-  }
-  .allcontactfom {
-    margin-top: 30px;
-    margin-bottom: 20px;
-  }
-  .sicka input[type=submit] {
-    width: 180px;
-    height: 35px;
-    background-color: #470B00;
-    color: #f1f1f1;
-    font-size: 18px;
-    border-radius: 10px;
-  }
-}/*# sourceMappingURL=kontakt.css.map */
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container .card-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60vw;
+  background-color: #16262B;
+  margin: 35px;
+  padding: 40px;
+  border-radius: 10px;
+  gap: 20px;
+  row-gap: 50px;
+}
+.container .card-box .card {
+  width: 250px;
+  background-color: #FEF7EC;
+  border-radius: 10px;
+  margin: 10px;
+  margin: auto;
+  display: inline-block;
+}
+.container .card-box .image {
+  height: 260px;
+  background-size: cover;
+  margin: 15px;
+  border-radius: 10px;
+  background-position: center;
+}
+.container .card-box .card-1 {
+  background-image: url(../img-medlemmar/Joes_louisiana_kitchen.png);
+  background-color: #9BAA8C;
+}
+.container .card-box .card-2 {
+  background-image: url(../img-medlemmar/cesans.png);
+}
+.container .card-box .card-3 {
+  background-image: url(../img-medlemmar/charrata.png);
+}
+.container .card-box .card-4 {
+  background-image: url(../img-medlemmar/ciaco.png);
+}
+.container .card-box .card-5 {
+  background-image: url(../img-medlemmar/mean_burgers.png);
+}
+.container .card-box .card-6 {
+  background-image: url(../img-medlemmar/Gyro_truck.png);
+}
+.container .card-box .card-7 {
+  background-image: url(../img-medlemmar/chapoh-foo.png);
+}
+.container .card-box .card-8 {
+  background-image: url(../img-medlemmar/votcan.png);
+}
+.container .card-box .card-9 {
+  background-image: url(../img-medlemmar/Nacho_mania.png);
+}
+.container .card-box .content {
+  margin: 10px;
+  text-align: center;
+}
+.container .card-box .content strong {
+  font-weight: bold;
+}/*# sourceMappingURL=medlemmar.css.map */
