@@ -300,7 +300,7 @@ body {
   height: 100%;
   align-items: center;
   background-size: cover;
-  background-image: url(nyheter-img/hero-shadow-img.png);
+  background-image: url(/nyheter-img/hero-shadow-img.png);
 }
 .hero-content .hero-text-container {
   display: flex;
