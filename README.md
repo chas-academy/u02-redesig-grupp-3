@@ -159,7 +159,7 @@ Deltagare: Emilia, Joseph, Felicia, Brian, Denjin, Samira
 
 
 - Kvarhållning av text i kort, med idén att texten blir större vid hovring för ökad tillgänglighet.
-- Sidor fördelades: Startsida (Felicia), nyheter (Emilia), event (Brian), medlemslista (Denjin), prislista (Joseph), om oss (Samira), kontakt (Samira).
+- Sidor fördelades: Startsida, nav och footer (Felicia), nyheter (Emilia), event (Brian), medlemslista (Denjin), prislista (Joseph), om oss och kontakt (Samira).
 - Plan att färdigställa HTML på fredag och möte fredag kl. 09 för Git-projekt och kanban.
 
 
@@ -180,8 +180,8 @@ Deltagare: Emilia, Felicia, Denjin
 Deltagare: Emilia, Joseph, Denjin, Brian
 
 
-- Tekniska justeringar: Användning av HTML istället för CSS för första sidan för snabbare laddning.
-- Stiljusteringar: Strong runt text i stycken, röd text runt länkar, tillägg av SVG framför rubriker.
+- Tekniska justeringar: Användning av HTML för bilderna istället för i CSS för första sidan för snabbare laddning.
+- Stiljusteringar: Strong runt text i stycken, röd text runt erbjudanden.
 - Förberedelse för nästa sprint och reflektion över design och projektstruktur.
 - Första sprinten ansågs vara avslutad med skapade issues och Git projects.
 
@@ -201,7 +201,7 @@ Deltagare: Emilia, Joseph, Denjin, Brian, Samira, Felicia
 Deltagare: Emilia, Denjin, Felicia
 
 
-- Övervägande av alternativ arbetsmetodik och beslut om att börja med sprintplanering.
+- Övervägande av alternativ arbetsmetodik och beslut om att börja med sprintplanering för kommande vecka.
 - Planering för retrospektiv på fredag, dagliga ståuppmöten och första mergen den 10/11.
 
 
@@ -210,6 +210,7 @@ Deltagare: Emilia, Denjin, Felicia
 
 Deltagare: Emilia, Denjin, Felicia, Joseph, Brian (Samira på Discord)
 
+- Joseph mergade sina ändringar.
 
 Retrospektiv:
 
@@ -232,11 +233,11 @@ Deltagare: Emilia, Denjin, Felicia, Joseph, Brian, Samira
 *Tisdag 14/11 - Discord Daily Standup:*
 
 
-Deltagare: Emilia, Felicia, Joseph, Samira, Brian
+Deltagare: Emilia, Felicia, Joseph, Samira, Brian, Denjin
 
 
 - Utmaningar med footer och designjusteringar diskuterades.
-- Planering för onsdagens avslutning av nav och footer.
+- Planering för onsdagens avslutning av nav och footer, då vi alla kommer att lägga till den uppdaterade HTML-koden på alla våras sidor.
 
 
 *Onsdag 15/11:*
@@ -244,11 +245,44 @@ Deltagare: Emilia, Felicia, Joseph, Samira, Brian
 
 Deltagare: Emilia, Felicia, Joseph, Samira, Brian, Denjin
 
+- Vi har idag mergat de färdiga filerna och ändringarna, med plats för eventuella sista-minuten fixar.
+- Stötte på några mindre konflikter under merge, men dessa löstes.
+- Påbörjade att föra över våra anteckningnar i README-filen.
+- La in våra intervjuer i PDF-filer och länkade i GitHub-projects. 
 
 Retrospektiv:
 Reflektion över projektet med insikter om strukturfel och nödvändiga justeringar i designen. Förberedelse för slutlig merge och avslutning av projektet.
 
 
+*Torsdag 16/11:*
+
+Deltagare: Emilia, Felicia, Denjin, Brian
+
+- Mindre nav- och footer-ändringar på alla sidor. Finjusteringar.
+- La in alla styling-filer i en styles-mapp för bättre struktur. Pga. det var vi tvugna att ändra paths för stylesheets och bilder. 
+- *Skip-bo-break*
+
+
+## Sammanfattning
+
+Vi har kollat igenom våra anteckningar och vi har kommit fram till att det finns flera saker vi kunnat göra annorlunda.
+
+#### Projektstruktur:
+Vi tycker att vi har haft en bra kommunikation och alla har varit delaktiga och positiva. Det har lett till att arbetsförhållandena har varit relativt enkla och om någon har stött på problem så har vi hjälpts åt och löst det tillsammans. Alla har varit öppna och mottagliga för att ge och få hjälp, vilket har varit mycket uppskattat.
+
+Det vi har lärt oss utav detta är att grundlig planering, estimera att det tar längre tid än vad det gör (och se det som en bonus) och ta hänsyn till allas kunskapsnivå. I början var vi väldigt ambitiösa och tog i lite för högt. Det ledde till att vi gjorde en mer komplicerad design utan att vi faktiskt förstod hur mycket arbete den skulle kräva. Det visade sig att vi inte hängde med och kunde fokusera på resten av utbildningen (javascript och teorihandboken). Allt blev väldigt stressat, vilket också ledde till att man inte gjorde allt som sagts. Under tredje sprinten fick vi ladda om och planera om kring mycket. 
+
+#### Vad har vi lärt oss: 
+- Lägg mer tid på planering
+- Keep it simple - när man kan
+- Mobile first approach
+- Större inblick i HTML och CSS
+- Mer förståelse i hur det är att arbeta agilt och vikten utav kanban-board och scrum
+
+
+
 ## Länkar
 #### Github Projects
 https://github.com/orgs/chas-academy/projects/61
+#### Trello board
+https://trello.com/b/Ik3AhC1r/user-stories
