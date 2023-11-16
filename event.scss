@@ -77,9 +77,10 @@ h1 {
 }
 
 p {
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   padding: 0.8rem;
 }
+
 /* main event för mobil*/
 .container {
   display: flex;
@@ -108,7 +109,7 @@ p {
   align-items: center;
   padding: 19px;
   flex-wrap: wrap;
-  background-color: antiquewhite;
+  background-color: #fff4df;
   margin: 6px;
   box-shadow: 4px 4px 15px lightgrey;
   width: 96%;
@@ -158,11 +159,12 @@ ol {
 }
 
 .calender-container {
-  background-color: #470b00;
+  background-color: #fff4df;
   border-radius: 10px;
   width: 90%;
   padding: 1rem;
   margin: 1rem;
+  box-shadow: 4px 4px 15px lightgrey;
 }
 
 .calender-heading {
@@ -175,7 +177,7 @@ ol {
 .weekdays {
   display: flex;
   justify-content: space-around;
-  color: #5b5b5b;
+  color: black;
   margin-top: 0;
 }
 
@@ -191,7 +193,7 @@ ol {
 .weeks .day:nth-child(3),
 .weeks .day:nth-child(4),
 .weeks .day:nth-child(5) {
-  color: white;
+  color: black;
 }
 
 .weeks .day:nth-child(6),
@@ -212,7 +214,7 @@ ol {
 }
 
 .day-special {
-  color: #fff;
+  color: black;
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -253,10 +255,30 @@ ol {
     color: #fff;
     text-align: center;
   }
+
+  .hero-bg {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    background-image: url(/expo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
   .hero-heading {
     font-size: 3rem;
     margin: 0;
-    padding: 0;
     text-align: left;
   }
   .hero-content {
@@ -273,21 +295,11 @@ ol {
     margin-top: 20px;
   }
 
-  h1 {
-    font-size: 3rem;
-  }
-
-  p {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-
   .button {
     display: inline-block;
     background-color: #f3c912;
     color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
+    padding: 12px 25px;
     border-radius: 5px;
     margin-top: 15px;
     transition: 0.3s;
@@ -314,9 +326,10 @@ ol {
   }
 
   .container-heading {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 0.5rem;
     margin: 0;
+    display: inline;
   }
   .event {
     background-color: #e3dbdb;
@@ -326,8 +339,7 @@ ol {
     padding: 1rem;
     display: flex;
     justify-content: space-between;
-    border: 0;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
   .card-img-container {
     width: 350px;
@@ -348,6 +360,9 @@ ol {
     justify-content: center;
     align-items: center;
     padding: 0.2rem;
+    background: unset;
+    box-shadow: none;
+    margin-left: -8rem;
   }
   .sub-heading {
     font-size: 0.8rem;
@@ -366,12 +381,11 @@ ol {
   }
 
   .calender-container {
-    box-sizing: border-box;
     background-color: #470b00;
-    border-radius: 10px;
     width: 30%;
     padding: 2rem;
     margin: auto;
+    border-radius: unset;
   }
 
   .calender-heading {
