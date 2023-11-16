@@ -12,8 +12,7 @@ background-color: $mainBackgroundColor;
 }
 .hero-content {
     width: 100%;
-    height: 10rem;
-
+    height: 345px;
     .hero-img-container {
         width: 100%;
         height: 100%;
@@ -21,36 +20,35 @@ background-color: $mainBackgroundColor;
         background-size: cover;
         background-image: url(/nyheter-img/hero-shadow-img.png);
     }
-    
-
     .hero-text-container {
         display: flex;
         flex-direction: row;
-        color: #FFF4DF;
+        color: $headerFontColor;
         align-items: center;
         width: 100%;
         height: 100%;
     }
     .hero-text-header {
         display: flex;
-        }
         
-        
+    }
+    h2 {
+        font-family: $header-font;
+        font-size: xx-large;
+        padding: 1rem;
+    }
         .hero-text {
         display: flex;
         flex-wrap: wrap;
         width: 70%;
-        font-size: small;
         p {
             font-family: $secondary-font;
             color: $primaryFontColor;
         }
-        
         .hero-text-color {
             color: $headerFontColor;
         }
         }
-        
         .hero-button {
             background-color: $buttonsColor;
             color: $primaryFontColor;
@@ -59,20 +57,8 @@ background-color: $mainBackgroundColor;
             margin-top: 1rem;
             padding: 0.5rem;
             border-radius: 0.5rem;
-            
-        
         }
 }
-
-
-
-h2 {
-    font-family: $header-font;
-    font-size: xx-large;
-    padding: 1rem;
-}
-
-
 #news-section {
     .news-section-background{
         width: 100%;
@@ -97,7 +83,6 @@ h2 {
     p {
         font-family: $secondary-font; }
 }
-
 .all-cards {
     width: 80%;
 }
@@ -106,14 +91,14 @@ h2 {
     height: auto;
     display: flex;
     flex-direction: row;
-    background-color: #FEF7EC;
+    background-color: $cardColor;
     overflow: hidden;
     margin-top: 1rem;
     border-radius: 5px 5px 0 0;
 }
 
 #profile-background-JK {
-    background-color: #2D5653;
+    background-color: $joesKitchen;
     display: flex;
     justify-content: center;
     height: 150px;
@@ -121,7 +106,7 @@ h2 {
     align-items: center;
 }
 #profile-background-cesan {
-    background-color: #A47355;
+    background-color: $cesans;
     display: flex;
     justify-content: center;
     height: 150px;
@@ -129,7 +114,7 @@ h2 {
     align-items: center;
 }
 #profile-background-chapoh {
-    background-color: #D05F2D;
+    background-color: $chapohFoo;
     display: flex;
     justify-content: center;
     height: 150px;
@@ -137,7 +122,7 @@ h2 {
     align-items: center;
 }
 #profile-background-charrata {
-    background-color: #1E4B38;
+    background-color: $charrata;
     display: flex;
     justify-content: center;
     height: 150px;
@@ -145,7 +130,7 @@ h2 {
     align-items: center;
 }
 #profile-background-votcan {
-    background-color: #8FBA61;
+    background-color: $votcan;
     display: flex;
     justify-content: center;
     height: 150px;
@@ -153,7 +138,7 @@ h2 {
     align-items: center;
 }
 #profile-background-mkburger {
-    background-color: #6B8F9B;
+    background-color: $meanBurgers;
     display: flex;
     justify-content: center;
     height: 150px;
@@ -165,10 +150,10 @@ h2 {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: #9BAA8C;
+    background-color: $joesKitchenLogo;
     flex-direction: row;
     align-items: flex-start;
-    border: 2px solid #FFAB78;
+    border: 2px solid $profileBorder;
     .profile-img{
         height: 100%;
         display: flex;
@@ -186,7 +171,6 @@ h2 {
     white-space: nowrap;
     padding: 10px;
     font-size: small;
-    
     p {
         font-family: $secondary-font;
         color: $primaryFontColor;
@@ -194,9 +178,8 @@ h2 {
             font-weight: 600;
         }
     }
-    }
-    
-.offer-container {
+}
+    .offer-container {
 width: 100%;
 height: auto;
 background-color: $cardColor;
@@ -214,10 +197,6 @@ padding: 10px;
         }
     }
 }
-
-
-
-
 .card-button {
     display: flex;
     background-color: $buttonsColor;
@@ -230,7 +209,6 @@ padding: 10px;
     margin-top: 10px;
     border: 2px solid;
 }
-/*space mellan bilderna så bakgrunden syns*/
 .news-img-container {
     width: 100%;
     height:100px;
@@ -243,7 +221,7 @@ padding: 10px;
         border-radius: 5px;
         background-size: cover;
         transition: transform .2s;
-        box-shadow: 2px 2px 5px black;
+        box-shadow: 2px 2px 5px $boxShadow;
     }
     
     .news-img-one:hover {
@@ -256,7 +234,7 @@ padding: 10px;
         border-radius: 5px;
         background-size: cover;
         transition: transform .2s;
-        box-shadow: 2px 2px 5px black;
+        box-shadow: 2px 2px 5px $boxShadow;
     }
     .news-img-two:hover {
         transform: scale(2.1);
@@ -268,7 +246,7 @@ padding: 10px;
         background-size: cover;
         border-radius: 5px;
         transition: transform .2s;
-        box-shadow: 2px 2px 5px black;
+        box-shadow: 2px 2px 5px $boxShadow;
     }
     .news-img-three:hover {
         transform: scale(2.1);
@@ -279,7 +257,7 @@ padding: 10px;
         background-size: cover;
         border-radius: 5px;
         transition: transform .2s;
-        box-shadow: 2px 2px 5px black;
+        box-shadow: 2px 2px 5px $boxShadow;
     }
     .news-img-four:hover {
         transform: scale(2.1);
@@ -290,7 +268,7 @@ padding: 10px;
         background-size: cover;
         border-radius: 5px;
         transition: transform .2s;
-        box-shadow: 2px 2px 5px black;
+        box-shadow: 2px 2px 5px $boxShadow;
     }
     .news-img-five:hover {
         transform: scale(2.1);
@@ -301,7 +279,6 @@ padding: 10px;
         margin-inline: 0.1rem;
     }
 }
-
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -354,12 +331,8 @@ padding: 10px;
     font-size: 12px;
     color: $headerFontColor;
 }
-
-
-
 /*bilder mobile*/
 @include maxWidth($mobileLarge) {
-
     #news-section {
         .news-section-background{
             width: 420px;
@@ -387,9 +360,7 @@ padding: 10px;
         .news-img-four{
             display: none;
         }
-    
     }
-    
     #cesan-images {
         .news-img-three, .news-img-four, .news-img-five {
             display: none;
@@ -413,40 +384,29 @@ padding: 10px;
 #meanB-images {
     .news-img-four {
         display: none;
+        }
     }
 }
-    
-
-
-}
-
-
 /*desktop*/
 
 @include devices ($mobileLarge) {
     .hero-content {
-        height: 25rem;
-        
-    
+        width: 100%;
+        height: 600px;
         h2{
             font-size: 4rem;
-            padding: 6rem;
+            padding: 4rem;
         }
-        
-.hero-text {
-    font-size: 1.8rem;
-    padding: 1rem;
-}
-
-.hero-button {
-    padding: 1.2rem;
-    font-size: 1.8rem;
-}
-    }
-    .hero-content {
-        width: 100%;
-        height: 100%;
-    }
+        .hero-text {
+            font-size: 2rem;
+            padding: 1rem;
+            .hero-button {
+                padding: 1.2rem;
+                font-size: 1.8rem;
+                margin-top: 3rem;
+            }
+        }
+            }
 #news-section {
     .news-section-background{
         width: 1000px;
@@ -492,12 +452,10 @@ padding: 10px;
         justify-content: space-between;
     }
 #JK-images {
-display: contents;
+    display: contents;
 }
 #cesan-images {
     display: contents;
-    
-    
 }
 #chapoh-images {
     display: contents;
@@ -516,7 +474,6 @@ display: contents;
         flex-wrap: wrap;
         height: 100%;
     }
-    /*minns inte varför dessa skulle ha olika namn från början men nu är det så*/
     .news-img-one-content, .news-img-two-content, .news-img-three-content, .news-img-four-content, .news-img-five-content {
         flex: 1 1 100px;
     }
@@ -525,30 +482,38 @@ display: contents;
     height: 100px;
     }
 }
+
     @include devices ($desktopLarge) {
+        .hero-content {
+            width: 100%;
+        .hero-text-container {
+                width: 1500px;
+                height: 100%;
+                h2{
+                    font-size: 7rem;
+                    padding: 4rem;
+                }
+                .hero-text {
+                    font-size: 3rem;
+                    padding: 1rem;
+                    .hero-button {
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
         #news-section {
             .news-section-background{
                 width: 1500px;
             }
-        } /*måste ändra så texten blir */
-        .hero-content {
-            width: 100%;
-            height: 100%;
-        .hero-text-container {
-                
-                width: 1500px;
-                height: 100%;
+            .wrapper {
+                justify-content: space-between;
+                .all-cards {
+                    flex: 1 1 50%;
+                        }
+                .news-img-one-content, .news-img-two-content, .news-img-three-content, .news-img-four-content, .news-img-five-content {
+                    flex: 1 1 100px;
+                }
             }
         }
-        .wrapper {
-            justify-content: space-between;
-        }
-        .all-cards {
-            flex: 1 1 50%;
-                }
-        .news-img-one-content, .news-img-two-content, .news-img-three-content, .news-img-four-content, .news-img-five-content {
-            flex: 1 1 100px;
-        }     
     }
-
-    
