@@ -72,12 +72,7 @@ h2 {
     padding: 1rem;
 }
 
-h3 {
-    font-family: $secondary-font;
-    font-size: large;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
+
 #news-section {
     .news-section-background{
         width: 100%;
@@ -99,6 +94,8 @@ h3 {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+    p {
+        font-family: $secondary-font; }
 }
 
 .all-cards {
@@ -189,6 +186,7 @@ h3 {
     white-space: nowrap;
     padding: 10px;
     font-size: small;
+    
     p {
         font-family: $secondary-font;
         color: $primaryFontColor;
@@ -230,6 +228,7 @@ padding: 10px;
     font-weight: 600;
     padding: 5px;
     margin-top: 10px;
+    border: 2px solid;
 }
 /*space mellan bilderna så bakgrunden syns*/
 .news-img-container {
@@ -314,6 +313,12 @@ padding: 10px;
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
+    h3 {
+        font-family: $secondary-font;
+        font-size: large;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
 }
 .profile-dots{
     display: flex;
@@ -473,7 +478,7 @@ padding: 10px;
         width: 10rem;
     }        
     .profile-text-content {
-        white-space: wrap;
+        white-space: inherit;
         h3 {
             font-size: medium;
         }

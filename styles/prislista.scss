@@ -5,11 +5,10 @@
 @import "nav-footer";
 
 body {
-<<<<<<< HEAD
     background-color: $redColor;
-}
-=======
     background-color: $mainBackgroundColor;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .wrapper {
@@ -354,10 +353,6 @@ h1 {
     display: inline;
     justify-content: center;
     flex-direction: column;
-<<<<<<< HEAD
-  }
->>>>>>> 132e80d8d25641b896fc9a556d154aaf650a2e74
-=======
     font-size: 14px;
     
     tr {
@@ -708,4 +703,3 @@ h1 {
     }
 }
 }
->>>>>>> 5d82c41762141dc56990ad79a43106b978832877
