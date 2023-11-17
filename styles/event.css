@@ -361,8 +361,8 @@ h1 {
 p {
   font-size: 1.17rem;
   margin: 0;
-  padding: 0.8rem;
-  line-height: 1.7rem;
+  padding: 0.5rem;
+  line-height: 1.5rem;
   font-family: "Poppins", sans-serif;
 }
 
@@ -651,7 +651,8 @@ ol {
     padding: 0;
     margin: 1rem;
   }
-  .event-list {
+  .event-list,
+  ol {
     margin: 0;
     line-height: 1.8rem;
     text-decoration: underline;
