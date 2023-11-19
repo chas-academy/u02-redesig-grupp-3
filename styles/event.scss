@@ -79,7 +79,7 @@ h1 {
   background-color: #17a1fa;
 }
 
-p {
+.hero-text {
   font-size: 1.17rem;
   margin: 0;
   padding: 0.5rem;
@@ -282,7 +282,7 @@ ol {
     width: 100%;
   }
 
-  p {
+  .hero-text {
     font-size: 1.3rem;
     line-height: 1.5;
     font-family: $secondary-font;
