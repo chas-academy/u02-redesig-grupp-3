@@ -286,7 +286,7 @@ table {
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(img-medlemmar/hero-medlemslista.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img-medlemmar/hero-medlemslista.png);
   height: auto;
   background-size: cover;
   display: flex;
@@ -373,32 +373,32 @@ table {
   background-position: center;
 }
 .container .card-box .card-1 {
-  background-image: url(img-medlemmar/Joes_louisiana_kitchen.png);
+  background-image: url(../img-medlemmar/Joes_louisiana_kitchen.png);
   background-color: #9BAA8C;
 }
 .container .card-box .card-2 {
-  background-image: url(img-medlemmar/cesans.png);
+  background-image: url(../img-medlemmar/cesans.png);
 }
 .container .card-box .card-3 {
-  background-image: url(img-medlemmar/charrata.png);
+  background-image: url(../img-medlemmar/charrata.png);
 }
 .container .card-box .card-4 {
-  background-image: url(img-medlemmar/ciaco.png);
+  background-image: url(../img-medlemmar/ciaco.png);
 }
 .container .card-box .card-5 {
-  background-image: url(img-medlemmar/mean_burgers.png);
+  background-image: url(../img-medlemmar/mean_burgers.png);
 }
 .container .card-box .card-6 {
-  background-image: url(img-medlemmar/Gyro_truck.png);
+  background-image: url(../img-medlemmar/Gyro_truck.png);
 }
 .container .card-box .card-7 {
-  background-image: url(img-medlemmar/chapoh-foo.png);
+  background-image: url(../img-medlemmar/chapoh-foo.png);
 }
 .container .card-box .card-8 {
-  background-image: url(img-medlemmar/votcan.png);
+  background-image: url(../img-medlemmar/votcan.png);
 }
 .container .card-box .card-9 {
-  background-image: url(img-medlemmar/Nacho_mania.png);
+  background-image: url(../img-medlemmar/Nacho_mania.png);
 }
 .container .card-box .content {
   margin: 10px;
