@@ -62,7 +62,226 @@ table {
 /*Colors*/
 /*Dot colors*/
 /*Members background color*/
-/*@import "nav-footer";*/
+/*Header and secondary font copy paste i HTML:
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nobile:wght@400;500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+*/
+/*Fonts*/
+/*Colors*/
+/*Dot colors*/
+/*Members background color*/
+/* Header */
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 83px;
+  padding: 5px;
+  background-color: #fef7ec;
+}
+.header-section .nav-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 720px) {
+  .header-section .nav-logo-container {
+    transition: transform 0.2s;
+  }
+  .header-section .nav-logo-container:hover {
+    transform: scale(1.2);
+  }
+}
+.header-section .nav-logo {
+  width: 68px;
+  height: 68px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header-section .nav-bar {
+  display: flex;
+  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #fef7ec;
+  padding-right: 20px;
+}
+.header-section .nav-bar .drop-btn {
+  color: #470b00;
+  padding: 8px;
+  font-size: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.header-section .nav-bar .drop-btn:hover {
+  transform: scale(1.2);
+}
+.header-section .nav-bar .dropdown {
+  position: relative;
+  z-index: 1;
+}
+.header-section .nav-bar .nav-links {
+  display: none;
+}
+.header-section .nav-bar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fef7ec;
+  right: 0;
+  width: 150px;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+.header-section .nav-bar ul {
+  padding: 0;
+}
+.header-section .nav-bar li {
+  list-style: none;
+}
+.header-section .nav-bar .dropdown-content a {
+  display: block;
+  color: #470b00;
+  font-size: 18px;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+.header-section .nav-bar .dropdown:hover .dropdown-content {
+  display: block;
+}
+.header-section .nav-bar .dropdown:hover .drop-btn {
+  background-color: #fef7ec;
+}
+@media screen and (min-width: 720px) {
+  .header-section .nav-bar .dropdown {
+    display: none;
+  }
+  .header-section .nav-bar .nav-links {
+    display: block;
+    width: 600px;
+  }
+  .header-section .nav-bar .nav-links a {
+    text-decoration: none;
+    color: #470b00;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+  }
+  .header-section .nav-bar .nav-links a.active {
+    text-decoration: underline;
+  }
+  .header-section .nav-bar li {
+    transition: transform 0.2s ease;
+  }
+  .header-section .nav-bar li:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  .header-section .nav-bar li a {
+    text-decoration: none;
+    color: #470b00;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+  }
+  .header-section .nav-bar .nav-link-list {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/* Footer */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #212121;
+  color: #fff4df;
+  font-family: "Poppins", sans-serif;
+}
+.footer-container .footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 5px;
+}
+.footer-container .footer-content .footer-list-containers {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-top: 30px;
+}
+.footer-container .footer-content .footer-contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 450px;
+}
+.footer-container .footer-content .footer-list-content {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+  width: 180px;
+  padding: 10px;
+}
+.footer-container .footer-content .footer-list-content h4, .footer-container .footer-content .footer-list-content .h4-footer-contact {
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer-container .footer-content .footer-list-content .list-item {
+  font-size: 16px;
+  color: #fff4df;
+  text-decoration: none;
+  padding: 3px;
+  transition: transform 0.2s ease;
+}
+.footer-container .footer-content .footer-list-content .list-item:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+  font-weight: 500;
+}
+.footer-container .footer-content .contact {
+  flex-direction: column;
+  padding: 5px;
+  width: 190px;
+}
+.footer-container .footer-content .footer-socials-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  padding: 20px;
+}
+.footer-container .footer-content .footer-socials-list .socials-icon {
+  font-size: 25px;
+  color: #fff4df;
+  transition: transform 0.2s ease;
+}
+.footer-container .footer-content .footer-socials-list .socials-icon:hover {
+  transform: scale(1.4);
+}
+@media screen and (min-width: 720px) {
+  .footer-container .footer-content {
+    margin-top: 10px;
+  }
+  .footer-container .footer-content .footer-list-containers {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.footer-container .footer-copyright {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -70,6 +289,7 @@ html {
 * {
   margin: 0 auto;
   box-sizing: border-box;
+  scroll-behavior: auto;
 }
 
 .hero {
@@ -81,58 +301,69 @@ html {
   width: 100%;
   height: auto;
 }
-.hero .hero-bg {
+
+.hero-bg {
   display: flex;
   flex-direction: row;
   align-items: left;
-  background-image: url(/expo.png);
+  background-image: url(/img-event/expo.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
 }
-.hero .hero-bg .hero-content {
+
+.hero-content {
   display: flex;
   flex-direction: column;
-  background-color: rgba(34, 27, 27, 0.6);
+  background-color: rgba(33, 33, 33, 0.79);
   text-align: left;
   width: 50%;
 }
-.hero .hero-bg .hero-content .hero-heading {
-  font-size: 1.5rem;
-  margin: 0.5rem;
-  padding: 0.5rem;
+
+.hero-heading {
+  margin: 0.7rem;
+  padding: 0.3rem;
   text-align: left;
+  font-family: "Nobile", sans-serif;
+  color: #fff4df;
 }
-.hero .hero-bg .hero-content .hero-btn-container {
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.hero-btn-container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
-.hero .hero-bg .hero-content .button {
+
+.button {
   display: inline-block;
-  background-color: #f3c912;
-  color: #fff;
-  padding: 0.5rem 0.7rem;
+  background-color: #f9e7a4;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  padding: 1.1rem 0.9rem;
   text-decoration: none;
   border-radius: 5px;
   margin-bottom: 1rem;
   transition: 0.3s;
 }
-.hero .hero-bg .hero-content .button:hover {
+
+.button:hover {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-  background-color: black;
-}
-
-h1 {
-  font-size: 1.5rem;
+  background-color: #17a1fa;
 }
 
 p {
-  font-size: 0.9rem;
-  padding: 0.8rem;
+  font-size: 1.17rem;
+  margin: 0;
+  padding: 0.5rem;
+  line-height: 1.5rem;
+  font-family: "Poppins", sans-serif;
 }
 
 /* main event för mobil*/
@@ -152,27 +383,9 @@ p {
 }
 
 .event {
-  padding: 0px;
   color: rgb(48, 47, 47);
   width: 100%;
-  border: 0;
   margin-top: 1rem;
-  align-items: center;
-}
-
-.card-img-container {
-  width: 350px;
-  height: 350px;
-}
-
-.card-img {
-  width: 80vw;
-  height: auto;
-  flex-wrap: wrap;
-  display: flex;
-  border-radius: 10px;
-  box-shadow: 1px 1px 10px black;
-  margin-top: 35px;
 }
 
 .event-content {
@@ -182,62 +395,87 @@ p {
   align-items: center;
   padding: 19px;
   flex-wrap: wrap;
-  background-color: antiquewhite;
+  background-color: #fef7ec;
+  border-radius: 10px;
   margin: 6px;
   box-shadow: 4px 4px 15px lightgrey;
+  width: 96%;
+}
+
+.event-heading {
+  font-size: 1.7rem;
+  margin: 1rem;
+  font-family: "Nobile", sans-serif;
+}
+
+.sub-heading {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  margin: 1rem;
+  line-height: 1.5rem;
+  list-style: unset;
+  font-family: "Poppins", sans-serif;
+}
+
+.card-img-container {
+  width: 100%;
+  margin-bottom: 1.3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.card-img {
   width: 90%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px black;
+  margin-top: 1.5rem;
 }
 
 .event-kcontent {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 19px;
   flex-wrap: wrap;
-  background-color: antiquewhite;
-  margin: 6px;
-  box-shadow: 4px 4px 15px lightgrey;
+  margin-bottom: 2rem;
+  padding: 2.5rem;
+  line-height: 2rem;
+  font-family: "Poppins", sans-serif;
 }
 
-.sub-heading {
-  font-size: 0.8rem;
-  padding: 0;
-  margin: 1rem;
-}
-
-.event-heading {
-  font-size: 1.5rem;
-  padding: 0;
-  margin-top: 0.8rem;
-}
-
-.event-list {
-  margin: 0;
-  line-height: 1.8rem;
+.event-list,
+ol {
+  line-height: 1.5rem;
   text-decoration: underline;
+  list-style: revert;
 }
 
 .calender-container {
-  box-sizing: border-box;
-  background-color: #470b00;
+  background-color: #fef7ec;
   border-radius: 10px;
-  width: 30%;
-  padding: 2rem;
-  margin: auto;
+  width: 90%;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 4px 4px 15px lightgrey;
 }
 
 .calender-heading {
   text-align: center;
   color: #5b5b5b;
-  margin-top: 0;
+  margin: 1rem;
   font-size: 1.5rem;
+  font-family: "Nobile", sans-serif;
+}
+
+.calender-body {
+  font-family: "Poppins", sans-serif;
 }
 
 .weekdays {
   display: flex;
   justify-content: space-around;
-  color: #5b5b5b;
+  color: black;
   margin-top: 0;
 }
 
@@ -253,7 +491,7 @@ p {
 .weeks .day:nth-child(3),
 .weeks .day:nth-child(4),
 .weeks .day:nth-child(5) {
-  color: white;
+  color: black;
 }
 
 .weeks .day:nth-child(6),
@@ -274,7 +512,7 @@ p {
 }
 
 .day-special {
-  color: #fff;
+  color: black;
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -305,22 +543,35 @@ p {
   background-color: #ffab78;
 }
 
-/*för desktop*/
 @media screen and (min-width: 720px) {
   .hero {
     display: flex;
     align-items: center;
-    background-image: url(/expo.png);
     background-size: cover;
     background-position: center;
     color: #fff;
     text-align: center;
   }
+  .hero-bg {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+  p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+    margin: 1rem;
+  }
   .hero-heading {
-    font-size: 3rem;
-    margin: 0;
-    padding: 0;
+    font-size: 3.5rem;
+    margin: 1.3rem;
     text-align: left;
+    font-family: "Nobile", sans-serif;
   }
   .hero-content {
     display: flex;
@@ -333,29 +584,20 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-  }
-  h1 {
-    font-size: 3rem;
-  }
-  p {
-    font-size: 1rem;
-    line-height: 1.5;
+    padding-top: 45px;
   }
   .button {
     display: inline-block;
     background-color: #f3c912;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 15px;
+    color: #000;
+    padding: 20px 30px;
+    border-radius: 10px;
     transition: 0.3s;
   }
   .button:hover {
     transition: all 0.3s ease-in-out;
     cursor: pointer;
-    background-color: black;
+    background-color: #17a1fa;
   }
   /*main*/
   .container {
@@ -364,28 +606,50 @@ p {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    background-color: rgb(12, 32, 24);
-    color: #fff;
+    background-color: #16262b;
     padding: 2rem;
     margin: 20px auto 40px;
-    max-width: 80%;
+    max-width: 100%;
   }
   .container-heading {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 0.5rem;
     margin: 0;
+    display: inline;
+    font-family: "Nobile", sans-serif;
   }
-  /*.event {
-    background-color: #e3dbdb;
-    padding: 1.5rem;
-    color: rgb(48, 47, 47);
+  .event {
+    background-color: #fef7ec;
+    color: #000;
     width: 100%;
-    padding: 1rem;
     display: flex;
     justify-content: space-between;
-    border: 0;
-    margin-top: 1rem;
-  }*/
+    padding-right: 2rem;
+    margin-top: 2rem;
+  }
+  .event-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    padding-bottom: 4rem;
+  }
+  .event-heading {
+    font-size: 1.5rem;
+    padding: 0;
+    margin-top: 0.8rem;
+  }
+  .sub-heading {
+    font-size: 0.8rem;
+    padding: 0;
+    margin: 1rem;
+  }
+  .event-list,
+  ol {
+    margin: 0;
+    text-decoration: underline;
+  }
   .card-img-container {
     width: 350px;
     height: 350px;
@@ -397,36 +661,13 @@ p {
     float: right;
     width: 100%;
     height: auto;
-  }
-  .event-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0.2rem;
-  }
-  .sub-heading {
-    font-size: 0.8rem;
-    padding: 0;
-    margin: 1rem;
-  }
-  .event-heading {
-    font-size: 1.5rem;
-    padding: 0;
-    margin-top: 0.8rem;
-  }
-  .event-list {
-    margin: 0;
-    line-height: 1.8rem;
-    text-decoration: underline;
+    margin-top: 5rem;
   }
   .calender-container {
-    box-sizing: border-box;
     background-color: #470b00;
-    border-radius: 10px;
-    width: 30%;
-    padding: 2rem;
+    width: 40%;
     margin: auto;
+    border-radius: unset;
   }
   .calender-heading {
     text-align: center;
@@ -494,31 +735,4 @@ p {
   .day-first:hover {
     background-color: #ffab78;
   }
-}
-/* media quierie for responsivenes*/
-/*@media screen and (min-width: 1200px) {
-  .hero {
-    flex-direction: row;
-  }
-
-  .hero-heading {
-    font-size: 3.5rem;
-  }
-
-  .hero-content {
-    width: 50%;
-  }
-
-  h1 {
-    font-size: 3.5rem;
-  }
-
-  p {
-    font-size: 1.1rem;
-  }
-
-  .button {
-    padding: 12px 25px;
-    font-size: 1rem;
-  }
-}{*//*# sourceMappingURL=event.css.map */
+}/*# sourceMappingURL=event.css.map */

@@ -78,7 +78,7 @@ table {
   align-items: center;
   height: 83px;
   padding: 5px;
-  background-color: #FEF7EC;
+  background-color: #fef7ec;
 }
 .header-section .nav-logo-container {
   display: flex;
@@ -104,11 +104,11 @@ table {
   align-items: center;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: #FEF7EC;
+  background-color: #fef7ec;
   padding-right: 20px;
 }
 .header-section .nav-bar .drop-btn {
-  color: #470B00;
+  color: #470b00;
   padding: 8px;
   font-size: 30px;
   border: none;
@@ -129,7 +129,7 @@ table {
 .header-section .nav-bar .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #FEF7EC;
+  background-color: #fef7ec;
   right: 0;
   width: 150px;
   border-radius: 5px;
@@ -145,7 +145,7 @@ table {
 }
 .header-section .nav-bar .dropdown-content a {
   display: block;
-  color: #470B00;
+  color: #470b00;
   font-size: 18px;
   padding: 12px 16px;
   text-decoration: none;
@@ -154,7 +154,7 @@ table {
   display: block;
 }
 .header-section .nav-bar .dropdown:hover .drop-btn {
-  background-color: #FEF7EC;
+  background-color: #fef7ec;
 }
 @media screen and (min-width: 720px) {
   .header-section .nav-bar .dropdown {
@@ -166,7 +166,7 @@ table {
   }
   .header-section .nav-bar .nav-links a {
     text-decoration: none;
-    color: #470B00;
+    color: #470b00;
     font-size: 18px;
     font-family: "Poppins", sans-serif;
   }
@@ -183,7 +183,7 @@ table {
   }
   .header-section .nav-bar li a {
     text-decoration: none;
-    color: #470B00;
+    color: #470b00;
     font-size: 18px;
     font-family: "Poppins", sans-serif;
   }
@@ -200,7 +200,7 @@ table {
   justify-content: center;
   align-items: center;
   background-color: #212121;
-  color: #FFF4DF;
+  color: #fff4df;
   font-family: "Poppins", sans-serif;
 }
 .footer-container .footer-content {
@@ -236,7 +236,7 @@ table {
 }
 .footer-container .footer-content .footer-list-content .list-item {
   font-size: 16px;
-  color: #FFF4DF;
+  color: #fff4df;
   text-decoration: none;
   padding: 3px;
   transition: transform 0.2s ease;
@@ -260,7 +260,7 @@ table {
 }
 .footer-container .footer-content .footer-socials-list .socials-icon {
   font-size: 25px;
-  color: #FFF4DF;
+  color: #fff4df;
   transition: transform 0.2s ease;
 }
 .footer-container .footer-content .footer-socials-list .socials-icon:hover {
@@ -288,7 +288,7 @@ table {
 }
 
 body {
-  background-color: #FEF7EC;
+  background-color: #fef7ec;
 }
 
 .hero-content {
@@ -305,7 +305,7 @@ body {
 .hero-content .hero-text-container {
   display: flex;
   flex-direction: row;
-  color: #FFF4DF;
+  color: #fff4df;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -325,14 +325,14 @@ body {
 }
 .hero-content .hero-text p {
   font-family: "Poppins", sans-serif;
-  color: #470B00;
+  color: #470b00;
 }
 .hero-content .hero-text .hero-text-color {
-  color: #FFF4DF;
+  color: #fff4df;
 }
 .hero-content .hero-button {
-  background-color: #F9E7A4;
-  color: #470B00;
+  background-color: #f9e7a4;
+  color: #470b00;
   font-family: "Poppins", sans-serif;
   margin: inherit;
   margin-top: 1rem;
@@ -350,7 +350,7 @@ body {
 }
 #news-section .news-section-background {
   width: 100%;
-  background-color: #16262B;
+  background-color: #16262b;
   border-radius: 1rem;
 }
 
@@ -376,14 +376,14 @@ body {
   height: auto;
   display: flex;
   flex-direction: row;
-  background-color: #FEF7EC;
+  background-color: #fef7ec;
   overflow: hidden;
   margin-top: 1rem;
   border-radius: 5px 5px 0 0;
 }
 
 #profile-background-JK {
-  background-color: #2D5653;
+  background-color: #2d5653;
   display: flex;
   justify-content: center;
   height: 150px;
@@ -392,7 +392,7 @@ body {
 }
 
 #profile-background-cesan {
-  background-color: #A47355;
+  background-color: #a47355;
   display: flex;
   justify-content: center;
   height: 150px;
@@ -401,7 +401,7 @@ body {
 }
 
 #profile-background-chapoh {
-  background-color: #D05F2D;
+  background-color: #d05f2d;
   display: flex;
   justify-content: center;
   height: 150px;
@@ -410,7 +410,7 @@ body {
 }
 
 #profile-background-charrata {
-  background-color: #1E4B38;
+  background-color: #1e4b38;
   display: flex;
   justify-content: center;
   height: 150px;
@@ -419,7 +419,7 @@ body {
 }
 
 #profile-background-votcan {
-  background-color: #8FBA61;
+  background-color: #8fba61;
   display: flex;
   justify-content: center;
   height: 150px;
@@ -428,7 +428,7 @@ body {
 }
 
 #profile-background-mkburger {
-  background-color: #6B8F9B;
+  background-color: #6b8f9b;
   display: flex;
   justify-content: center;
   height: 150px;
@@ -441,10 +441,10 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: #9BAA8C;
+  background-color: #9baa8c;
   flex-direction: row;
   align-items: flex-start;
-  border: 2px solid #FFAB78;
+  border: 2px solid #ffab78;
 }
 .profile-img-container .profile-img {
   height: 100%;
@@ -457,7 +457,7 @@ body {
 
 .profile-text-container {
   width: 100%;
-  background-color: #FEF7EC;
+  background-color: #fef7ec;
 }
 
 .profile-text-content {
@@ -468,7 +468,7 @@ body {
 }
 .profile-text-content p {
   font-family: "Poppins", sans-serif;
-  color: #470B00;
+  color: #470b00;
 }
 .profile-text-content p strong {
   font-weight: 600;
@@ -477,7 +477,7 @@ body {
 .offer-container {
   width: 100%;
   height: auto;
-  background-color: #FEF7EC;
+  background-color: #fef7ec;
   padding: 10px;
   border-radius: 0 0 5px 5px;
   margin-bottom: 1rem;
@@ -487,16 +487,16 @@ body {
 }
 .offer-container .offer-content-text p {
   font-family: "Poppins", sans-serif;
-  color: #470B00;
+  color: #470b00;
 }
 .offer-container .offer-content-text .offer-color-red {
-  color: #C60000;
+  color: #c60000;
 }
 
 .card-button {
   display: flex;
-  background-color: #F9E7A4;
-  color: #470B00;
+  background-color: #f9e7a4;
+  color: #470b00;
   font-family: "Poppins", sans-serif;
   border-radius: 8px;
   font-size: medium;
@@ -601,37 +601,37 @@ body {
 /*Måste ligga under alla cards*/
 .dot-veg {
   font-family: "Material Symbols Outlined";
-  color: #98BE6F;
+  color: #98be6f;
   font-size: smaller;
 }
 
 .dot-meat {
   font-family: "Material Symbols Outlined";
-  color: #E5712A;
+  color: #e5712a;
   font-size: smaller;
 }
 
 .dot-pork {
   font-family: "Material Symbols Outlined";
-  color: #F3C912;
+  color: #f3c912;
   font-size: smaller;
 }
 
 .dot-chicken {
   font-family: "Material Symbols Outlined";
-  color: #E52A2A;
+  color: #e52a2a;
   font-size: smaller;
 }
 
 .dot-fish {
   font-family: "Material Symbols Outlined";
-  color: #2A8BE5;
+  color: #2a8be5;
   font-size: smaller;
 }
 
 .dot-text {
   font-size: 12px;
-  color: #FFF4DF;
+  color: #fff4df;
 }
 
 /*bilder mobile*/
