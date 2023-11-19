@@ -1,7 +1,7 @@
 @import "reset";
 @import "primary";
 @import "mixinss";
-/*@import "nav-footer";*/
+@import "nav-footer";
 
 html {
   scroll-behavior: smooth;
@@ -10,6 +10,7 @@ html {
 * {
   margin: 0 auto;
   box-sizing: border-box;
+  scroll-behavior: auto;
 }
 
 .hero {
@@ -20,66 +21,72 @@ html {
   align-items: center;
   width: 100%;
   height: auto;
+}
 
-  .hero-bg {
-    display: flex;
-    flex-direction: row;
-    align-items: left;
-    background-image: url(/expo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
+.hero-bg {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  background-image: url(/img-event/expo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
 
-    .hero-content {
-      display: flex;
-      flex-direction: column;
-      background-color: rgba(34, 27, 27, 0.6);
-      text-align: left;
-      width: 50%;
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  background-color: $colorGradiant;
+  text-align: left;
+  width: 50%;
+}
 
-      .hero-heading {
-        font-size: 1.5rem;
-        margin: 0.5rem;
-        padding: 0.5rem;
-        text-align: left;
-      }
-
-      .hero-btn-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-      }
-
-      .button {
-        display: inline-block;
-        background-color: #f3c912;
-        color: #fff;
-        padding: 0.5rem 0.7rem;
-        text-decoration: none;
-        border-radius: 5px;
-        margin-bottom: 1rem;
-        transition: 0.3s;
-      }
-
-      .button:hover {
-        transition: all 0.3s ease-in-out;
-        cursor: pointer;
-        background-color: black;
-      }
-    }
-  }
+.hero-heading {
+  margin: 0.7rem;
+  padding: 0.3rem;
+  text-align: left;
+  font-family: $header-font;
+  color: $headerFontColor;
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.hero-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  background-color: $buttonsColor;
+  font-family: $secondary-font;
+  color: #000;
+  padding: 1.1rem 0.9rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  transition: 0.3s;
+}
+
+.button:hover {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  background-color: #17a1fa;
 }
 
 p {
-  font-size: 0.9rem;
-  padding: 0.8rem;
+  font-size: 1.17rem;
+  margin: 0;
+  padding: 0.5rem;
+  line-height: 1.5rem;
+  font-family: $secondary-font;
 }
+
 /* main event för mobil*/
 .container {
   display: flex;
@@ -96,26 +103,11 @@ p {
   display: none;
 }
 .event {
-  padding: 0px;
   color: rgb(48, 47, 47);
   width: 100%;
-  border: 0;
   margin-top: 1rem;
-  align-items: center;
 }
-.card-img-container {
-  width: 350px;
-  height: 350px;
-}
-.card-img {
-  width: 80vw;
-  height: auto;
-  flex-wrap: wrap;
-  display: flex;
-  border-radius: 10px;
-  box-shadow: 1px 1px 10px black;
-  margin-top: 35px;
-}
+
 .event-content {
   display: flex;
   flex-direction: column;
@@ -123,59 +115,86 @@ p {
   align-items: center;
   padding: 19px;
   flex-wrap: wrap;
-  background-color: antiquewhite;
+  background-color: $cardColor;
+  border-radius: 10px;
   margin: 6px;
   box-shadow: 4px 4px 15px lightgrey;
+  width: 96%;
+}
+
+.event-heading {
+  font-size: 1.7rem;
+  margin: 1rem;
+  font-family: $header-font;
+}
+
+.sub-heading {
+  font-size: 1rem;
+  font-family: $secondary-font;
+}
+
+ul {
+  margin: 1rem;
+  line-height: 1.5rem;
+  list-style: unset;
+  font-family: $secondary-font;
+}
+
+.card-img-container {
+  width: 100%;
+  margin-bottom: 1.3rem;
+  display: flex;
+  justify-content: center;
+}
+.card-img {
   width: 90%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px black;
+  margin-top: 1.5rem;
 }
 
 .event-kcontent {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 19px;
   flex-wrap: wrap;
-  background-color: antiquewhite;
-  margin: 6px;
-  box-shadow: 4px 4px 15px lightgrey;
+  margin-bottom: 2rem;
+  padding: 2.5rem;
+  line-height: 2rem;
+  font-family: $secondary-font;
 }
-.sub-heading {
-  font-size: 0.8rem;
-  padding: 0;
-  margin: 1rem;
-}
-.event-heading {
-  font-size: 1.5rem;
-  padding: 0;
-  margin-top: 0.8rem;
-}
-.event-list {
-  margin: 0;
-  line-height: 1.8rem;
+
+.event-list,
+ol {
+  line-height: 1.5rem;
   text-decoration: underline;
+  list-style: revert;
 }
 
 .calender-container {
-  box-sizing: border-box;
-  background-color: #470b00;
+  background-color: $cardColor;
   border-radius: 10px;
-  width: 30%;
-  padding: 2rem;
-  margin: auto;
+  width: 90%;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 4px 4px 15px lightgrey;
 }
 
 .calender-heading {
   text-align: center;
   color: #5b5b5b;
-  margin-top: 0;
+  margin: 1rem;
   font-size: 1.5rem;
+  font-family: $header-font;
+}
+
+.calender-body {
+  font-family: $secondary-font;
 }
 
 .weekdays {
   display: flex;
   justify-content: space-around;
-  color: #5b5b5b;
+  color: black;
   margin-top: 0;
 }
 
@@ -191,7 +210,7 @@ p {
 .weeks .day:nth-child(3),
 .weeks .day:nth-child(4),
 .weeks .day:nth-child(5) {
-  color: white;
+  color: black;
 }
 
 .weeks .day:nth-child(6),
@@ -212,7 +231,7 @@ p {
 }
 
 .day-special {
-  color: #fff;
+  color: black;
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -242,7 +261,7 @@ p {
 .day-first:hover {
   background-color: #ffab78;
 }
-/*för desktop*/
+
 @include devices($desktop) {
   .hero {
     display: flex;
@@ -253,11 +272,30 @@ p {
     color: #fff;
     text-align: center;
   }
+
+  .hero-bg {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    background-image: url(/expo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+
+  p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-family: $secondary-font;
+    margin: 1rem;
+  }
+
   .hero-heading {
-    font-size: 3rem;
-    margin: 0;
-    padding: 0;
+    font-size: 3.5rem;
+    margin: 1.3rem;
     text-align: left;
+    font-family: $header-font;
   }
   .hero-content {
     display: flex;
@@ -270,33 +308,22 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-  }
-
-  h1 {
-    font-size: 3rem;
-  }
-
-  p {
-    font-size: 1rem;
-    line-height: 1.5;
+    padding-top: 45px;
   }
 
   .button {
     display: inline-block;
     background-color: #f3c912;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 15px;
+    color: #000;
+    padding: 20px 30px;
+    border-radius: 10px;
     transition: 0.3s;
   }
 
   .button:hover {
     transition: all 0.3s ease-in-out;
     cursor: pointer;
-    background-color: black;
+    background-color: #17a1fa;
   }
 
   /*main*/
@@ -306,29 +333,56 @@ p {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    background-color: rgb(12, 32, 24);
-    color: #fff;
+    background-color: $cardBackgroundColor;
     padding: 2rem;
     margin: 20px auto 40px;
-    max-width: 80%;
+    max-width: 100%;
   }
 
   .container-heading {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 0.5rem;
     margin: 0;
+    display: inline;
+    font-family: $header-font;
   }
-  /*.event {
-    background-color: #e3dbdb;
-    padding: 1.5rem;
-    color: rgb(48, 47, 47);
+  .event {
+    background-color: $cardColor;
+    color: #000;
     width: 100%;
-    padding: 1rem;
     display: flex;
     justify-content: space-between;
-    border: 0;
-    margin-top: 1rem;
-  }*/
+    padding-right: 2rem;
+    margin-top: 2rem;
+  }
+
+  .event-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    padding-bottom: 4rem;
+  }
+
+  .event-heading {
+    font-size: 1.5rem;
+    padding: 0;
+    margin-top: 0.8rem;
+  }
+
+  .sub-heading {
+    font-size: 0.8rem;
+    padding: 0;
+    margin: 1rem;
+  }
+
+  .event-list,
+  ol {
+    margin: 0;
+    text-decoration: underline;
+  }
+
   .card-img-container {
     width: 350px;
     height: 350px;
@@ -340,38 +394,14 @@ p {
     float: right;
     width: 100%;
     height: auto;
-  }
-
-  .event-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0.2rem;
-  }
-  .sub-heading {
-    font-size: 0.8rem;
-    padding: 0;
-    margin: 1rem;
-  }
-  .event-heading {
-    font-size: 1.5rem;
-    padding: 0;
-    margin-top: 0.8rem;
-  }
-  .event-list {
-    margin: 0;
-    line-height: 1.8rem;
-    text-decoration: underline;
+    margin-top: 5rem;
   }
 
   .calender-container {
-    box-sizing: border-box;
-    background-color: #470b00;
-    border-radius: 10px;
-    width: 30%;
-    padding: 2rem;
+    background-color: $primaryFontColor;
+    width: 40%;
     margin: auto;
+    border-radius: unset;
   }
 
   .calender-heading {
@@ -452,32 +482,3 @@ p {
     background-color: #ffab78;
   }
 }
-
-/* media quierie for responsivenes*/
-
-/*@media screen and (min-width: 1200px) {
-  .hero {
-    flex-direction: row;
-  }
-
-  .hero-heading {
-    font-size: 3.5rem;
-  }
-
-  .hero-content {
-    width: 50%;
-  }
-
-  h1 {
-    font-size: 3.5rem;
-  }
-
-  p {
-    font-size: 1.1rem;
-  }
-
-  .button {
-    padding: 12px 25px;
-    font-size: 1rem;
-  }
-}{*/

@@ -78,7 +78,7 @@ table {
   align-items: center;
   height: 83px;
   padding: 5px;
-  background-color: #FEF7EC;
+  background-color: #fef7ec;
 }
 .header-section .nav-logo-container {
   display: flex;
@@ -104,11 +104,11 @@ table {
   align-items: center;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: #FEF7EC;
+  background-color: #fef7ec;
   padding-right: 20px;
 }
 .header-section .nav-bar .drop-btn {
-  color: #470B00;
+  color: #470b00;
   padding: 8px;
   font-size: 30px;
   border: none;
@@ -129,7 +129,7 @@ table {
 .header-section .nav-bar .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #FEF7EC;
+  background-color: #fef7ec;
   right: 0;
   width: 150px;
   border-radius: 5px;
@@ -145,7 +145,7 @@ table {
 }
 .header-section .nav-bar .dropdown-content a {
   display: block;
-  color: #470B00;
+  color: #470b00;
   font-size: 18px;
   padding: 12px 16px;
   text-decoration: none;
@@ -154,7 +154,7 @@ table {
   display: block;
 }
 .header-section .nav-bar .dropdown:hover .drop-btn {
-  background-color: #FEF7EC;
+  background-color: #fef7ec;
 }
 @media screen and (min-width: 720px) {
   .header-section .nav-bar .dropdown {
@@ -166,7 +166,7 @@ table {
   }
   .header-section .nav-bar .nav-links a {
     text-decoration: none;
-    color: #470B00;
+    color: #470b00;
     font-size: 18px;
     font-family: "Poppins", sans-serif;
   }
@@ -183,7 +183,7 @@ table {
   }
   .header-section .nav-bar li a {
     text-decoration: none;
-    color: #470B00;
+    color: #470b00;
     font-size: 18px;
     font-family: "Poppins", sans-serif;
   }
@@ -200,7 +200,7 @@ table {
   justify-content: center;
   align-items: center;
   background-color: #212121;
-  color: #FFF4DF;
+  color: #fff4df;
   font-family: "Poppins", sans-serif;
 }
 .footer-container .footer-content {
@@ -236,7 +236,7 @@ table {
 }
 .footer-container .footer-content .footer-list-content .list-item {
   font-size: 16px;
-  color: #FFF4DF;
+  color: #fff4df;
   text-decoration: none;
   padding: 3px;
   transition: transform 0.2s ease;
@@ -260,7 +260,7 @@ table {
 }
 .footer-container .footer-content .footer-socials-list .socials-icon {
   font-size: 25px;
-  color: #FFF4DF;
+  color: #fff4df;
   transition: transform 0.2s ease;
 }
 .footer-container .footer-content .footer-socials-list .socials-icon:hover {
@@ -283,8 +283,8 @@ table {
 }
 
 body {
-  background-color: #C60000;
-  background-color: #FEF7EC;
+  background-color: #c60000;
+  background-color: #fef7ec;
   box-sizing: border-box;
   margin: 0 auto;
 }
@@ -312,7 +312,7 @@ body {
 
 h1 {
   font-family: "Nobile", sans-serif;
-  color: #FFF4DF;
+  color: #fff4df;
   font-weight: bold;
   font-size: 37px;
   text-align: center;
@@ -320,7 +320,7 @@ h1 {
 
 .header-text {
   font-family: "Poppins", sans-serif;
-  color: #FFF4DF;
+  color: #fff4df;
   font-size: 16px;
   text-align: center;
   text-shadow: 1px 1px 2px #000000;
@@ -333,7 +333,7 @@ h1 {
   align-items: center;
   width: 379px;
   border-radius: 5px;
-  background-color: #16262B;
+  background-color: #16262b;
   margin-top: 10px;
 }
 
@@ -347,42 +347,42 @@ h1 {
 
 .dot-text {
   font-family: "Poppins", sans-serif;
-  color: #FFF4DF;
+  color: #fff4df;
   font-size: 8px;
 }
 
 .dot1 {
   font-family: "Material Symbols Outlined";
-  color: #98BE6F;
+  color: #98be6f;
   font-size: smaller;
 }
 
 .dot2 {
   font-family: "Material Symbols Outlined";
-  color: #E5712A;
+  color: #e5712a;
   font-size: smaller;
 }
 
 .dot3 {
   font-family: "Material Symbols Outlined";
-  color: #F3C912;
+  color: #f3c912;
   font-size: smaller;
 }
 
 .dot4 {
   font-family: "Material Symbols Outlined";
-  color: #E52A2A;
+  color: #e52a2a;
   font-size: smaller;
 }
 
 .dot5 {
   font-family: "Material Symbols Outlined";
-  color: #2A8BE5;
+  color: #2a8be5;
   font-size: smaller;
 }
 
 .prislista {
-  background-color: #FEF7EC;
+  background-color: #fef7ec;
   width: 371px;
   height: 319px;
   font-size: 8px;
@@ -402,7 +402,7 @@ h1 {
 .kontakt {
   width: 117px;
   font-family: "Poppins", sans-serif;
-  color: #470B00;
+  color: #470b00;
 }
 .kontakt h2, .kontakt h3 {
   text-align: center;
@@ -437,28 +437,28 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #2D5653;
+  background-color: #2d5653;
   border-radius: 5px 0 0 0;
 }
 
 .cesans {
-  background-color: #A47355;
+  background-color: #a47355;
 }
 
 .chapoh {
-  background-color: #D05F2D;
+  background-color: #d05f2d;
 }
 
 .charrata {
-  background-color: #1E4B38;
+  background-color: #1e4b38;
 }
 
 .votcan {
-  background-color: #8FBA61;
+  background-color: #8fba61;
 }
 
 .meanburger {
-  background-color: #6B8F9B;
+  background-color: #6b8f9b;
 }
 
 .ciaco {
@@ -466,15 +466,15 @@ h1 {
 }
 
 .gyro {
-  background-color: #D9913F;
+  background-color: #d9913f;
 }
 
 .nacho {
-  background-color: #9A3B0A;
+  background-color: #9a3b0a;
 }
 
 .reklam {
-  background-color: #71848A;
+  background-color: #71848a;
 }
 
 .logo {
@@ -483,7 +483,7 @@ h1 {
   display: flex;
   justify-content: center;
   border-radius: 40px;
-  border: 2px solid #FFAB78;
+  border: 2px solid #ffab78;
 }
 .logo img {
   width: 57px;
@@ -493,39 +493,39 @@ h1 {
 }
 
 .joelogo {
-  background-color: #9BAA8C;
+  background-color: #9baa8c;
 }
 
 .cesanslogo {
-  background-color: #161B1D;
+  background-color: #161b1d;
 }
 
 .chapohlogo {
-  background-color: #C34A2F;
+  background-color: #c34a2f;
 }
 
 .charratalogo {
-  background-color: #0A0E0F;
+  background-color: #0a0e0f;
 }
 
 .votcanlogo {
-  background-color: #10191B;
+  background-color: #10191b;
 }
 
 .meanburgerLogo {
-  background-color: #0A252E;
+  background-color: #0a252e;
 }
 
 .ciacologo {
-  background-color: #110C10;
+  background-color: #110c10;
 }
 
 .gyrologo {
-  background-color: #0E1216;
+  background-color: #0e1216;
 }
 
 .nachologo {
-  background-color: #C36314;
+  background-color: #c36314;
 }
 
 .reklamlogo {
@@ -535,8 +535,8 @@ h1 {
   justify-content: center;
   align-items: center;
   border-radius: 40px;
-  border: 2px solid #FFAB78;
-  background-color: #16262B;
+  border: 2px solid #ffab78;
+  background-color: #16262b;
 }
 
 .dinlogga {
@@ -544,7 +544,7 @@ h1 {
   font-size: 12px;
   text-align: center;
   align-items: center;
-  color: #FFF4DF;
+  color: #fff4df;
 }
 
 .mat-bilder4 {
@@ -613,11 +613,11 @@ table {
   font-size: 14px;
 }
 table tr {
-  border-bottom: 1px solid #470B00;
+  border-bottom: 1px solid #470b00;
 }
 table td {
   font-family: "Poppins", sans-serif;
-  color: #470B00;
+  color: #470b00;
   text-align: start;
   padding: 2px;
   vertical-align: bottom;
@@ -640,12 +640,12 @@ table p {
   width: 52.2px;
   height: 15.35px;
   font-family: "Poppins", sans-serif;
-  color: #470B00;
+  color: #470b00;
   font-weight: bold;
   font-size: 10px;
-  background-color: #F9E7A4;
+  background-color: #f9e7a4;
   border-radius: 4px;
-  border: 1px solid #470B00;
+  border: 1px solid #470b00;
   align-items: center;
 }
 
@@ -654,12 +654,12 @@ table p {
   width: 85px;
   height: 20px;
   font-family: "Poppins", sans-serif;
-  color: #470B00;
+  color: #470b00;
   font-weight: bold;
   font-size: 10px;
-  background-color: #F9E7A4;
+  background-color: #f9e7a4;
   border-radius: 4px;
-  border: 1px solid #470B00;
+  border: 1px solid #470b00;
   align-items: center;
   margin-top: 10px;
 }
@@ -684,7 +684,7 @@ table p {
 .reklam-text {
   width: 228px;
   font-family: "Poppins", sans-serif;
-  color: #470B00;
+  color: #470b00;
   text-align: start;
   padding: 2px;
   vertical-align: bottom;
@@ -714,14 +714,14 @@ table p {
   }
   h1 {
     font-family: "Nobile", sans-serif;
-    color: #FFF4DF;
+    color: #fff4df;
     font-weight: bold;
     font-size: 75px;
     text-align: center;
   }
   .header-text {
     font-family: "Poppins", sans-serif;
-    color: #FFF4DF;
+    color: #fff4df;
     font-size: 35px;
     text-align: center;
     text-shadow: 1px 1px 2px #000000;
@@ -891,7 +891,7 @@ table p {
   .reklam-text {
     width: 200px;
     font-family: "Poppins", sans-serif;
-    color: #470B00;
+    color: #470b00;
     text-align: start;
     padding: 5px;
     vertical-align: bottom;
